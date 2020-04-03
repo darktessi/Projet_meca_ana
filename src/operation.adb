@@ -201,6 +201,21 @@ package body operation is
       return n;
    end;
 
+   function hard_normalise(e : in T_expr_int) return T_expr_int is
+   begin
+      if e = normaliser(e) then
+         return e;
+      else
+         return hard_normalise(normaliser(e));
+      end if;
+   end;
+
+   procedure hard_normalise(e : in out T_expr_int) is
+   begin
+      e := hard_normalise(e);
+   end;
+
+
 
 
 

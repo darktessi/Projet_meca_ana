@@ -12,5 +12,7 @@ package operation is
    function nb_expr(n : in float ) return T_expr_int;
    function evaluate(e : in T_expr_int) return float;
    function puissance(a : in float; n : in integer) return float;
+   function hard_normalise(e : in T_expr_int) return T_expr_int;
+   procedure hard_normalise(e : in out T_expr_int);
 
 end operation;

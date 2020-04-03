@@ -53,6 +53,8 @@ package type_expression is
       end case;
    end record;
 
+
+
    function expr_text(expr : in T_expr_int) return T_chaine;
    function text_ch(s : in string) return T_chaine;
    function "="(n1 : in T_expr_int; n2 : in T_expr_int) return boolean;

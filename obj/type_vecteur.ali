@@ -23,7 +23,7 @@ W ada.text_io%s		a-textio.adb		a-textio.ali
 Z operation%s		operation.adb		operation.ali  AD
 W type_expression%s	type_expression.adb	type_expression.ali
 
-U type_vecteur%s	type_vecteur.ads	9255bfbe EE OO PK IL
+U type_vecteur%s	type_vecteur.ads	02f7a784 EE OO PK IL
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W operation%s		operation.adb		operation.ali
 W type_expression%s	type_expression.adb	type_expression.ali
@@ -37,7 +37,7 @@ D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
 D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
-D operation.ads		20200403155302 cc1b1e6d operation%s
+D operation.ads		20200403164016 5cb90657 operation%s
 D system.ads		20190518041258 32a08138 system%s
 D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
 D s-exctab.ads		20190518041256 54135002 system.exception_table%s
@@ -51,7 +51,7 @@ D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
 D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
-D type_expression.ads	20200403163006 a77b78a2 type_expression%s
+D type_expression.ads	20200403164010 a77b78a2 type_expression%s
 D type_vecteur.ads	20200403160244 f935d971 type_vecteur%s
 D type_vecteur.adb	20200403160244 a42b2032 type_vecteur%b
 G a e
@@ -80,51 +80,51 @@ G c Z s b [normaliser type_vecteur 39 14 none]
 G c Z s b [normaliser type_vecteur 40 14 none]
 G c Z s s [t_vecteurIP type_vecteur 8 9 none]
 G r c none [s type_vecteur 7 1 none] [nb_expr operation 12 13 none]
-G r c none [Omultiply type_vecteur 18 13 none] [Omultiply type_expression 59 13 none]
-G r c none [Omultiply type_vecteur 18 13 none] [Oadd type_expression 60 13 none]
+G r c none [Omultiply type_vecteur 18 13 none] [Omultiply type_expression 61 13 none]
+G r c none [Omultiply type_vecteur 18 13 none] [Oadd type_expression 62 13 none]
 G r c none [Omultiply type_vecteur 18 13 none] [normaliser operation 11 13 none]
 G r c none [Omultiply type_vecteur 19 13 none] [nb_expr operation 12 13 none]
-G r c none [Omultiply type_vecteur 19 13 none] [Omultiply type_expression 59 13 none]
-G r c none [Omultiply type_vecteur 19 13 none] [Osubtract type_expression 61 13 none]
+G r c none [Omultiply type_vecteur 19 13 none] [Omultiply type_expression 61 13 none]
+G r c none [Omultiply type_vecteur 19 13 none] [Osubtract type_expression 63 13 none]
 G r c none [Omultiply type_vecteur 19 13 none] [normaliser operation 11 13 none]
 G r c none [Oadd type_vecteur 20 13 none] [nb_expr operation 12 13 none]
-G r c none [Oadd type_vecteur 20 13 none] [Oadd type_expression 60 13 none]
+G r c none [Oadd type_vecteur 20 13 none] [Oadd type_expression 62 13 none]
 G r c none [Oadd type_vecteur 20 13 none] [normaliser operation 11 13 none]
 G r c none [Omultiply type_vecteur 21 13 none] [nb_expr operation 12 13 none]
-G r c none [Omultiply type_vecteur 21 13 none] [Omultiply type_expression 59 13 none]
+G r c none [Omultiply type_vecteur 21 13 none] [Omultiply type_expression 61 13 none]
 G r c none [Omultiply type_vecteur 21 13 none] [normaliser operation 11 13 none]
 G r c none [Osubtract type_vecteur 22 13 none] [nb_expr operation 12 13 none]
-G r c none [Osubtract type_vecteur 22 13 none] [Omultiply type_expression 59 13 none]
+G r c none [Osubtract type_vecteur 22 13 none] [Omultiply type_expression 61 13 none]
 G r c none [Osubtract type_vecteur 22 13 none] [normaliser operation 11 13 none]
-G r c none [Osubtract type_vecteur 22 13 none] [Oadd type_expression 60 13 none]
-G r c none [put type_vecteur 23 14 none] [put type_expression 63 14 none]
-G r c none [put_line type_vecteur 24 14 none] [put type_expression 63 14 none]
-G r c none [Oadd type_vecteur 27 13 none] [Oadd type_expression 60 13 none]
+G r c none [Osubtract type_vecteur 22 13 none] [Oadd type_expression 62 13 none]
+G r c none [put type_vecteur 23 14 none] [put type_expression 65 14 none]
+G r c none [put_line type_vecteur 24 14 none] [put type_expression 65 14 none]
+G r c none [Oadd type_vecteur 27 13 none] [Oadd type_expression 62 13 none]
 G r c none [Omultiply type_vecteur 28 13 none] [nb_expr operation 12 13 none]
-G r c none [Omultiply type_vecteur 28 13 none] [Omultiply type_expression 59 13 none]
-G r c none [Omultiply type_vecteur 28 13 none] [Oadd type_expression 60 13 none]
-G r c none [Omultiply type_vecteur 29 13 none] [Omultiply type_expression 59 13 none]
+G r c none [Omultiply type_vecteur 28 13 none] [Omultiply type_expression 61 13 none]
+G r c none [Omultiply type_vecteur 28 13 none] [Oadd type_expression 62 13 none]
+G r c none [Omultiply type_vecteur 29 13 none] [Omultiply type_expression 61 13 none]
 G r c none [Osubtract type_vecteur 30 13 none] [nb_expr operation 12 13 none]
-G r c none [Osubtract type_vecteur 30 13 none] [Omultiply type_expression 59 13 none]
-G r c none [Osubtract type_vecteur 30 13 none] [Oadd type_expression 60 13 none]
+G r c none [Osubtract type_vecteur 30 13 none] [Omultiply type_expression 61 13 none]
+G r c none [Osubtract type_vecteur 30 13 none] [Oadd type_expression 62 13 none]
 G r c none [Omultiply type_vecteur 31 13 none] [nb_expr operation 12 13 none]
-G r c none [Omultiply type_vecteur 31 13 none] [Omultiply type_expression 59 13 none]
-G r c none [Omultiply type_vecteur 31 13 none] [Oadd type_expression 60 13 none]
-G r c none [put type_vecteur 32 14 none] [put type_expression 63 14 none]
+G r c none [Omultiply type_vecteur 31 13 none] [Omultiply type_expression 61 13 none]
+G r c none [Omultiply type_vecteur 31 13 none] [Oadd type_expression 62 13 none]
+G r c none [put type_vecteur 32 14 none] [put type_expression 65 14 none]
 G r c none [inverser type_vecteur 33 13 none] [nb_expr operation 12 13 none]
-G r c none [inverser type_vecteur 33 13 none] [Omultiply type_expression 59 13 none]
-G r c none [inverser type_vecteur 33 13 none] [Osubtract type_expression 61 13 none]
-G r c none [inverser type_vecteur 33 13 none] [Oadd type_expression 60 13 none]
-G r c none [inverser type_vecteur 33 13 none] [Odivide type_expression 62 13 none]
+G r c none [inverser type_vecteur 33 13 none] [Omultiply type_expression 61 13 none]
+G r c none [inverser type_vecteur 33 13 none] [Osubtract type_expression 63 13 none]
+G r c none [inverser type_vecteur 33 13 none] [Oadd type_expression 62 13 none]
+G r c none [inverser type_vecteur 33 13 none] [Odivide type_expression 64 13 none]
 G r c none [det type_vecteur 34 13 none] [nb_expr operation 12 13 none]
-G r c none [det type_vecteur 34 13 none] [Omultiply type_expression 59 13 none]
-G r c none [det type_vecteur 34 13 none] [Osubtract type_expression 61 13 none]
-G r c none [det type_vecteur 34 13 none] [Oadd type_expression 60 13 none]
-G r c none [put_line type_vecteur 35 14 none] [put type_expression 63 14 none]
+G r c none [det type_vecteur 34 13 none] [Omultiply type_expression 61 13 none]
+G r c none [det type_vecteur 34 13 none] [Osubtract type_expression 63 13 none]
+G r c none [det type_vecteur 34 13 none] [Oadd type_expression 62 13 none]
+G r c none [put_line type_vecteur 35 14 none] [put type_expression 65 14 none]
 G r c none [mat_rotation type_vecteur 37 13 none] [nb_expr operation 12 13 none]
 G r c none [rotation_3d type_vecteur 38 13 none] [nb_expr operation 12 13 none]
-G r c none [rotation_3d type_vecteur 38 13 none] [Omultiply type_expression 59 13 none]
-G r c none [rotation_3d type_vecteur 38 13 none] [Oadd type_expression 60 13 none]
+G r c none [rotation_3d type_vecteur 38 13 none] [Omultiply type_expression 61 13 none]
+G r c none [rotation_3d type_vecteur 38 13 none] [Oadd type_expression 62 13 none]
 G r c none [normaliser type_vecteur 39 14 none] [normaliser operation 10 14 none]
 G r c none [normaliser type_vecteur 40 14 none] [normaliser operation 10 14 none]
 G r c none [t_vecteurIP type_vecteur 8 9 none] [nb_expr operation 12 13 none]
@@ -136,7 +136,7 @@ X 6 a-textio.ads
 465U14*Put 26|146s7 149s7 152s7 170s7 172s10 176s16 182s7
 508U14*Put_Line 26|180s10
 X 10 operation.ads
-7K9*operation 16e14 25|4w6 4r21
+7K9*operation 18e14 25|4w6 4r21
 10U14*normaliser 26|236s13 243s7 244s7 245s7
 11V13*normaliser{24|27P9} 26|12s14 18s17 19s17 20s17 28s17 29s17 30s17 38s17
 . 39s17 40s17
@@ -145,7 +145,7 @@ X 10 operation.ads
 . 191s21 192s21 193s21 195s48 200s21 201s21 202s21 203s21 204s21 206s48 211s21
 . 212s21 213s21 214s21 215s21 217s48
 X 24 type_expression.ads
-3K9*type_expression 67e20 25|2w6 3r5 26|1w6 2r5
+3K9*type_expression 69e20 25|2w6 3r5 26|1w6 2r5
 11n24*produit{11E9} 26|195r39 206r39 217r39
 11n40*litteral{11E9} 26|194r62 195r103 196r62 197r62 205r62 206r103 207r62
 . 208r62 216r62 217r103 218r62 219r62
@@ -158,18 +158,18 @@ X 24 type_expression.ads
 . 216r25 216r48 217r25 217r66 217r89 218r25 218r48 219r25 219r48
 27P9*T_expr_int(26R9) 25|9r11 10r11 11r11 14r43 18r62 21r24 29r24 34r42 26|9r62
 . 35r24 65r11 79r24 97r11 108r11 136r42 137r21
-59V14*"*"{27P9} 26|12s31 12s47 12s63 18s34 18s50 19s34 19s50 20s34 20s50
+61V14*"*"{27P9} 26|12s31 12s47 12s63 18s34 18s50 19s34 19s50 20s34 20s50
 . 38s30 39s30 40s30 71s33 84s26 99s22 99s38 99s54 100s22 100s38 100s54 101s22
 . 101s38 101s54 111s26 111s42 112s26 112s42 113s26 113s42 114s26 114s42 115s26
 . 115s42 116s26 116s42 117s26 117s42 118s26 118s42 119s26 119s42 139s29 139s38
 . 139s54 139s71 139s80 139s96 139s113 139s122 139s138
-60V14*"+"{27P9} 26|12s39 12s55 28s33 29s33 30s33 56s34 71s23 99s28 99s44
+62V14*"+"{27P9} 26|12s39 12s55 28s33 29s33 30s33 56s34 71s23 99s28 99s44
 . 100s28 100s44 101s28 101s44 139s105
-61V14*"-"{27P9} 26|18s42 19s42 20s42 111s34 112s34 113s34 114s34 115s34 116s34
+63V14*"-"{27P9} 26|18s42 19s42 20s42 111s34 112s34 113s34 114s34 115s34 116s34
 . 117s34 118s34 119s34 139s46 139s63 139s88 139s130
-62V14*"/"{27P9} 26|121s27 122s27 123s27 124s27 125s27 126s27 127s27 128s27
+64V14*"/"{27P9} 26|121s27 122s27 123s27 124s27 125s27 126s27 127s27 128s27
 . 129s27
-63U14*put 26|147s7 150s7 153s7 174s13
+65U14*put 26|147s7 150s7 153s7 174s13
 X 25 type_vecteur.ads
 7K9*type_vecteur 42l5 42e17 26|7b14 253l5 253t17
 8R9*T_vecteur 12e14 18r25 18r44 19r25 19r44 19r62 20r25 20r44 20r62 21r44

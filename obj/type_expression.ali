@@ -20,7 +20,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 RV SPARK_05
 
-U type_expression%b	type_expression.adb	75685fca NE OO PK IL
+U type_expression%b	type_expression.adb	e5ca47f0 NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -46,7 +46,7 @@ D a-tiinio.ads		20190518041256 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
-D operation.ads		20200403155302 cc1b1e6d operation%s
+D operation.ads		20200403164016 5cb90657 operation%s
 D system.ads		20190518041258 32a08138 system%s
 D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
 D s-exctab.ads		20190518041256 54135002 system.exception_table%s
@@ -62,28 +62,28 @@ D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
 D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
-D type_expression.ads	20200403163006 a77b78a2 type_expression%s
+D type_expression.ads	20200403164010 a77b78a2 type_expression%s
 D type_expression.adb	20200403163006 a73d226c type_expression%b
 G a e
-G c Z s b [expr_text type_expression 56 13 none]
-G c Z s b [text_ch type_expression 57 13 none]
-G c Z s b [Oeq type_expression 58 13 none]
-G c Z s b [Omultiply type_expression 59 13 none]
-G c Z s b [Oadd type_expression 60 13 none]
-G c Z s b [Osubtract type_expression 61 13 none]
-G c Z s b [Odivide type_expression 62 13 none]
-G c Z s b [put type_expression 63 14 none]
-G c Z s b [put_line type_expression 64 14 none]
-G c Z s b [Oadd type_expression 65 13 none]
-G c Z s b [Oeq type_expression 66 13 none]
+G c Z s b [expr_text type_expression 58 13 none]
+G c Z s b [text_ch type_expression 59 13 none]
+G c Z s b [Oeq type_expression 60 13 none]
+G c Z s b [Omultiply type_expression 61 13 none]
+G c Z s b [Oadd type_expression 62 13 none]
+G c Z s b [Osubtract type_expression 63 13 none]
+G c Z s b [Odivide type_expression 64 13 none]
+G c Z s b [put type_expression 65 14 none]
+G c Z s b [put_line type_expression 66 14 none]
+G c Z s b [Oadd type_expression 67 13 none]
+G c Z s b [Oeq type_expression 68 13 none]
 G c Z s s [t_chaineIP type_expression 5 9 none]
 G c Z s s [Tt_valeur_litBIP type_expression 13 4 none]
 G c Z s s [t_litterauxIP type_expression 14 9 none]
 G c Z s s [t_expressionIP type_expression 29 9 none]
-G r c none [Omultiply type_expression 59 13 none] [nb_expr operation 12 13 none]
-G r c none [Oadd type_expression 60 13 none] [nb_expr operation 12 13 none]
-G r c none [Osubtract type_expression 61 13 none] [nb_expr operation 12 13 none]
-G r c none [Odivide type_expression 62 13 none] [nb_expr operation 12 13 none]
+G r c none [Omultiply type_expression 61 13 none] [nb_expr operation 12 13 none]
+G r c none [Oadd type_expression 62 13 none] [nb_expr operation 12 13 none]
+G r c none [Osubtract type_expression 63 13 none] [nb_expr operation 12 13 none]
+G r c none [Odivide type_expression 64 13 none] [nb_expr operation 12 13 none]
 X 1 ada.ads
 16K9*Ada 20e8 31|2r6 3r5 4r6 5r5 6r6 7r5
 X 3 a-flteio.ads
@@ -95,11 +95,11 @@ X 8 a-textio.ads
 264U14*New_Line 31|166s7
 465U14*Put 31|70s7
 X 14 operation.ads
-7K9*operation 16e14 31|1w6 1r21
+7K9*operation 18e14 31|1w6 1r21
 12V13*nb_expr{30|27P9} 31|25s17 36s17 47s17 50s73 59s17
 X 30 type_expression.ads
-3K9*type_expression 67l5 67e20 31|10b14 190l5 190t20
-5R9*T_chaine 8e14 56r52 57r43 65r26 65r45 65r62 66r26 66r45 31|68r11 73r43
+3K9*type_expression 69l5 69e20 31|10b14 190l5 190t20
+5R9*T_chaine 8e14 58r52 59r43 67r26 67r45 67r62 68r26 68r45 31|68r11 73r43
 . 74r8 82r52 83r11 169r26 169r45 169r62 170r9 178r26 178r45
 6a7*ch{string} 31|70r13 76m9 172m10 172r31 173m10 173r45 180r40 180r60
 7i7*lg{integer} 31|70r21 77m9 172r20 172r41 173r17 173r27 173r34 173r55 174m10
@@ -130,8 +130,8 @@ X 30 type_expression.ads
 20a7*valeur{13A9}
 26R9*T_expression 27r30 29c9 29d22 54e14 31|28r21 39r21 50r21 50r50 62r21
 27P9*T_expr_int(26R9) 32r18 33r18 35r18 36r18 42r20 45r18 46r18 48r20 50r20
-. 56r33 58r25 58r45 59r25 59r45 59r64 60r25 60r45 60r64 61r25 61r45 61r64
-. 62r25 62r45 62r64 63r28 64r32 31|12r25 12r45 22r25 22r45 22r64 33r25 33r45
+. 58r33 60r25 60r45 61r25 61r45 61r64 62r25 62r45 62r64 63r25 63r45 63r64
+. 64r25 64r45 64r64 65r28 66r32 31|12r25 12r45 22r25 22r45 22r64 33r25 33r45
 . 33r64 44r25 44r45 44r64 56r25 56r45 56r64 67r28 82r33 163r32
 29e22*type_expr{11E9} 30r12 31|14r13 14r39 24r13 24r39 35r13 35r39 46r12
 . 46r38 58r13 58r39 85r17 87r24 95r24 117r26 117r60 117r92 117r121 131r24
@@ -149,45 +149,45 @@ X 30 type_expression.ads
 46p13*d2{27P9} 31|139r21 139r53 140r39 143r39
 48p13*Carg{27P9} 31|149r36
 50p13*Sarg{27P9} 31|153r36
-56V13*expr_text{5R9} 56>23 31|17s17 17s33 68s23 82b13 88s24 92s24 96s24 99s24
+58V13*expr_text{5R9} 58>23 31|17s17 17s33 68s23 82b13 88s24 92s24 96s24 99s24
 . 104s21 106s21 118s24 124s24 132s24 136s24 140s24 143s24 149s21 153s21 160l8
 . 160t17
-56p23 expr{27P9} 31|82b23 85r12 87r16 88r34 92r34 95r16 96r34 99r34 104r31
+58p23 expr{27P9} 31|82b23 85r12 87r16 88r34 92r34 95r16 96r34 99r34 104r31
 . 106r31 109r29 109r50 110r25 115r41 117r16 117r50 117r82 117r111 118r34
 . 120r46 124r34 126r46 131r16 132r34 136r34 139r16 139r48 140r34 143r34 149r31
 . 153r31
-57V13*text_ch{5R9} 57>21 31|73b13 79t7 83s23 89s24 91s24 93s24 98s24 100s24
+59V13*text_ch{5R9} 59>21 31|73b13 79t7 83s23 89s24 91s24 93s24 98s24 100s24
 . 105s21 109s21 111s24 115s21 119s24 120s24 123s24 125s24 126s24 133s24 135s24
 . 137s24 142s24 144s24 148s21 150s21 152s21 154s21
-57a21 s{string} 31|73b21 76r15 76r28 77r15
-58V14*"="{boolean} 58>17 58>37 31|12b14 20l9 20t11
-58p17 n1{27P9} 31|12b17 14r10 15r18 17r27
-58p37 n2{27P9} 31|12b37 14r36 15r30 17r43
-59V14*"*"{27P9} 59>17 59>37 31|22b14 31l9 31t11
-59p17 n1{27P9} 31|22b17 24r10 25r25 28r44
-59p37 n2{27P9} 31|22b37 24r36 25r35 28r48
-60V14*"+"{27P9} 60>17 60>37 31|33b14 42l9 42t11
-60p17 n1{27P9} 31|33b17 35r10 36r25 39r42
-60p37 n2{27P9} 31|33b37 35r36 36r35 39r46
-61V14*"-"{27P9} 61>17 61>37 31|44b14 53l9 53t11
-61p17 n1{27P9} 31|44b17 46r9 47r25 50r42
-61p37 n2{27P9} 31|44b37 46r35 47r35 50r88
-62V14*"/"{27P9} 62>17 62>37 31|56b14 65l9 65t11
-62p17 d1{27P9} 31|56b17 58r10 59r25 62r45
-62p37 d2{27P9} 31|56b37 58r36 59r35 62r49
-63U14*put 63>18 31|67b14 71t7 165s7
-63p18 expr{27P9} 31|67b18 68r33
-64U14*put_line 64>23 31|163b14 167t7
-64p23 expr{27P9} 31|163b23 165r11
-65V14*"+"{5R9} 65>17 65>36 31|88s22 89s22 91s22 92s22 93s22 96s22 98s22 99s22
+59a21 s{string} 31|73b21 76r15 76r28 77r15
+60V14*"="{boolean} 60>17 60>37 31|12b14 20l9 20t11
+60p17 n1{27P9} 31|12b17 14r10 15r18 17r27
+60p37 n2{27P9} 31|12b37 14r36 15r30 17r43
+61V14*"*"{27P9} 61>17 61>37 31|22b14 31l9 31t11
+61p17 n1{27P9} 31|22b17 24r10 25r25 28r44
+61p37 n2{27P9} 31|22b37 24r36 25r35 28r48
+62V14*"+"{27P9} 62>17 62>37 31|33b14 42l9 42t11
+62p17 n1{27P9} 31|33b17 35r10 36r25 39r42
+62p37 n2{27P9} 31|33b37 35r36 36r35 39r46
+63V14*"-"{27P9} 63>17 63>37 31|44b14 53l9 53t11
+63p17 n1{27P9} 31|44b17 46r9 47r25 50r42
+63p37 n2{27P9} 31|44b37 46r35 47r35 50r88
+64V14*"/"{27P9} 64>17 64>37 31|56b14 65l9 65t11
+64p17 d1{27P9} 31|56b17 58r10 59r25 62r45
+64p37 d2{27P9} 31|56b37 58r36 59r35 62r49
+65U14*put 65>18 31|67b14 71t7 165s7
+65p18 expr{27P9} 31|67b18 68r33
+66U14*put_line 66>23 31|163b14 167t7
+66p23 expr{27P9} 31|163b23 165r11
+67V14*"+"{5R9} 67>17 67>36 31|88s22 89s22 91s22 92s22 93s22 96s22 98s22 99s22
 . 100s22 104s19 105s19 106s19 109s19 111s22 115s19 118s22 119s22 120s22 123s22
 . 124s22 125s22 126s22 132s22 133s22 135s22 136s22 137s22 140s22 142s22 143s22
 . 144s22 148s19 149s19 150s19 152s19 153s19 154s19 169b14 176t7
-65r17 ch1{5R9} 31|169b17 172r16 172r27 172r37 173r13 173r23 174r16
-65r36 ch2{5R9} 31|169b36 173r30 173r41 173r51 174r23
-66V14*"="{boolean} 66>17 66>36 31|17s31 178b14 181l9 181t11
-66r17 ch1{5R9} 31|178b17 180r15 180r36 180r46
-66r36 ch2{5R9} 31|178b36 180r24 180r56 180r66
+67r17 ch1{5R9} 31|169b17 172r16 172r27 172r37 173r13 173r23 174r16
+67r36 ch2{5R9} 31|169b36 173r30 173r41 173r51 174r23
+68V14*"="{boolean} 68>17 68>36 31|17s31 178b14 181l9 181t11
+68r17 ch1{5R9} 31|178b17 180r15 180r36 180r46
+68r36 ch2{5R9} 31|178b36 180r24 180r56 180r66
 X 31 type_expression.adb
 68r7 c{30|5R9} 70r11 70r19
 74r4 c{30|5R9} 76m7 77m7 78r14

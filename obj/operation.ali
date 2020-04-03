@@ -18,7 +18,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 RV SPARK_05
 
-U operation%b		operation.adb		8f63cfe4 NE OO PK IL
+U operation%b		operation.adb		194e623a NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
@@ -28,7 +28,7 @@ W affichage_expr%s	affichage_expr.adb	affichage_expr.ali
 Z interfaces%s		interfac.ads		interfac.ali
 W type_expression%s	type_expression.adb	type_expression.ali
 
-U operation%s		operation.ads		6b6066cf EE NE OO PK IL
+U operation%s		operation.ads		fbc27ef5 EE NE OO PK IL
 W type_expression%s	type_expression.adb	type_expression.ali
 
 D ada.ads		20190518041256 76789da1 ada%s
@@ -44,8 +44,8 @@ D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
 D affichage_expr.ads	20190125225724 8126b7c7 affichage_expr%s
 D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
-D operation.ads		20200403155302 cc1b1e6d operation%s
-D operation.adb		20200403155302 c839f69d operation%b
+D operation.ads		20200403164016 5cb90657 operation%s
+D operation.adb		20200403164010 ceb64379 operation%b
 D system.ads		20190518041258 32a08138 system%s
 D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
 D s-exctab.ads		20190518041256 54135002 system.exception_table%s
@@ -59,7 +59,7 @@ D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
 D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
-D type_expression.ads	20200403163006 a77b78a2 type_expression%s
+D type_expression.ads	20200403164010 a77b78a2 type_expression%s
 G a e
 G c Z s b [deriver operation 9 13 none]
 G c Z s b [normaliser operation 10 14 none]
@@ -67,8 +67,12 @@ G c Z s b [normaliser operation 11 13 none]
 G c Z s b [nb_expr operation 12 13 none]
 G c Z s b [evaluate operation 13 13 none]
 G c Z s b [puissance operation 14 13 none]
-G r c none [normaliser operation 10 14 none] [Oeq type_expression 58 13 none]
-G r c none [normaliser operation 11 13 none] [Oeq type_expression 58 13 none]
+G c Z s b [hard_normalise operation 15 13 none]
+G c Z s b [hard_normalise operation 16 14 none]
+G r c none [normaliser operation 10 14 none] [Oeq type_expression 60 13 none]
+G r c none [normaliser operation 11 13 none] [Oeq type_expression 60 13 none]
+G r c none [hard_normalise operation 15 13 none] [Oeq type_expression 60 13 none]
+G r c none [hard_normalise operation 16 14 none] [Oeq type_expression 60 13 none]
 X 1 ada.ads
 16K9*Ada 20e8 15|5r6 6r5 9r6 10r5
 X 4 a-numeri.ads
@@ -83,7 +87,7 @@ X 9 a-textio.ads
 X 11 affichage_expr.ads
 6K9*affichage_expr 13e19 15|7w6 8r5
 X 14 operation.ads
-7K9*operation 16l5 16e14 15|13b14 210l5 210t14
+7K9*operation 18l5 18e14 15|13b14 225l5 225t14
 9V13*deriver{29|27P9} 9>21 9>43 15|22b13 30s49 31s49 35s45 35s70 51s23 55s91
 . 58s49 59s49 66s56 71s47 77l8 77t15
 9p21 expr{29|27P9} 15|22b21 28r12 30r57 30r74 31r57 31r74 35r53 35r78 37r16
@@ -99,7 +103,7 @@ X 14 operation.ads
 . 126r27 127r19 128m19 130r19 131m19 131r24 134r27 135r24 136r16 136r44 137m16
 . 137r29 137r43 139r19 140m19 142r19 143m19 143r24 148r27 149r19 150m19 153r27
 . 154r19 155m19
-11V13*normaliser{29|27P9} 11>24 15|196b13 202t7
+11V13*normaliser{29|27P9} 11>24 15|196b13 202t7 206s14 209s32
 11p24 e{29|27P9} 15|196b24 199r12
 12V13*nb_expr{29|27P9} 12>21 15|15b13 18l8 18t15 38s23 43s26 48s20 54s25
 . 60s49 65s22 73s20 89s21 92s23 92s46 93s20 96s26 100s29 112s21 114s26 118s29
@@ -112,6 +116,10 @@ X 14 operation.ads
 14V13*puissance{float} 14>23 14>37 15|164b13 171l8 171t17 185s20
 14f23 a{float} 15|164b23 168r18
 14i37 n{integer} 15|164b37 167r19
+15V13*hard_normalise{29|27P9} 15>28 15|204b13 209s17 211t7 215s12
+15p28 e{29|27P9} 15|204b28 206r10 206r25 207r17 209r43
+16U14*hard_normalise 16=29 15|213b14 216t7
+16p29 e{29|27P9} 15|213b29 215m7 215r27
 X 15 operation.adb
 23p7 temp1{29|27P9} 30m13 33r45 53m16 55r50 58m13 61r47 65m13 66r49
 24p7 temp2{29|27P9} 31m13 33r52 54m16 55r84 59m13 60m13 60r64 61m13 61r54
@@ -122,7 +130,7 @@ X 15 operation.adb
 167i11 i{integer}
 197p7 n{29|27P9} 199m7 200m18 200r18 201r14
 X 29 type_expression.ads
-3K9*type_expression 14|3w6 4r5 15|3w6 4r5 29|67e20
+3K9*type_expression 14|3w6 4r5 15|3w6 4r5 29|69e20
 11n24*produit{11E9} 15|29r15 30r40 31r40 55r41 55r75 58r40 59r40 60r40 66r40
 . 68r38 71r38 84r15 176r15
 11n33*somme{11E9} 15|33r38 34r15 35r38 61r40 108r15 178r15
@@ -144,8 +152,9 @@ X 29 type_expression.ads
 20a7*valeur{13A9} 15|41r179 181r27
 26R9*T_expression 15|17r18 30r26 31r26 33r24 35r24 41r30 53r29 55r27 55r61
 . 58r26 59r26 60r26 61r26 62r26 63r24 66r26 67r26 68r24 70r26 71r24 29|54e14
-27P9*T_expr_int(26R9) 14|9r31 9r71 10r36 11r31 11r50 12r43 13r29 15|15r43
-. 22r31 22r71 23r15 24r15 25r15 79r36 80r15 173r29 196r31 196r50 197r11
+27P9*T_expr_int(26R9) 14|9r31 9r71 10r36 11r31 11r50 12r43 13r29 15r35 15r54
+. 16r40 15|15r43 22r31 22r71 23r15 24r15 25r15 79r36 80r15 173r29 196r31
+. 196r50 197r11 204r35 204r54 213r40
 29e22*type_expr{11E9} 15|28r17 83r14 88r21 88r49 111r21 111r49 136r21 136r49
 . 175r14
 32p13*p1{27P9} 15|30r62 31r79 86m26 88r18 89r31 92r18 96r21 101r29 177r31
@@ -161,6 +170,6 @@ X 29 type_expression.ads
 46p13*d2{27P9} 15|58r79 59r62 62r56 135m26 136r46 137r45 142r21 187r46
 48p13*Carg{27P9} 15|66r69 67r50 148m29 149r21 189r35
 50p13*Sarg{27P9} 15|70r50 71r60 153m29 154r21 191r35
-58V14*"="{boolean} 15|92s21 92s44 96s24 100s27 114s24 118s27 139s24 142s24
-. 149s26 154s26
+60V14*"="{boolean} 15|92s21 92s44 96s24 100s27 114s24 118s27 139s24 142s24
+. 149s26 154s26 206s12
 
