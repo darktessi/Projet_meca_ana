@@ -10,16 +10,16 @@ package body ada_main is
    E072 : Short_Integer; pragma Import (Ada, E072, "system__os_lib_E");
    E013 : Short_Integer; pragma Import (Ada, E013, "system__soft_links_E");
    E025 : Short_Integer; pragma Import (Ada, E025, "system__exception_table_E");
+   E040 : Short_Integer; pragma Import (Ada, E040, "ada__containers_E");
    E068 : Short_Integer; pragma Import (Ada, E068, "ada__io_exceptions_E");
    E052 : Short_Integer; pragma Import (Ada, E052, "ada__strings_E");
-   E040 : Short_Integer; pragma Import (Ada, E040, "ada__containers_E");
-   E027 : Short_Integer; pragma Import (Ada, E027, "system__exceptions_E");
-   E078 : Short_Integer; pragma Import (Ada, E078, "interfaces__c_E");
    E054 : Short_Integer; pragma Import (Ada, E054, "ada__strings__maps_E");
    E058 : Short_Integer; pragma Import (Ada, E058, "ada__strings__maps__constants_E");
-   E021 : Short_Integer; pragma Import (Ada, E021, "system__soft_links__initialize_E");
+   E078 : Short_Integer; pragma Import (Ada, E078, "interfaces__c_E");
+   E027 : Short_Integer; pragma Import (Ada, E027, "system__exceptions_E");
    E080 : Short_Integer; pragma Import (Ada, E080, "system__object_reader_E");
    E047 : Short_Integer; pragma Import (Ada, E047, "system__dwarf_lines_E");
+   E021 : Short_Integer; pragma Import (Ada, E021, "system__soft_links__initialize_E");
    E039 : Short_Integer; pragma Import (Ada, E039, "system__traceback__symbolic_E");
    E157 : Short_Integer; pragma Import (Ada, E157, "ada__numerics_E");
    E103 : Short_Integer; pragma Import (Ada, E103, "ada__tags_E");
@@ -30,8 +30,8 @@ package body ada_main is
    E111 : Short_Integer; pragma Import (Ada, E111, "system__file_io_E");
    E099 : Short_Integer; pragma Import (Ada, E099, "ada__text_io_E");
    E154 : Short_Integer; pragma Import (Ada, E154, "type_expression_E");
-   E156 : Short_Integer; pragma Import (Ada, E156, "operation_E");
    E134 : Short_Integer; pragma Import (Ada, E134, "affichage_expr_E");
+   E156 : Short_Integer; pragma Import (Ada, E156, "operation_E");
    E166 : Short_Integer; pragma Import (Ada, E166, "type_vecteur_E");
    E164 : Short_Integer; pragma Import (Ada, E164, "type_mecanique_E");
 
@@ -164,31 +164,31 @@ package body ada_main is
       System.Soft_Links'Elab_Spec;
       System.Exception_Table'Elab_Body;
       E025 := E025 + 1;
+      Ada.Containers'Elab_Spec;
+      E040 := E040 + 1;
       Ada.Io_Exceptions'Elab_Spec;
       E068 := E068 + 1;
       Ada.Strings'Elab_Spec;
       E052 := E052 + 1;
-      Ada.Containers'Elab_Spec;
-      E040 := E040 + 1;
-      System.Exceptions'Elab_Spec;
-      E027 := E027 + 1;
-      Interfaces.C'Elab_Spec;
-      System.Os_Lib'Elab_Body;
-      E072 := E072 + 1;
       Ada.Strings.Maps'Elab_Spec;
+      E054 := E054 + 1;
       Ada.Strings.Maps.Constants'Elab_Spec;
       E058 := E058 + 1;
+      Interfaces.C'Elab_Spec;
+      E078 := E078 + 1;
+      System.Exceptions'Elab_Spec;
+      E027 := E027 + 1;
+      System.Object_Reader'Elab_Spec;
+      E080 := E080 + 1;
+      System.Dwarf_Lines'Elab_Spec;
+      E047 := E047 + 1;
+      System.Os_Lib'Elab_Body;
+      E072 := E072 + 1;
       System.Soft_Links.Initialize'Elab_Body;
       E021 := E021 + 1;
       E013 := E013 + 1;
-      System.Object_Reader'Elab_Spec;
-      System.Dwarf_Lines'Elab_Spec;
-      E047 := E047 + 1;
-      E078 := E078 + 1;
-      E054 := E054 + 1;
       System.Traceback.Symbolic'Elab_Body;
       E039 := E039 + 1;
-      E080 := E080 + 1;
       Ada.Numerics'Elab_Spec;
       E157 := E157 + 1;
       Ada.Tags'Elab_Spec;
@@ -207,9 +207,10 @@ package body ada_main is
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
       E099 := E099 + 1;
-      E154 := E154 + 1;
       E134 := E134 + 1;
       E156 := E156 + 1;
+      E154 := E154 + 1;
+      type_vecteur'elab_spec;
       E166 := E166 + 1;
       type_mecanique'elab_spec;
       E164 := E164 + 1;
@@ -248,15 +249,15 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\Alexis\Desktop\meca_ana_project\obj\type_expression.o
-   --   C:\Users\Alexis\Desktop\meca_ana_project\obj\affichage_expr.o
-   --   C:\Users\Alexis\Desktop\meca_ana_project\obj\operation.o
-   --   C:\Users\Alexis\Desktop\meca_ana_project\obj\type_vecteur.o
-   --   C:\Users\Alexis\Desktop\meca_ana_project\obj\type_mecanique.o
-   --   C:\Users\Alexis\Desktop\meca_ana_project\obj\main.o
-   --   -LC:\Users\Alexis\Desktop\meca_ana_project\obj\
-   --   -LC:\Users\Alexis\Desktop\meca_ana_project\obj\
-   --   -LC:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
+   --   C:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\affichage_expr.o
+   --   C:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\operation.o
+   --   C:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\type_expression.o
+   --   C:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\type_vecteur.o
+   --   C:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\type_mecanique.o
+   --   C:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\main.o
+   --   -LC:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\
+   --   -LC:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\
+   --   -LG:/logiciel/gnat/lib/gcc/x86_64-pc-mingw32/8.3.1/adalib/
    --   -static
    --   -lgnat
    --   -Wl,--stack=0x2000000

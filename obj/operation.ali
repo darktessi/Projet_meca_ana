@@ -1,4 +1,4 @@
-V "GNAT Lib v2018"
+V "GNAT Lib v2019"
 A -gnatA
 A -mtune=generic
 A -march=x86-64
@@ -17,7 +17,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 RV SPARK_05
 
-U operation%b		operation.adb		c6dba063 NE OO PK IL
+U operation%b		operation.adb		e032c654 NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
 W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
@@ -30,35 +30,42 @@ W type_expression%s	type_expression.adb	type_expression.ali
 U operation%s		operation.ads		34baad2a EE NE OO PK IL
 W type_expression%s	type_expression.adb	type_expression.ali
 
-D ada.ads		20180524051736 76789da1 ada%s
-D a-except.ads		20180524051736 291912d5 ada.exceptions%s
-D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
-D a-numeri.ads		20180524051736 bb51c45a ada.numerics%s
-D a-nuelfu.ads		20180524051736 03e83d1c ada.numerics.elementary_functions%s
-D a-ngelfu.ads		20180524051738 55716239 ada.numerics.generic_elementary_functions%s
-D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
-D a-tags.ads		20180524051738 491b781d ada.tags%s
-D a-textio.ads		20180524051738 881db35a ada.text_io%s
-D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
-D affichage_expr.ads	20190126075724 8126b7c7 affichage_expr%s
-D interfac.ads		20180524051736 5ab55268 interfaces%s
-D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D operation.ads		20190127040858 6b3409df operation%s
-D operation.adb		20190127001448 f8b234c8 operation%b
-D system.ads		20180524051738 32a08138 system%s
-D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
-D s-exctab.ads		20180524051738 54135002 system.exception_table%s
-D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
-D s-parame.ads		20180524051738 48ec542b system.parameters%s
-D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
-D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
-D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
-D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
-D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
-D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
-D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
-D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D type_expression.ads	20200330094136 5f8ea4f5 type_expression%s
+D ada.ads		20190518041256 76789da1 ada%s
+D a-except.ads		20190518041256 291912d5 ada.exceptions%s
+D a-ioexce.ads		20190518041256 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20190518041256 bb51c45a ada.numerics%s
+D a-nuelfu.ads		20190518041256 03e83d1c ada.numerics.elementary_functions%s
+D a-ngelfu.ads		20190518041258 55716239 ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20190518041256 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041258 491b781d ada.tags%s
+D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
+D affichage_expr.ads	20190125225724 8126b7c7 affichage_expr%s
+D interfac.ads		20190518041256 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
+D operation.ads		20190126190858 6b3409df operation%s
+D operation.adb		20190126151448 f8b234c8 operation%b
+D system.ads		20190518041258 32a08138 system%s
+D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041256 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041258 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041258 48ec542b system.parameters%s
+D s-secsta.ads		20190518041258 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041256 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041258 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041258 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
+D type_expression.ads	20200330004136 5f8ea4f5 type_expression%s
+G a e
+G c Z s b [deriver operation 9 13 none]
+G c Z s b [normaliser operation 10 14 none]
+G c Z s b [nb_expr operation 11 13 none]
+G c Z s b [evaluate operation 12 13 none]
+G c Z s b [puissance operation 13 13 none]
+G r c none [normaliser operation 10 14 none] [Oeq type_expression 51 13 none]
 X 1 ada.ads
 16K9*Ada 20e8 15|5r6 6r5 9r6 10r5
 X 4 a-numeri.ads
@@ -69,7 +76,7 @@ X 6 a-ngelfu.ads
 94V13*Sin{float} 15|191s20[5|18]
 103V13*Cos{float} 15|189s20[5|18]
 X 9 a-textio.ads
-49K13*Text_IO 471e16 15|5w10 6r9
+57K13*Text_IO 727e16 15|5w10 6r9
 X 11 affichage_expr.ads
 6K9*affichage_expr 13e19 15|7w6 8r5
 X 14 operation.ads

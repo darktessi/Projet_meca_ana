@@ -4,7 +4,8 @@ use type_vecteur;
 with type_expression;
 use type_expression;
 
-
+with operation;
+use operation;
 
 package body type_mecanique is
 
@@ -37,12 +38,12 @@ package body type_mecanique is
      ref_actual : T_referentiel := ref;
 
    begin
-      while ref_actual.dependance <> initial loop
-         mtot = mtot*ref_actual.matrice_passage;
+      while ref_actual.dependance /= initial loop
+         mtot := mtot*ref_actual.matrice_passage;
          ref_actual := ref_actual.dependance;
       end loop;
-      mat_passage := mat_passage*ref_actual.matrice_passage;
-      return mat_passage;
+      mtot := mtot*ref_actual.matrice_passage;
+      return mtot;
    end;
 
    function chgt_base(ref1 :in T_referentiel; ref2 : in T_referentiel; v : in T_vecteur) return T_vecteur is
@@ -62,13 +63,13 @@ package body type_mecanique is
    end;
 
    function calcul_energie_cinetique(solide : in T_solide) return T_expr_int is
-      cinema : T_torseur := solide.cinematique;
+      cinema : T_torseur := solide.cinematique_t;
    begin
-      if cinema.point <> solide.cinetique.point then
-         deplacer(cinema, solide.cinetique.point);
+      if cinema.point /= solide.cinetique_t.point then
+         deplacer(cinema, solide.cinetique_t.point);
       end if;
 
-      return nb_expr(0.5)*(solide.cinetique *cinema);
+      return nb_expr(0.5)*(solide.cinetique_t *cinema);
    end;
 
 

@@ -1,6 +1,7 @@
-V "GNAT Lib v2018"
+V "GNAT Lib v2019"
 M P W=b
 A -gnatA
+A -gnatf
 A -mtune=generic
 A -march=x86-64
 P ZX
@@ -13,9 +14,10 @@ RV NO_LOCAL_ALLOCATORS
 RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
 RV NO_DEFAULT_INITIALIZATION
 RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
 RV SPARK_05
 
-U main%b		main.adb		7edb4f6e NE OO SU IL
+U main%b		main.adb		a888b694 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
@@ -25,74 +27,81 @@ W operation%s		operation.adb		operation.ali
 W type_expression%s	type_expression.adb	type_expression.ali
 W type_mecanique%s	type_mecanique.adb	type_mecanique.ali
 
-D ada.ads		20180524051736 76789da1 ada%s
-D a-except.ads		20180524051736 291912d5 ada.exceptions%s
-D a-flteio.ads		20180524051736 e18a47a0 ada.float_text_io%s
-D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
-D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
-D a-tags.ads		20180524051738 491b781d ada.tags%s
-D a-textio.ads		20180524051738 881db35a ada.text_io%s
-D a-tiflio.ads		20180524051736 56fbda09 ada.text_io.float_io%s
-D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
-D affichage_expr.ads	20190126165724 8126b7c7 affichage_expr%s
-D interfac.ads		20180524051736 5ab55268 interfaces%s
-D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D main.adb		20200328210546 b0222282 main%b
-D operation.ads		20190127130900 6b3409df operation%s
-D system.ads		20180524051738 32a08138 system%s
-D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
-D s-exctab.ads		20180524051738 54135002 system.exception_table%s
-D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
-D s-parame.ads		20180524051738 48ec542b system.parameters%s
-D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
-D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
-D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
-D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
-D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
-D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
-D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
-D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D type_expression.ads	20190127133916 4afaf53c type_expression%s
-D type_mecanique.ads	20190127135630 0786d232 type_mecanique%s
-D type_vecteur.ads	20190127134904 ca3d665a type_vecteur%s
+D ada.ads		20190518041256 76789da1 ada%s
+D a-except.ads		20190518041256 291912d5 ada.exceptions%s
+D a-flteio.ads		20190518041256 e18a47a0 ada.float_text_io%s
+D a-ioexce.ads		20190518041256 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041256 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041258 491b781d ada.tags%s
+D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
+D a-tiflio.ads		20190518041256 bf196650 ada.text_io.float_io%s
+D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
+D affichage_expr.ads	20190125225724 8126b7c7 affichage_expr%s
+D interfac.ads		20190518041256 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
+D main.adb		20200403154900 85e55ffe main%b
+D operation.ads		20190126190858 6b3409df operation%s
+D system.ads		20190518041258 32a08138 system%s
+D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041256 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041258 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041258 48ec542b system.parameters%s
+D s-secsta.ads		20190518041258 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041256 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041258 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041258 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
+D type_expression.ads	20200330004136 5f8ea4f5 type_expression%s
+D type_mecanique.ads	20200403154442 d78f614a type_mecanique%s
+D type_vecteur.ads	20200402230004 1f3a4e2e type_vecteur%s
+G a e
+G c Z b b [main standard 19 11 none]
+G r c none [main standard 19 11 none] [deriver operation 9 13 none]
+G r c none [main standard 19 11 none] [normaliser operation 10 14 none]
+G r c none [main standard 19 11 none] [evaluate operation 12 13 none]
 X 1 ada.ads
 16K9*Ada 20e8 13|13r6 14r5 16r6 17r5
 X 3 a-flteio.ads
 20K13*Float_Text_IO[8|46] 13|16w10 17r9
 X 7 a-textio.ads
-49K13*Text_IO 471e16 13|13w10 14r9
-166U14*New_Line 13|39s4
-242U14*Put 13|40s4
+57K13*Text_IO 727e16 13|13w10 14r9
+264U14*New_Line 13|40s4
+465U14*Put 13|41s4
 X 8 a-tiflio.ads
-68U14*Put 13|41s4[3|20]
+82U14*Put 13|42s4[3|20]
 X 10 affichage_expr.ads
 6K9*affichage_expr 13e19 13|4w6 5r5
 X 13 main.adb
-19U11*main 19b11 44l5 44t9
-20p4 expr{28|22P9} 29m4 30r35
-21p4 temp{28|22P9} 28m4 29r39 30m4 31m4 31r41 34m4 34r20 35m4 35r20 36m4
-. 36r20 37m4 37r20 38m15 38r15 41r17
-22r4 t{28|9R9} 34r26 35r26 36r26 37r26
-23r4 alpha{28|9R9} 29r73
+19U11*main 19b11 45l5 45t9
+20p4 expr{28|22P9} 30m4 31r35
+21p4 temp{28|22P9} 29m4 30r39 31m4 32m4 32r41 35m4 35r20 36m4 36r20 37m4
+. 37r20 38m4 38r20 39m15 39r15 42r17
+22r4 t{28|9R9} 35r26 36r26 37r26 38r26
+23r4 alpha{28|9R9} 30r73
+24r4 beta{28|9R9}
+25r4 gamma{28|9R9}
 X 14 operation.ads
 7K9*operation 13|7w6 8r5 14|15e14
-9V13*deriver{28|22P9} 13|34s12 35s12 36s12 37s12
-10U14*normaliser 13|38s4
-12V13*evaluate{float} 13|41s8
+9V13*deriver{28|22P9} 13|35s12 36s12 37s12 38s12
+10U14*normaliser 13|39s4
+12V13*evaluate{float} 13|42s8
 X 28 type_expression.ads
-3K9*type_expression 13|1w6 2r5 28|58e20
-6n24*produit{6E9} 13|29r30
-6n40*litteral{6E9} 13|29r63
-6n50*nombre{6E9} 13|28r43
-6n58*puissance{6E9} 13|31r30
-6n79*cos{6E9} 13|30r30
+3K9*type_expression 13|1w6 2r5 28|60e20
+6n24*produit{6E9} 13|30r30
+6n40*litteral{6E9} 13|30r63
+6n50*nombre{6E9} 13|29r43
+6n58*puissance{6E9} 13|32r30
+6n79*cos{6E9} 13|31r30
 7n42*temps{7E9} 13|22r63
-7n49*angle{7E9} 13|23r66
-9R9*T_litteraux 13|22r8 23r11 28|17e14
-21R9*T_expression 13|28r16 29r16 29r49 30r16 31r16 28|49e14
+7n49*angle{7E9} 13|23r66 24r65 25r66
+9R9*T_litteraux 13|22r8 23r11 24r10 25r11 28|17e14
+21R9*T_expression 13|29r16 30r16 30r49 31r16 32r16 28|49e14
 22P9*T_expr_int(21R9) 13|20r11 21r11
-24e22*type_expr{6E9} 13|28m30
-35f13*valeur{float} 13|28m51
+24e22*type_expr{6E9} 13|29m30
+35f13*valeur{float} 13|29m51
 X 29 type_mecanique.ads
-8K9*type_mecanique 13|10w6 11r5 29|75e19
+8K9*type_mecanique 13|10w6 11r5 29|101e19
 

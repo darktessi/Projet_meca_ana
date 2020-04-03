@@ -1,4 +1,4 @@
-V "GNAT Lib v2018"
+V "GNAT Lib v2019"
 A -gnatA
 A -mtune=generic
 A -march=x86-64
@@ -6,6 +6,7 @@ P SS ZX
 
 RN
 RV NO_ALLOCATORS
+RV NO_FLOATING_POINT
 RV NO_IMPLICIT_CONDITIONALS
 RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
@@ -16,76 +17,160 @@ RV NO_IMPLICIT_LOOPS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U type_mecanique%b	type_mecanique.adb	ceedb018 NE OO PK IL
+U type_mecanique%b	type_mecanique.adb	2e89c710 NE OO PK IL
+W operation%s		operation.adb		operation.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 W type_expression%s	type_expression.adb	type_expression.ali
 W type_vecteur%s	type_vecteur.adb	type_vecteur.ali
 
-U type_mecanique%s	type_mecanique.ads	87414154 EE OO PK IL
+U type_mecanique%s	type_mecanique.ads	973b8b91 EE OO PK IL
 W type_expression%s	type_expression.adb	type_expression.ali
 W type_vecteur%s	type_vecteur.adb	type_vecteur.ali
 
-D operation.ads		20190127130900 6b3409df operation%s
-D system.ads		20180524051738 32a08138 system%s
-D s-parame.ads		20180524051738 48ec542b system.parameters%s
-D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
-D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
-D type_expression.ads	20190127133916 4afaf53c type_expression%s
-D type_mecanique.ads	20190127135630 0786d232 type_mecanique%s
-D type_mecanique.adb	20190127135630 49acf14c type_mecanique%b
-D type_vecteur.ads	20190127134904 ca3d665a type_vecteur%s
+D operation.ads		20190126190858 6b3409df operation%s
+D system.ads		20190518041258 32a08138 system%s
+D s-parame.ads		20190518041258 48ec542b system.parameters%s
+D s-secsta.ads		20190518041258 20bbe636 system.secondary_stack%s
+D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
+D type_expression.ads	20200330004136 5f8ea4f5 type_expression%s
+D type_mecanique.ads	20200403154442 d78f614a type_mecanique%s
+D type_mecanique.adb	20200403154708 d286455e type_mecanique%b
+D type_vecteur.ads	20200402230004 1f3a4e2e type_vecteur%s
+G a e
+G c Z s s [t_referentiel_rIP type_mecanique 22 9 none]
+G c Z s b [Oadd type_mecanique 90 13 none]
+G c Z s b [Omultiply type_mecanique 91 13 none]
+G c Z s b [chgt_base type_mecanique 93 13 none]
+G c Z s b [mat_passage type_mecanique 94 13 none]
+G c Z s b [deplacer type_mecanique 96 14 none]
+G c Z s b [calcul_energie_cinetique type_mecanique 97 13 none]
+G c Z s s [t_pointIP type_mecanique 10 10 none]
+G c Z s s [t_torseurIP type_mecanique 43 9 none]
+G c Z s s [Tt_tab_actionBIP type_mecanique 37 4 none]
+G c Z s s [t_liste_actionIP type_mecanique 38 9 none]
+G c Z s s [t_solideIP type_mecanique 59 9 none]
+G r s t_vecteur [t_referentiel_rIP type_mecanique 22 9 none] [t_vecteurIP type_vecteur 8 9 none]
+G r s Tt_matriceB [t_referentiel_rIP type_mecanique 22 9 none] [Tt_matriceBIP type_vecteur 15 4 none]
+G r c none [Oadd type_mecanique 90 13 none] [Oadd type_vecteur 20 13 none]
+G r c none [Omultiply type_mecanique 91 13 none] [Omultiply type_vecteur 18 13 none]
+G r c none [Omultiply type_mecanique 91 13 none] [Oadd type_expression 53 13 none]
+G r s t_vecteur [chgt_base type_mecanique 93 13 none] [t_vecteurIP type_vecteur 8 9 none]
+G r c none [chgt_base type_mecanique 93 13 none] [Omultiply type_vecteur 28 13 none]
+G r c none [chgt_base type_mecanique 93 13 none] [inverser type_vecteur 33 13 none]
+G r c none [chgt_base type_mecanique 93 13 none] [Omultiply type_vecteur 31 13 none]
+G r c none [mat_passage type_mecanique 94 13 none] [Omultiply type_vecteur 28 13 none]
+G r c none [deplacer type_mecanique 96 14 none] [Osubtract type_vecteur 22 13 none]
+G r c none [deplacer type_mecanique 96 14 none] [Omultiply type_vecteur 19 13 none]
+G r c none [deplacer type_mecanique 96 14 none] [Oadd type_vecteur 20 13 none]
+G r c none [calcul_energie_cinetique type_mecanique 97 13 none] [Osubtract type_vecteur 22 13 none]
+G r c none [calcul_energie_cinetique type_mecanique 97 13 none] [Omultiply type_vecteur 19 13 none]
+G r c none [calcul_energie_cinetique type_mecanique 97 13 none] [Oadd type_vecteur 20 13 none]
+G r c none [calcul_energie_cinetique type_mecanique 97 13 none] [nb_expr operation 11 13 none]
+G r c none [calcul_energie_cinetique type_mecanique 97 13 none] [Omultiply type_vecteur 18 13 none]
+G r c none [calcul_energie_cinetique type_mecanique 97 13 none] [Oadd type_expression 53 13 none]
+G r c none [calcul_energie_cinetique type_mecanique 97 13 none] [Omultiply type_expression 52 13 none]
+G r s t_vecteur [t_pointIP type_mecanique 10 10 none] [t_vecteurIP type_vecteur 8 9 none]
+G r s t_vecteur [t_torseurIP type_mecanique 43 9 none] [t_vecteurIP type_vecteur 8 9 none]
+G r s t_litteraux [t_solideIP type_mecanique 59 9 none] [t_litterauxIP type_expression 9 9 none]
+G r s Tt_matriceB [t_solideIP type_mecanique 59 9 none] [Tt_matriceBIP type_vecteur 15 4 none]
+G r s t_vecteur [t_solideIP type_mecanique 59 9 none] [t_vecteurIP type_vecteur 8 9 none]
+X 1 operation.ads
+7K9*operation 15e14 8|7w6 8r5
+11V13*nb_expr{6|22P9} 8|72s14
 X 6 type_expression.ads
-3K9*type_expression 58e20 7|4w6 5r5 8|4w6 5r5
-9R9*T_litteraux 17e14 7|17r15
-22P9*T_expr_int(21R9) 7|62r63 8|26r62 27r13
-53V14*"+"{22P9} 8|29s43
+3K9*type_expression 60e20 7|4w6 5r5 8|4w6 5r5
+9R9*T_litteraux 17e14 7|60r15
+22P9*T_expr_int(21R9) 7|91r63 97r67 8|27r62 28r13 65r67
+52V14*"*"{22P9} 8|72s26
+53V14*"+"{22P9} 8|30s43
 X 7 type_mecanique.ads
-8K9*type_mecanique 75l5 75e19 8|9b14 37l5 37t19
-10R10*T_point 14e14 45r15
-11r7*coordonnees{9|8R9}
+8K9*type_mecanique 101l5 101e19 8|10b14 78l5 78t19
+10R10*T_point 14e14 47r15 64r24 96r63 8|59r63
+11r7*coordonnees{9|8R9} 8|61r45 61r66
 12a7*nom{string}
 13i7*nom_lg{integer}
-16R9*T_solide 20e14 46r16
-17r7*masse{6|9R9}
-18a7*nom{string}
-19i7*nom_lg{integer}
-22E9*T_cat_torseur 22e69 41r27
-22n27*dynamique{22E9}
-22n38*cinetique{22E9}
-22n49*cinematique{22E9}
-22n62*action{22E9} 48r15 8|17r23
-23E9*T_cat_referentiel 23e70 27r31
-23n32*galileen{23E9} 29r15 37r67
-23n42*en_translation{23E9}
-23n58*en_rotation{23E9}
-25R9*T_referentiel_r 26r33 27c9 27d25 35e14 37r44
-26P9*T_referentiel(25R9) 32r26 37r23 42r21
-27e25*cat{23E9} 28r12 37m61
-32p13*dependance{26P9}
-33r13*rotation{9|8R9}
-37p4*initial{26P9}
-41R9*T_torseur 41d19 54e14 61r25 61r44 61r62 62r26 62r45 8|12r25 12r44 12r62
-. 13r10 26r25 26r44
-41e19*genre{22E9} 47r12
-42p7*referentiel{26P9}
-43r7*resultante{9|8R9} 8|15m12 15r29 15r45 29r19 29r61
-44r7*moment{9|8R9} 8|16m12 16r25 16r37 29r35 29r49
-45r7*point{10R10}
-46r7*solide{16R9}
-49a10*nom_action{string} 8|18m15
-50i10*n_a_lg{integer} 8|19m15
-61V14*"+"{41R9} 61>17 61>36 8|12b14 23l9 23t11
-61r17 t1{41R9} 8|12b17 13r23 15r26 16r22
-61r36 t2{41R9} 8|12b36 15r42 16r34
-62V14*"*"{6|22P9} 62>18 62>37 8|26b14 33l9 33t11
-62r18 t1{41R9} 8|26b17 29r16 29r46
-62r37 t2{41R9} 8|26b36 29r32 29r58
+16R9*T_solide 48r23 59c9 72e14 97r50 8|65r50
+18E9*T_cat_referentiel 18e70 22r31
+18n32*galileen{18E9} 24r15 77r67
+18n42*en_translation{18E9}
+18n58*en_rotation{18E9}
+20R9*T_referentiel_r 21r33 22c9 22d25 32e14 77r44
+21P9*T_referentiel(20R9) 27r26 44r21 77r23 93r32 93r57 94r35 8|36r35 38r19
+. 49r32 49r57
+22e25*cat{18E9} 23r12 77m61
+27p13*dependance{21P9} 8|41r24 43r35
+28r13*rotation{9|8R9}
+29r13*translation{9|8R9}
+30a13*matrice_passage{9|15A9} 8|42r34 45r31
+34R9*T_torseur 37r49 43c9 43d19 55e14 65r21 66r21 67r23 90r25 90r44 90r62
+. 91r26 91r45 96r35 8|13r25 13r44 13r62 14r10 27r25 27r44 59r35 66r16
+36E9*T_cat_torseur 36e69 43r27
+36n27*dynamique{36E9} 65r31
+36n38*cinetique{36E9} 66r31
+36n49*cinematique{36E9} 67r33
+36n62*action{36E9} 50r15 8|18r23
+37A9*T_tab_action(34R9)<integer> 39r20
+38R9*T_liste_action 41e14 68r22
+39a7*tab_action{37A9}
+40i7*nb{integer}
+43R9*T_torseur
+43e19*genre{36E9} 49r12
+44p7*referentiel{21P9}
+45r7*resultante{9|8R9} 8|16m12 16r29 16r45 30r19 30r61 61r82
+46r7*moment{9|8R9} 8|17m12 17r25 17r37 30r35 30r49 61m10 61r23
+47r7*point{10R10} 8|61r60 62m10 68r17 68r45 69r46
+48p7*solide(16R9)
+51a10*nom_action{string} 8|19m15
+52i10*n_a_lg{integer} 8|20m15
+59R9*T_solide
+60r7*masse{6|9R9}
+61a7*nom{string}
+62i7*nom_lg{integer}
+63a7*mat_intertie{9|15A9}
+64r7*centre_inertie{10R10}
+65r7*dynamique_t{43R9}
+66r7*cinetique_t{43R9} 8|68r33 69r34 72r35
+67r7*cinematique_t{43R9} 8|66r36
+68r7*liste_action{38R9}
+77p4*initial{21P9} 8|41r38
+90V14*"+"{43R9} 90>17 90>36 8|13b14 24l9 24t11
+90r17 t1{43R9} 8|13b17 14r23 16r26 17r22
+90r36 t2{43R9} 8|13b36 16r42 17r34
+91V14*"*"{6|22P9} 91>18 91>37 8|27b14 34l9 34t11 72s47
+91r18 t1{43R9} 8|27b17 30r16 30r46
+91r37 t2{43R9} 8|27b36 30r32 30r58
+93V13*chgt_base{9|8R9} 93>23 93>47 93>72 8|49b13 56l8 56t17
+93p23 ref1{21P9} 8|49b23 51r40
+93p47 ref2{21P9} 8|49b47 52r40
+93r72 v{9|8R9} 8|49b72 54r37
+94V13*mat_passage{9|15A9} 94>25 8|36b13 47t7 51s28 52s28
+94p25 ref{21P9} 8|36b25 38r36
+96U14*deplacer 96=23 96>46 8|59b14 63t7 69s10
+96r23 T1{43R9} 8|59b23 61m7 61r20 61r57 61r79 62m7
+96r46 point_cible{10R10} 8|59b46 61r33 62r19
+97V13*calcul_energie_cinetique{6|22P9} 97>38 8|65b13 73t7
+97r38 solide{59R9} 8|65b38 66r29 68r26 69r27 72r28
 X 8 type_mecanique.adb
-13r4 temp{7|41R9} 15m7 16m7 17r10 18m10 19m10 21r14
-27p7 temp{6|22P9} 29m7 31r14
+14r4 temp{7|43R9} 16m7 17m7 18r10 19m10 20m10 22r14
+28p7 temp{6|22P9} 30m7 32r14
+37a6 mtot{9|15A9} 42m10 42r18 45m7 45r15 46r14
+38p6 ref_actual{7|21P9} 41r13 42r23 43m10 43r24 45r20
+50r7 v_primaire{9|8R9} 54m7 55r20
+51a7 mtot1{9|15A9} 54r30
+52a7 mtot2{9|15A9} 55r14
+66r7 cinema{7|43R9} 68r10 69m19 69r19 72r48
 X 9 type_vecteur.ads
-7K9*type_vecteur 7|1w6 2r5 8|1w6 2r5 9|20e17
-8R9*T_vecteur 7|11r21 33r24 43r20 44r16 9|12e14
-14V14*"*"{6|22P9} 8|29s30 29s56
-16V14*"+"{8R9} 8|15s40 16s32
+7K9*type_vecteur 7|1w6 2r5 8|1w6 2r5 9|39e17
+8R9*T_vecteur 7|11r21 28r24 29r27 45r20 46r16 93r79 93r97 8|49r79 49r97 50r19
+. 9|12e14
+14A9*T_matrice_ligne(6|22P9)<integer>
+15A9*T_matrice(14A9)<integer> 7|30r31 63r22 94r57 8|36r57 37r13 51r15 52r15
+16a4*identity{15A9} 8|37r26
+18V14*"*"{6|22P9} 8|30s30 30s56
+19V14*"*"{8R9} 8|61s78
+20V14*"+"{8R9} 8|16s40 17s32 61s30
+22V14*"-"{8R9} 8|61s56
+28V14*"*"{15A9} 8|42s22 45s19
+31V14*"*"{8R9} 8|54s36 55s19
+33V13*inverser{15A9} 8|54s21
 

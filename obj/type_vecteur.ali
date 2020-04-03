@@ -1,4 +1,4 @@
-V "GNAT Lib v2018"
+V "GNAT Lib v2019"
 A -gnatA
 A -mtune=generic
 A -march=x86-64
@@ -15,7 +15,7 @@ RV NO_IMPLICIT_LOOPS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U type_vecteur%b	type_vecteur.adb	190f855c NE OO PK IL
+U type_vecteur%b	type_vecteur.adb	3fe6e36b NE OO PK IL
 W ada%s			ada.ads			ada.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -27,39 +27,104 @@ Z ada.tags%s		a-tags.adb		a-tags.ali
 W operation%s		operation.adb		operation.ali
 W type_expression%s	type_expression.adb	type_expression.ali
 
-D ada.ads		20180524051736 76789da1 ada%s
-D a-except.ads		20180524051736 291912d5 ada.exceptions%s
-D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
-D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
-D a-tags.ads		20180524051738 491b781d ada.tags%s
-D a-textio.ads		20180524051738 881db35a ada.text_io%s
-D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
-D interfac.ads		20180524051736 5ab55268 interfaces%s
-D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D operation.ads		20190127040858 6b3409df operation%s
-D system.ads		20180524051738 32a08138 system%s
-D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
-D s-exctab.ads		20180524051738 54135002 system.exception_table%s
-D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
-D s-parame.ads		20180524051738 48ec542b system.parameters%s
-D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
-D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
-D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
-D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
-D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
-D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
-D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
-D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D type_expression.ads	20200330094136 5f8ea4f5 type_expression%s
-D type_vecteur.ads	20200403080004 1f3a4e2e type_vecteur%s
-D type_vecteur.adb	20200403080004 d1a6dcdd type_vecteur%b
+D ada.ads		20190518041256 76789da1 ada%s
+D a-except.ads		20190518041256 291912d5 ada.exceptions%s
+D a-ioexce.ads		20190518041256 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041256 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041258 491b781d ada.tags%s
+D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
+D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20190518041256 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
+D operation.ads		20190126190858 6b3409df operation%s
+D system.ads		20190518041258 32a08138 system%s
+D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041256 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041258 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041258 48ec542b system.parameters%s
+D s-secsta.ads		20190518041258 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041256 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041258 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041258 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
+D type_expression.ads	20200330004136 5f8ea4f5 type_expression%s
+D type_vecteur.ads	20200402230004 1f3a4e2e type_vecteur%s
+D type_vecteur.adb	20200402230004 d1a6dcdd type_vecteur%b
+G a e
+G c s s s [s type_vecteur 7 1 none]
+G c Z s s [Tt_matrice_ligneBIP type_vecteur 14 4 none]
+G c Z s s [Tt_matriceBIP type_vecteur 15 4 none]
+G c Z s b [Omultiply type_vecteur 18 13 none]
+G c Z s b [Omultiply type_vecteur 19 13 none]
+G c Z s b [Oadd type_vecteur 20 13 none]
+G c Z s b [Omultiply type_vecteur 21 13 none]
+G c Z s b [Osubtract type_vecteur 22 13 none]
+G c Z s b [put type_vecteur 23 14 none]
+G c Z s b [put_line type_vecteur 24 14 none]
+G c Z s b [Oadd type_vecteur 27 13 none]
+G c Z s b [Omultiply type_vecteur 28 13 none]
+G c Z s b [Omultiply type_vecteur 29 13 none]
+G c Z s b [Osubtract type_vecteur 30 13 none]
+G c Z s b [Omultiply type_vecteur 31 13 none]
+G c Z s b [put type_vecteur 32 14 none]
+G c Z s b [inverser type_vecteur 33 13 none]
+G c Z s b [det type_vecteur 34 13 none]
+G c Z s b [put_line type_vecteur 35 14 none]
+G c Z s b [mat_rotation type_vecteur 37 13 none]
+G c Z s b [rotation_3d type_vecteur 38 13 none]
+G c Z s s [t_vecteurIP type_vecteur 8 9 none]
+G r c none [s type_vecteur 7 1 none] [nb_expr operation 11 13 none]
+G r c none [Omultiply type_vecteur 18 13 none] [Omultiply type_expression 52 13 none]
+G r c none [Omultiply type_vecteur 18 13 none] [Oadd type_expression 53 13 none]
+G r c none [Omultiply type_vecteur 19 13 none] [nb_expr operation 11 13 none]
+G r c none [Omultiply type_vecteur 19 13 none] [Omultiply type_expression 52 13 none]
+G r c none [Omultiply type_vecteur 19 13 none] [Osubtract type_expression 54 13 none]
+G r c none [Oadd type_vecteur 20 13 none] [nb_expr operation 11 13 none]
+G r c none [Oadd type_vecteur 20 13 none] [Oadd type_expression 53 13 none]
+G r c none [Omultiply type_vecteur 21 13 none] [nb_expr operation 11 13 none]
+G r c none [Omultiply type_vecteur 21 13 none] [Omultiply type_expression 52 13 none]
+G r c none [Osubtract type_vecteur 22 13 none] [nb_expr operation 11 13 none]
+G r c none [Osubtract type_vecteur 22 13 none] [Omultiply type_expression 52 13 none]
+G r c none [Osubtract type_vecteur 22 13 none] [Oadd type_expression 53 13 none]
+G r c none [put type_vecteur 23 14 none] [put type_expression 56 14 none]
+G r c none [put_line type_vecteur 24 14 none] [put type_expression 56 14 none]
+G r c none [Oadd type_vecteur 27 13 none] [Oadd type_expression 53 13 none]
+G r c none [Omultiply type_vecteur 28 13 none] [nb_expr operation 11 13 none]
+G r c none [Omultiply type_vecteur 28 13 none] [Omultiply type_expression 52 13 none]
+G r c none [Omultiply type_vecteur 28 13 none] [Oadd type_expression 53 13 none]
+G r c none [Omultiply type_vecteur 29 13 none] [Omultiply type_expression 52 13 none]
+G r c none [Osubtract type_vecteur 30 13 none] [nb_expr operation 11 13 none]
+G r c none [Osubtract type_vecteur 30 13 none] [Omultiply type_expression 52 13 none]
+G r c none [Osubtract type_vecteur 30 13 none] [Oadd type_expression 53 13 none]
+G r c none [Omultiply type_vecteur 31 13 none] [nb_expr operation 11 13 none]
+G r c none [Omultiply type_vecteur 31 13 none] [Omultiply type_expression 52 13 none]
+G r c none [Omultiply type_vecteur 31 13 none] [Oadd type_expression 53 13 none]
+G r c none [put type_vecteur 32 14 none] [put type_expression 56 14 none]
+G r c none [inverser type_vecteur 33 13 none] [nb_expr operation 11 13 none]
+G r c none [inverser type_vecteur 33 13 none] [Omultiply type_expression 52 13 none]
+G r c none [inverser type_vecteur 33 13 none] [Osubtract type_expression 54 13 none]
+G r c none [inverser type_vecteur 33 13 none] [Oadd type_expression 53 13 none]
+G r c none [inverser type_vecteur 33 13 none] [Odivide type_expression 55 13 none]
+G r c none [det type_vecteur 34 13 none] [nb_expr operation 11 13 none]
+G r c none [det type_vecteur 34 13 none] [Omultiply type_expression 52 13 none]
+G r c none [det type_vecteur 34 13 none] [Osubtract type_expression 54 13 none]
+G r c none [det type_vecteur 34 13 none] [Oadd type_expression 53 13 none]
+G r c none [put_line type_vecteur 35 14 none] [put type_expression 56 14 none]
+G r c none [mat_rotation type_vecteur 37 13 none] [nb_expr operation 11 13 none]
+G r c none [rotation_3d type_vecteur 38 13 none] [nb_expr operation 11 13 none]
+G r c none [rotation_3d type_vecteur 38 13 none] [Omultiply type_expression 52 13 none]
+G r c none [rotation_3d type_vecteur 38 13 none] [Oadd type_expression 53 13 none]
+G r c none [t_vecteurIP type_vecteur 8 9 none] [nb_expr operation 11 13 none]
 X 1 ada.ads
 16K9*Ada 20e8 26|3r6 4r5
 X 6 a-textio.ads
-49K13*Text_IO 471e16 26|3w10 4r9
-166U14*New_Line 26|148s7 151s7 159s7 165s7
-242U14*Put 26|146s7 149s7 152s7 170s7 172s10 176s16 182s7
-263U14*Put_Line 26|180s10
+57K13*Text_IO 727e16 26|3w10 4r9
+264U14*New_Line 26|148s7 151s7 159s7 165s7
+465U14*Put 26|146s7 149s7 152s7 170s7 172s10 176s16 182s7
+508U14*Put_Line 26|180s10
 X 10 operation.ads
 7K9*operation 15e14 25|4w6 4r21
 11V13*nb_expr{24|22P9} 25|9s24 10s24 11s24 16s39 16s52 16s65 16s80 16s93

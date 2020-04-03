@@ -2,7 +2,11 @@ project Meca_Ana_Project is
 
    for Source_Dirs use ("src");
    for Object_Dir use "obj";
-   for Main use ("affichage_expr.adb", "main.adb", "test_matrice.adb");
+   for Main use ("main.adb", "test_matrice.adb");
+
+   package Compiler is
+      for Switches ("ada") use ("-gnatf");
+   end Compiler;
 
 end Meca_Ana_Project;
 

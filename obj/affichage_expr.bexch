@@ -1,0 +1,22 @@
+[MAPPING FILE]
+C:\Users\ALEXIS\AppData\Local\Temp\GNAT-TEMP-000003.TMP
+[TOOLCHAIN VERSION]
+ada
+GNAT 2019
+[MAIN BASE NAME]
+affichage_expr
+[COMPILER PATH]
+g:\logiciel\gnat\bin\gcc.exe
+[COMPILER LEADING SWITCHES]
+-c
+-x
+ada
+-gnatA
+[MAIN DEPENDENCY FILE]
+C:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\affichage_expr.ali
+[DEPENDENCY FILES]
+[BINDING OPTIONS]
+gnatbind_prefix=
+[PROJECT FILES]
+C:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\meca_ana_project.gpr
+20200403153638

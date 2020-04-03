@@ -13,22 +13,8 @@ package type_mecanique is
       nom_lg : integer := 1;
    end record;
 
-   type T_solide is record
-      masse : T_litteraux;
-      nom : string(1..10);
-      nom_lg : integer;
-      mat_intertie : T_matrice; -- dans le repère du solide
-      centre_inertie : T_point;
-      dynamique : T_torseur;
-      cinetique : T_torseur;
-      cinematique : T_torseur;
-      liste_action : T_liste_action;
+   Type T_solide;
 
-
-
-   end record;
-
-   type T_cat_torseur is (dynamique, cinetique, cinematique, action);
    type T_cat_referentiel is  (galileen, en_translation, en_rotation);
 
    type T_referentiel_r;
@@ -45,16 +31,21 @@ package type_mecanique is
       end case;
    end record;
 
-   initial : constant T_referentiel := new T_referentiel_r'(cat =>galileen);
+   Type T_torseur;
 
-
+   type T_cat_torseur is (dynamique, cinetique, cinematique, action);
+   type T_tab_action is array(1..100) of access T_torseur;
+   type T_liste_action is record
+      tab_action : T_tab_action;
+      nb : integer := 0;
+   end record;
 
    type T_torseur(genre : T_cat_torseur) is record
       referentiel : T_referentiel;
       resultante : T_vecteur;
       moment : T_vecteur;
       point : T_point;
-      solide : T_solide;
+      solide : access T_solide;
       case genre is
          when action =>
          nom_action : string(1..100);
@@ -64,11 +55,32 @@ package type_mecanique is
    end record;
 
 
-   type T_tab_action is array(1..100) of T_torseur(action);
-   type T_liste_action is record
-      tab_action : T_tab_action;
-      nb : integer := 0;
+
+   type T_solide is record
+      masse : T_litteraux;
+      nom : string(1..10);
+      nom_lg : integer;
+      mat_intertie : T_matrice; -- dans le repère du solide
+      centre_inertie : T_point;
+      dynamique_t : T_torseur(dynamique);
+      cinetique_t : T_torseur(cinetique);
+      cinematique_t : T_torseur(cinematique);
+      liste_action : T_liste_action;
+
+
+
    end record;
+
+
+
+
+   initial : constant T_referentiel := new T_referentiel_r'(cat =>galileen);
+
+
+
+
+
+
 
 
 
@@ -87,3 +99,4 @@ package type_mecanique is
 
 
 end type_mecanique;
+
