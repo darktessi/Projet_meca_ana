@@ -181,6 +181,10 @@ package body type_expression is
    end "=";
 
 
+   procedure put(c : in T_chaine) is
+   begin
+      put(c.ch(1..c.lg));
+   end;
 
 
 

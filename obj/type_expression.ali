@@ -20,7 +20,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 RV SPARK_05
 
-U type_expression%b	type_expression.adb	6214575c NE OO PK IL
+U type_expression%b	type_expression.adb	cb84a434 NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -31,7 +31,7 @@ W operation%s		operation.adb		operation.ali
 Z system.img_int%s	s-imgint.adb		s-imgint.ali
 Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
 
-U type_expression%s	type_expression.ads	a77b78a2 EE NE OO PK IL
+U type_expression%s	type_expression.ads	917e31a4 EE NE OO PK IL
 
 D ada.ads		20190518041256 76789da1 ada%s
 D a-except.ads		20190518041256 291912d5 ada.exceptions%s
@@ -62,8 +62,8 @@ D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
 D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
-D type_expression.ads	20200403164010 a77b78a2 type_expression%s
-D type_expression.adb	20200403163006 a73d226c type_expression%b
+D type_expression.ads	20200403201352 917e31a4 type_expression%s
+D type_expression.adb	20200403201352 38a89802 type_expression%b
 G a e
 G c Z s b [expr_text type_expression 58 13 none]
 G c Z s b [text_ch type_expression 59 13 none]
@@ -76,6 +76,7 @@ G c Z s b [put type_expression 65 14 none]
 G c Z s b [put_line type_expression 66 14 none]
 G c Z s b [Oadd type_expression 67 13 none]
 G c Z s b [Oeq type_expression 68 13 none]
+G c Z s b [put type_expression 69 14 none]
 G c Z s s [t_chaineIP type_expression 5 9 none]
 G c Z s s [Tt_valeur_litBIP type_expression 13 4 none]
 G c Z s s [t_litterauxIP type_expression 14 9 none]
@@ -93,17 +94,17 @@ X 4 a-inteio.ads
 X 8 a-textio.ads
 57K13*Text_IO 727e16 31|2w10 3r9
 264U14*New_Line 31|166s7
-465U14*Put 31|70s7
+465U14*Put 31|70s7 186s7
 X 14 operation.ads
 7K9*operation 19e14 31|1w6 1r21
 13V13*nb_expr{30|27P9} 31|25s17 36s17 47s17 50s73 59s17
 X 30 type_expression.ads
-3K9*type_expression 69l5 69e20 31|10b14 190l5 190t20
-5R9*T_chaine 8e14 58r52 59r43 67r26 67r45 67r62 68r26 68r45 31|68r11 73r43
-. 74r8 82r52 83r11 169r26 169r45 169r62 170r9 178r26 178r45
-6a7*ch{string} 31|70r13 76m9 172m10 172r31 173m10 173r45 180r40 180r60
+3K9*type_expression 70l5 70e20 31|10b14 194l5 194t20
+5R9*T_chaine 8e14 58r52 59r43 67r26 67r45 67r62 68r26 68r45 69r25 31|68r11
+. 73r43 74r8 82r52 83r11 169r26 169r45 169r62 170r9 178r26 178r45 184r25
+6a7*ch{string} 31|70r13 76m9 172m10 172r31 173m10 173r45 180r40 180r60 186r13
 7i7*lg{integer} 31|70r21 77m9 172r20 172r41 173r17 173r27 173r34 173r55 174m10
-. 174r20 174r27 180r19 180r28 180r50 180r70
+. 174r20 174r27 180r19 180r28 180r50 180r70 186r21
 11E9*T_cat_expr 11e88 29r34
 11n24*produit{11E9} 31r15 31|28r35 50r64 86r15
 11n33*somme{11E9} 34r15 31|39r35 50r35 87r37 95r37 102r15 131r37
@@ -188,6 +189,8 @@ X 30 type_expression.ads
 68V14*"="{boolean} 68>17 68>36 31|17s31 178b14 181l9 181t11
 68r17 ch1{5R9} 31|178b17 180r15 180r36 180r46
 68r36 ch2{5R9} 31|178b36 180r24 180r56 180r66
+69U14*put 69>18 31|184b14 187t7
+69r18 c{5R9} 31|184b18 186r11 186r19
 X 31 type_expression.adb
 68r7 c{30|5R9} 70r11 70r19
 74r4 c{30|5R9} 76m7 77m7 78r14

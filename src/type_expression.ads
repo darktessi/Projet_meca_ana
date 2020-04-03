@@ -66,4 +66,5 @@ package type_expression is
    procedure put_line(expr: in T_expr_int);
    function "+"(ch1 : in T_chaine; ch2 : in T_chaine) return T_chaine;
    function "="(ch1 : in T_chaine; ch2 : in T_chaine) return Boolean;
+   procedure put(c : in T_chaine);
 end type_expression;

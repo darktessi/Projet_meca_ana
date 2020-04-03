@@ -17,10 +17,11 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 RV SPARK_05
 
-U test_matrice%b	test_matrice.adb	2f035dbe NE OO SU IL
+U test_matrice%b	test_matrice.adb	080180c4 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
+W affichage_latex%s	affichage_latex.adb	affichage_latex.ali
 W operation%s		operation.adb		operation.ali
 W type_expression%s	type_expression.adb	type_expression.ali
 W type_vecteur%s	type_vecteur.adb	type_vecteur.ali
@@ -32,6 +33,7 @@ D a-stream.ads		20190518041256 119b8fb3 ada.streams%s
 D a-tags.ads		20190518041258 491b781d ada.tags%s
 D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
 D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
+D affichage_latex.ads	20200403201048 2a5cabb0 affichage_latex%s
 D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
 D operation.ads		20200403170512 db6716fb operation%s
@@ -48,65 +50,60 @@ D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
 D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
-D test_matrice.adb	20200403170158 459c7eed test_matrice%b
-D type_expression.ads	20200403164010 a77b78a2 type_expression%s
+D test_matrice.adb	20200403201504 7ec74121 test_matrice%b
+D type_expression.ads	20200403201352 917e31a4 type_expression%s
 D type_vecteur.ads	20200403170026 b8779867 type_vecteur%s
 G a e
-G c Z b b [test_matrice standard 14 11 none]
-G r s Tt_matriceB [test_matrice standard 14 11 none] [Tt_matriceBIP type_vecteur 15 4 none]
-G r s t_litteraux [test_matrice standard 14 11 none] [t_litterauxIP type_expression 14 9 none]
-G r s t_vecteur [test_matrice standard 14 11 none] [t_vecteurIP type_vecteur 8 9 none]
-G r c none [test_matrice standard 14 11 none] [nb_expr operation 13 13 none]
-G r c none [test_matrice standard 14 11 none] [rotation_3d type_vecteur 38 13 none]
-G r c none [test_matrice standard 14 11 none] [normaliser type_vecteur 39 14 none]
-G r c none [test_matrice standard 14 11 none] [Omultiply type_vecteur 31 13 none]
-G r c none [test_matrice standard 14 11 none] [put_line type_vecteur 24 14 none]
-G r c none [test_matrice standard 14 11 none] [deriver type_vecteur 42 14 none]
-G r c none [test_matrice standard 14 11 none] [put type_vecteur 23 14 none]
+G c Z b b [test_matrice standard 16 11 none]
+G r s Tt_matriceB [test_matrice standard 16 11 none] [Tt_matriceBIP type_vecteur 15 4 none]
+G r s t_vecteur [test_matrice standard 16 11 none] [t_vecteurIP type_vecteur 8 9 none]
+G r c none [test_matrice standard 16 11 none] [rotation_3d type_vecteur 38 13 none]
+G r c none [test_matrice standard 16 11 none] [normaliser type_vecteur 39 14 none]
+G r c none [test_matrice standard 16 11 none] [Omultiply type_vecteur 31 13 none]
+G r c none [test_matrice standard 16 11 none] [put_line type_vecteur 24 14 none]
+G r c none [test_matrice standard 16 11 none] [deriver type_vecteur 42 14 none]
+G r c none [test_matrice standard 16 11 none] [latex_vecteur affichage_latex 11 14 none]
 X 1 ada.ads
-16K9*Ada 20e8 24|10r6 11r5
+16K9*Ada 20e8 25|10r6 11r5
 X 6 a-textio.ads
-57K13*Text_IO 727e16 24|10w10 11r9
-X 10 operation.ads
-7K9*operation 19e14 24|7w6 8r5
-13V13*nb_expr{25|27P9} 24|31s21 34s15
-X 24 test_matrice.adb
-14U11*test_matrice 14b11 53l5 53t17
-15a4 m{26|15A9} 28m4 31m10 34m4 40m4 41m15 41r15 46r13 47r12
-16r4 theta{25|14R9} 26m4 27m4
-17r4 alpha{25|14R9} 40r21
-18r4 beta{25|14R9} 40r28
-19r4 gamma{25|14R9} 40r34
-20r4 x{25|14R9} 42r42
-21r4 y{25|14R9} 43r42
-22r4 z{25|14R9} 44r42
-23r4 t{25|14R9} 49r21
-24r4 vect{26|8R9} 42m4 43m4 44m4 46r15 47m4 47r14 49m15 49r15 51r8
-29i8 i{integer} 31r12 31r35
-30i11 j{integer} 31r15 31r37
-48i8 i{integer}
-X 25 type_expression.ads
-3K9*type_expression 24|4w6 5r5 25|69e20
-11n40*litteral{11E9} 24|42r32 43r32 44r32
-12n42*temps{12E9} 24|17r66 18r65 19r66 20r63 21r63 22r63 23r63
-14R9*T_litteraux 24|16r12 17r11 18r10 19r11 20r8 21r8 22r8 23r8 25|22e14
-17a7*symbole{string} 24|26m10
-18i7*symbole_lg{integer} 24|27m10
-26R9*T_expression 24|42r18 43r18 44r18 25|54e14
+57K13*Text_IO 727e16 25|10w10 11r9
+X 8 affichage_latex.ads
+7K9*affichage_latex 15e20 25|13w6 14r5
+11U14*latex_vecteur 25|45s4
+X 11 operation.ads
+7K9*operation 19e14 25|7w6 8r5
+X 25 test_matrice.adb
+16U11*test_matrice 16b11 47l5 47t17
+17a4 m{27|15A9} 34m4 35m15 35r15 40r13 41r12
+18r4 alpha{26|14R9} 27m4 28m4 34r21
+19r4 beta{26|14R9} 34r28
+20r4 gamma{26|14R9} 34r34
+21r4 x{26|14R9} 36r42
+22r4 y{26|14R9} 37r42
+23r4 z{26|14R9} 38r42
+24r4 t{26|14R9} 43r21
+25r4 vect{27|8R9} 36m4 37m4 38m4 40r15 41m4 41r14 43m15 43r15 45r18
+42i8 i{integer}
+X 26 type_expression.ads
+3K9*type_expression 25|4w6 5r5 26|70e20
+11n40*litteral{11E9} 25|36r32 37r32 38r32
+12n42*temps{12E9} 25|18r66 19r65 20r66 21r63 22r63 23r63 24r63
+14R9*T_litteraux 25|18r11 19r10 20r11 21r8 22r8 23r8 24r8 26|22e14
+17a7*symbole{string} 25|27m10
+18i7*symbole_lg{integer} 25|28m10
+26R9*T_expression 25|36r18 37r18 38r18 26|54e14
 27P9*T_expr_int(26R9)
-X 26 type_vecteur.ads
-7K9*type_vecteur 24|1w6 2r5 26|45e17
-8R9*T_vecteur 24|24r11 26|12e14
-9p7*X{25|27P9} 24|42m9
-10p7*Y{25|27P9} 24|43m9
-11p7*Z{25|27P9} 24|44m9
-14A9*T_matrice_ligne(25|27P9)<integer>
-15A9*T_matrice(14A9)<integer> 24|15r8
-16a4*identity{15A9} 24|28r9
-23U14*put 24|51s4
-24U14*put_line 24|46s4
-31V14*"*"{8R9} 24|46s14 47s13
-38V13*rotation_3D{15A9} 24|40s9
-39U14*normaliser 24|41s4
-42U14*deriver 24|49s7
+X 27 type_vecteur.ads
+7K9*type_vecteur 25|1w6 2r5 27|45e17
+8R9*T_vecteur 25|25r11 27|12e14
+9p7*X{26|27P9} 25|36m9
+10p7*Y{26|27P9} 25|37m9
+11p7*Z{26|27P9} 25|38m9
+14A9*T_matrice_ligne(26|27P9)<integer>
+15A9*T_matrice(14A9)<integer> 25|17r8
+24U14*put_line 25|40s4
+31V14*"*"{8R9} 25|40s14 41s13
+38V13*rotation_3D{15A9} 25|34s9
+39U14*normaliser 25|35s4
+42U14*deriver 25|43s7
 

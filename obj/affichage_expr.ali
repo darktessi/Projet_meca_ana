@@ -13,7 +13,7 @@ RV NO_RECURSION
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U affichage_expr%b	affichage_expr.adb	017078fa NE OO PK IL
+U affichage_expr%b	affichage_expr.adb	377531fc NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -22,7 +22,7 @@ W ada.text_io%s		a-textio.adb		a-textio.ali
 Z interfaces%s		interfac.ads		interfac.ali
 W type_expression%s	type_expression.adb	type_expression.ali
 
-U affichage_expr%s	affichage_expr.ads	265dcf65 EE NE OO PK IL
+U affichage_expr%s	affichage_expr.ads	10588663 EE NE OO PK IL
 W type_expression%s	type_expression.adb	type_expression.ali
 
 D ada.ads		20190518041256 76789da1 ada%s
@@ -53,7 +53,7 @@ D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
 D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
-D type_expression.ads	20200403164010 a77b78a2 type_expression%s
+D type_expression.ads	20200403201352 917e31a4 type_expression%s
 G a e
 G c Z s b [display_expr affichage_expr 9 14 none]
 X 1 ada.ads
@@ -80,7 +80,7 @@ X 12 affichage_expr.ads
 X 13 affichage_expr.adb
 38i17 i{integer}
 X 29 type_expression.ads
-3K9*type_expression 12|3w6 4r5 13|5w6 29|69e20
+3K9*type_expression 12|3w6 4r5 13|5w6 29|70e20
 11n24*produit{11E9} 13|14r15
 11n33*somme{11E9} 13|15r37 23r37 30r15 59r37
 11n40*litteral{11E9} 13|36r15 45r38 67r36

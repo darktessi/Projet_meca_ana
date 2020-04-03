@@ -21,7 +21,7 @@ package body ada_main is
    E047 : Short_Integer; pragma Import (Ada, E047, "system__dwarf_lines_E");
    E021 : Short_Integer; pragma Import (Ada, E021, "system__soft_links__initialize_E");
    E039 : Short_Integer; pragma Import (Ada, E039, "system__traceback__symbolic_E");
-   E116 : Short_Integer; pragma Import (Ada, E116, "ada__numerics_E");
+   E159 : Short_Integer; pragma Import (Ada, E159, "ada__numerics_E");
    E006 : Short_Integer; pragma Import (Ada, E006, "ada__tags_E");
    E105 : Short_Integer; pragma Import (Ada, E105, "ada__streams_E");
    E113 : Short_Integer; pragma Import (Ada, E113, "system__file_control_block_E");
@@ -29,10 +29,11 @@ package body ada_main is
    E110 : Short_Integer; pragma Import (Ada, E110, "ada__finalization_E");
    E109 : Short_Integer; pragma Import (Ada, E109, "system__file_io_E");
    E103 : Short_Integer; pragma Import (Ada, E103, "ada__text_io_E");
-   E162 : Short_Integer; pragma Import (Ada, E162, "type_expression_E");
-   E127 : Short_Integer; pragma Import (Ada, E127, "affichage_expr_E");
-   E115 : Short_Integer; pragma Import (Ada, E115, "operation_E");
-   E164 : Short_Integer; pragma Import (Ada, E164, "type_vecteur_E");
+   E168 : Short_Integer; pragma Import (Ada, E168, "type_expression_E");
+   E166 : Short_Integer; pragma Import (Ada, E166, "affichage_expr_E");
+   E158 : Short_Integer; pragma Import (Ada, E158, "operation_E");
+   E156 : Short_Integer; pragma Import (Ada, E156, "type_vecteur_E");
+   E115 : Short_Integer; pragma Import (Ada, E115, "affichage_latex_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -189,7 +190,7 @@ package body ada_main is
       System.Traceback.Symbolic'Elab_Body;
       E039 := E039 + 1;
       Ada.Numerics'Elab_Spec;
-      E116 := E116 + 1;
+      E159 := E159 + 1;
       Ada.Tags'Elab_Spec;
       Ada.Tags'Elab_Body;
       E006 := E006 + 1;
@@ -206,11 +207,12 @@ package body ada_main is
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
       E103 := E103 + 1;
-      E127 := E127 + 1;
-      E115 := E115 + 1;
-      E162 := E162 + 1;
+      E166 := E166 + 1;
+      E158 := E158 + 1;
+      E168 := E168 + 1;
       type_vecteur'elab_spec;
-      E164 := E164 + 1;
+      E156 := E156 + 1;
+      E115 := E115 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -250,6 +252,7 @@ package body ada_main is
    --   C:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\operation.o
    --   C:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\type_expression.o
    --   C:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\type_vecteur.o
+   --   C:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\affichage_latex.o
    --   C:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\test_matrice.o
    --   -LC:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\
    --   -LC:\Users\ALEXIS\Documents\GitHub\Projet_meca_ana\obj\

@@ -10,10 +10,11 @@ use operation;
 with ada.Text_IO;
 use ada.Text_IO;
 
+with affichage_latex;
+use affichage_latex;
 
 procedure test_matrice is
    m : T_matrice;
-   theta : T_litteraux;
    alpha :T_litteraux := (false, 0, (1=> 'a', others => ' '), 1, temps, (0=>1.0, 1=>2.0, others => 0.0));
    beta :T_litteraux := (false, 0, (1=> 'b', others => ' '), 1, temps, (0=>1.0, 1=>2.0, others => 0.0));
    gamma :T_litteraux := (false, 0, (1=> 'c', others => ' '), 1, temps, (0=>1.0, 1=>2.0, others => 0.0));
@@ -23,15 +24,8 @@ procedure test_matrice is
    t : T_litteraux := (false, 0, (1=> 't', others => ' '), 1, temps, (0=> 1.0, others => 0.0));
    vect : T_vecteur;
 begin
-   theta.symbole(1..5) := "theta";
-   theta.symbole_lg := 5;
-   m := identity;
-   for i in 1..3 loop
-      for j in 1..3 loop
-         m(i)(j) := nb_expr(Float(i+j));
-      end loop;
-   end loop;
-   m(1)(1) := nb_expr(3.14);
+   alpha.symbole(1..5) := "ALPHA";
+   alpha.symbole_lg := 5;
 
    --put_line(m);
    --put_line(det(m));
@@ -48,6 +42,6 @@ begin
    for i in 1..2 loop
       deriver(vect, t);
    end loop;
-   put(vect);
+   latex_vecteur(vect);
 
 end test_matrice;
