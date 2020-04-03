@@ -2,7 +2,8 @@ with type_expression;
 use type_expression;
 with ada.Text_IO;
 use ada.Text_IO;
-
+with operation;
+use operation;
 
 package body type_vecteur is
 
@@ -233,17 +234,38 @@ package body type_vecteur is
    begin
       for i in 1..3 loop
          for j in 1..3 loop
-            normaliser(m(i)(j));
+            hard_normaliser(m(i)(j));
          end loop;
       end loop;
    end;
 
    procedure normaliser(v : in out T_vecteur) is
    begin
-      normaliser(v.X);
-      normaliser(v.Y);
-      normaliser(v.Z);
+      hard_normaliser(v.X);
+      hard_normaliser(v.Y);
+      hard_normaliser(v.Z);
    end;
+
+
+   procedure deriver(v : in out T_vecteur; param : in T_litteraux) is
+   begin
+      deriver(v.X, param);
+      deriver(v.Y, param);
+      deriver(v.Z, param);
+      normaliser(v);
+   end;
+
+   procedure deriver(m : in out T_matrice; param : in T_litteraux) is
+   begin
+      for i in 1..3 loop
+         for j in 1..3 loop
+            deriver(m(i)(j), param);
+         end loop;
+      end loop;
+      normaliser(m);
+   end;
+
+
 
 
 

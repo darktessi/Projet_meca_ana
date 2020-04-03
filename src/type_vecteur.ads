@@ -39,4 +39,7 @@ package type_vecteur is
    procedure normaliser(m : in out T_matrice);
    procedure normaliser(v : in out T_vecteur);
 
+   procedure deriver(v : in out T_vecteur; param : in T_litteraux);
+   procedure deriver(m : in out T_matrice; param : in T_litteraux);
+
 end type_vecteur;

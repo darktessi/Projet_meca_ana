@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#bba25f88#;
+   u00001 : constant Version_32 := 16#2f035dbe#;
    pragma Export (C, u00001, "test_matriceB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -263,9 +263,9 @@ package ada_main is
    pragma Export (C, u00112, "system__finalization_rootS");
    u00113 : constant Version_32 := 16#cf3f1b90#;
    pragma Export (C, u00113, "system__file_control_blockS");
-   u00114 : constant Version_32 := 16#194e623a#;
+   u00114 : constant Version_32 := 16#85af1775#;
    pragma Export (C, u00114, "operationB");
-   u00115 : constant Version_32 := 16#fbc27ef5#;
+   u00115 : constant Version_32 := 16#7c1c6e59#;
    pragma Export (C, u00115, "operationS");
    u00116 : constant Version_32 := 16#cd2959fb#;
    pragma Export (C, u00116, "ada__numericsS");
@@ -357,22 +357,18 @@ package ada_main is
    pragma Export (C, u00159, "system__val_unsB");
    u00160 : constant Version_32 := 16#33208002#;
    pragma Export (C, u00160, "system__val_unsS");
-   u00161 : constant Version_32 := 16#e5ca47f0#;
+   u00161 : constant Version_32 := 16#6214575c#;
    pragma Export (C, u00161, "type_expressionB");
    u00162 : constant Version_32 := 16#a77b78a2#;
    pragma Export (C, u00162, "type_expressionS");
-   u00163 : constant Version_32 := 16#7268f812#;
-   pragma Export (C, u00163, "system__img_boolB");
-   u00164 : constant Version_32 := 16#c779f0d3#;
-   pragma Export (C, u00164, "system__img_boolS");
-   u00165 : constant Version_32 := 16#5491548c#;
-   pragma Export (C, u00165, "type_vecteurB");
-   u00166 : constant Version_32 := 16#02f7a784#;
-   pragma Export (C, u00166, "type_vecteurS");
-   u00167 : constant Version_32 := 16#e31b7c4e#;
-   pragma Export (C, u00167, "system__memoryB");
-   u00168 : constant Version_32 := 16#6bdde70c#;
-   pragma Export (C, u00168, "system__memoryS");
+   u00163 : constant Version_32 := 16#87963641#;
+   pragma Export (C, u00163, "type_vecteurB");
+   u00164 : constant Version_32 := 16#c46bf63e#;
+   pragma Export (C, u00164, "type_vecteurS");
+   u00165 : constant Version_32 := 16#e31b7c4e#;
+   pragma Export (C, u00165, "system__memoryB");
+   u00166 : constant Version_32 := 16#6bdde70c#;
+   pragma Export (C, u00166, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -384,8 +380,6 @@ package ada_main is
    --  system.exn_llf%b
    --  system.float_control%s
    --  system.float_control%b
-   --  system.img_bool%s
-   --  system.img_bool%b
    --  system.img_int%s
    --  system.img_int%b
    --  system.img_lli%s

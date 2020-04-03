@@ -32,7 +32,7 @@ package body ada_main is
    E162 : Short_Integer; pragma Import (Ada, E162, "type_expression_E");
    E127 : Short_Integer; pragma Import (Ada, E127, "affichage_expr_E");
    E115 : Short_Integer; pragma Import (Ada, E115, "operation_E");
-   E166 : Short_Integer; pragma Import (Ada, E166, "type_vecteur_E");
+   E164 : Short_Integer; pragma Import (Ada, E164, "type_vecteur_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -210,7 +210,7 @@ package body ada_main is
       E115 := E115 + 1;
       E162 := E162 + 1;
       type_vecteur'elab_spec;
-      E166 := E166 + 1;
+      E164 := E164 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
