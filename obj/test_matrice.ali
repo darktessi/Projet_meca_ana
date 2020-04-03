@@ -1,0 +1,54 @@
+V "GNAT Lib v2018"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U test_matrice%b	test_matrice.adb	53371410 NE OO SU IL
+W operation%s		operation.adb		operation.ali
+W type_expression%s	type_expression.adb	type_expression.ali
+W type_vecteur%s	type_vecteur.adb	type_vecteur.ali
+
+D operation.ads		20190127040858 6b3409df operation%s
+D system.ads		20180524051738 32a08138 system%s
+D test_matrice.adb	20200403075856 78b7f714 test_matrice%b
+D type_expression.ads	20200330094136 5f8ea4f5 type_expression%s
+D type_vecteur.ads	20200403080004 1f3a4e2e type_vecteur%s
+X 1 operation.ads
+7K9*operation 15e14 3|7w6 8r5
+11V13*nb_expr{4|22P9} 3|24s21 27s15
+X 3 test_matrice.adb
+11U11*test_matrice 11b11 36l5 36t17
+12a4 m{5|15A9} 21m4 24m10 27m4 29r13 30r17 31r22
+13r4 theta{4|9R9} 19m4 20m4 32r26
+14r4 alpha{4|9R9} 33r25
+15r4 beta{4|9R9} 33r32
+16r4 gamma{4|9R9} 33r38
+22i8 i{integer} 24r12 24r35
+23i11 j{integer} 24r15 24r37
+X 4 type_expression.ads
+3K9*type_expression 3|4w6 5r5 4|60e20
+7n49*angle{7E9} 3|14r66 15r65 16r66
+9R9*T_litteraux 3|13r12 14r11 15r10 16r11 4|17e14
+12a7*symbole{string} 3|19m10
+13i7*symbole_lg{integer} 3|20m10
+22P9*T_expr_int(21R9)
+57U14*put_line 3|30s4
+X 5 type_vecteur.ads
+7K9*type_vecteur 3|1w6 2r5 5|39e17
+14A9*T_matrice_ligne(4|22P9)<integer>
+15A9*T_matrice(14A9)<integer> 3|12r8
+16a4*identity{15A9} 3|21r9
+33V13*inverser{15A9} 3|31s13
+34V13*det{4|22P9} 3|30s13
+35U14*put_line 3|29s4 31s4 32s4 33s4
+37V13*mat_rotation{15A9} 3|32s13
+38V13*rotation_3D{15A9} 3|33s13
+

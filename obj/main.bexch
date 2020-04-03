@@ -1,0 +1,24 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Users\Alexis\Desktop\meca_ana_project\meca_ana_project.gpr
+20190126125350
+[BOUND OBJECT FILES]
+C:\Users\Alexis\Desktop\meca_ana_project\obj\type_expression.o
+C:\Users\Alexis\Desktop\meca_ana_project\obj\affichage_expr.o
+C:\Users\Alexis\Desktop\meca_ana_project\obj\operation.o
+C:\Users\Alexis\Desktop\meca_ana_project\obj\type_vecteur.o
+C:\Users\Alexis\Desktop\meca_ana_project\obj\type_mecanique.o
+C:\Users\Alexis\Desktop\meca_ana_project\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Users\Alexis\Desktop\meca_ana_project\obj\
+-LC:\Users\Alexis\Desktop\meca_ana_project\obj\
+-LC:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

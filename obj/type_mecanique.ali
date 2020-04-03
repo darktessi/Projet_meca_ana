@@ -1,0 +1,91 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U type_mecanique%b	type_mecanique.adb	ceedb018 NE OO PK IL
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W type_expression%s	type_expression.adb	type_expression.ali
+W type_vecteur%s	type_vecteur.adb	type_vecteur.ali
+
+U type_mecanique%s	type_mecanique.ads	87414154 EE OO PK IL
+W type_expression%s	type_expression.adb	type_expression.ali
+W type_vecteur%s	type_vecteur.adb	type_vecteur.ali
+
+D operation.ads		20190127130900 6b3409df operation%s
+D system.ads		20180524051738 32a08138 system%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D type_expression.ads	20190127133916 4afaf53c type_expression%s
+D type_mecanique.ads	20190127135630 0786d232 type_mecanique%s
+D type_mecanique.adb	20190127135630 49acf14c type_mecanique%b
+D type_vecteur.ads	20190127134904 ca3d665a type_vecteur%s
+X 6 type_expression.ads
+3K9*type_expression 58e20 7|4w6 5r5 8|4w6 5r5
+9R9*T_litteraux 17e14 7|17r15
+22P9*T_expr_int(21R9) 7|62r63 8|26r62 27r13
+53V14*"+"{22P9} 8|29s43
+X 7 type_mecanique.ads
+8K9*type_mecanique 75l5 75e19 8|9b14 37l5 37t19
+10R10*T_point 14e14 45r15
+11r7*coordonnees{9|8R9}
+12a7*nom{string}
+13i7*nom_lg{integer}
+16R9*T_solide 20e14 46r16
+17r7*masse{6|9R9}
+18a7*nom{string}
+19i7*nom_lg{integer}
+22E9*T_cat_torseur 22e69 41r27
+22n27*dynamique{22E9}
+22n38*cinetique{22E9}
+22n49*cinematique{22E9}
+22n62*action{22E9} 48r15 8|17r23
+23E9*T_cat_referentiel 23e70 27r31
+23n32*galileen{23E9} 29r15 37r67
+23n42*en_translation{23E9}
+23n58*en_rotation{23E9}
+25R9*T_referentiel_r 26r33 27c9 27d25 35e14 37r44
+26P9*T_referentiel(25R9) 32r26 37r23 42r21
+27e25*cat{23E9} 28r12 37m61
+32p13*dependance{26P9}
+33r13*rotation{9|8R9}
+37p4*initial{26P9}
+41R9*T_torseur 41d19 54e14 61r25 61r44 61r62 62r26 62r45 8|12r25 12r44 12r62
+. 13r10 26r25 26r44
+41e19*genre{22E9} 47r12
+42p7*referentiel{26P9}
+43r7*resultante{9|8R9} 8|15m12 15r29 15r45 29r19 29r61
+44r7*moment{9|8R9} 8|16m12 16r25 16r37 29r35 29r49
+45r7*point{10R10}
+46r7*solide{16R9}
+49a10*nom_action{string} 8|18m15
+50i10*n_a_lg{integer} 8|19m15
+61V14*"+"{41R9} 61>17 61>36 8|12b14 23l9 23t11
+61r17 t1{41R9} 8|12b17 13r23 15r26 16r22
+61r36 t2{41R9} 8|12b36 15r42 16r34
+62V14*"*"{6|22P9} 62>18 62>37 8|26b14 33l9 33t11
+62r18 t1{41R9} 8|26b17 29r16 29r46
+62r37 t2{41R9} 8|26b36 29r32 29r58
+X 8 type_mecanique.adb
+13r4 temp{7|41R9} 15m7 16m7 17r10 18m10 19m10 21r14
+27p7 temp{6|22P9} 29m7 31r14
+X 9 type_vecteur.ads
+7K9*type_vecteur 7|1w6 2r5 8|1w6 2r5 9|20e17
+8R9*T_vecteur 7|11r21 33r24 43r20 44r16 9|12e14
+14V14*"*"{6|22P9} 8|29s30 29s56
+16V14*"+"{8R9} 8|15s40 16s32
+

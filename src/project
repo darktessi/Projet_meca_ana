@@ -1,0 +1,11 @@
+Builder results
+    C:\Users\Alexis\Desktop\meca_ana_project\src\operation.adb
+        80:31 expected type "Standard.Float"
+        83:31 expected type "Standard.Float"
+        80:31 found type universal integer
+        83:31 found type universal integer
+        66:13 warning: "return" statement missing following this statement
+        66:13 warning: Program_Error may be raised at run time
+        33:24 no selector "cat_litt" for type "T_litteraux" defined at type_expression.ads:7
+        33:25 possible misspelling of "cat_lit"
+        48:83 too many discriminants given in constraint
