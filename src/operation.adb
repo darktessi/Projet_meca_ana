@@ -193,6 +193,15 @@ package body operation is
       end case;
    end evaluate;
 
+   function normaliser(e : in T_expr_int) return T_expr_int is
+      n : T_expr_int;
+   begin
+      n := e;
+      normaliser(n);
+      return n;
+   end;
+
+
 
 
 

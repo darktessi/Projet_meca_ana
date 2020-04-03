@@ -2,6 +2,11 @@
 
 package type_expression is
 
+   type T_chaine is record
+      ch : String(1..10000);
+      lg : integer := 0;
+   end record;
+
 
    type T_cat_expr is (produit, somme, litteral, nombre, puissance, division, cos, sin);
    type T_cat_litt is  (masse, longueur, temps, angle, inertie);
@@ -48,6 +53,8 @@ package type_expression is
       end case;
    end record;
 
+   function expr_text(expr : in T_expr_int) return T_chaine;
+   function text_ch(s : in string) return T_chaine;
    function "="(n1 : in T_expr_int; n2 : in T_expr_int) return boolean;
    function "*"(n1 : in T_expr_int; n2 : in T_expr_int) return T_expr_int;
    function "+"(n1 : in T_expr_int; n2 : in T_expr_int) return T_expr_int;
@@ -55,6 +62,6 @@ package type_expression is
    function "/"(d1 : in T_expr_int; d2 : in T_expr_int) return T_expr_int;
    procedure put(expr : in T_expr_int);
    procedure put_line(expr: in T_expr_int);
-
-
+   function "+"(ch1 : in T_chaine; ch2 : in T_chaine) return T_chaine;
+   function "="(ch1 : in T_chaine; ch2 : in T_chaine) return Boolean;
 end type_expression;

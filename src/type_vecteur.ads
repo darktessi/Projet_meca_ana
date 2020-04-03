@@ -36,4 +36,7 @@ package type_vecteur is
 
    function mat_rotation(angle : in T_litteraux; axe : integer) return T_matrice;
    function rotation_3D(roulis : in T_litteraux; lacet : in T_litteraux; tanguage : in T_litteraux) return T_matrice;
+   procedure normaliser(m : in out T_matrice);
+   procedure normaliser(v : in out T_vecteur);
+
 end type_vecteur;

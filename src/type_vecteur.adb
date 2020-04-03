@@ -9,15 +9,15 @@ package body type_vecteur is
    function "*"(v1 : in T_vecteur; v2 : in T_vecteur) return T_expr_int is
    begin
       --il faut s'assurer que les deux vecteurs soient ecris dans la meme base
-      return (v1.X * v2.X) + (v1.Y * v2.Y) + (v1.Z * v2.Z);
+      return normaliser((v1.X * v2.X) + (v1.Y * v2.Y) + (v1.Z * v2.Z));
    end "*";
    function "*"(v1 : in T_vecteur; v2 : in T_vecteur) return T_vecteur is
       temp : T_vecteur;
    begin
       --il faut s'assurer que les deux vecteurs soient ecris dans la meme base
-      temp.X := (v1.Y * v2.Z) - (v1.Z * v2.Y);
-      temp.Y := (v1.Z * v2.X) - (v1.X * v2.Z);
-      temp.Z := (v1.X * v2.Y) - (v1.Y * v2.X);
+      temp.X := normaliser((v1.Y * v2.Z) - (v1.Z * v2.Y));
+      temp.Y := normaliser((v1.Z * v2.X) - (v1.X * v2.Z));
+      temp.Z := normaliser((v1.X * v2.Y) - (v1.Y * v2.X));
       return temp;
    end "*";
 
@@ -25,9 +25,9 @@ package body type_vecteur is
       temp : T_vecteur;
 
    begin
-      temp.X := v1.X + v2.X;
-      temp.Y := v1.Y + v2.Y;
-      temp.Z := v1.Z + v2.Z;
+      temp.X := normaliser(v1.X + v2.X);
+      temp.Y := normaliser(v1.Y + v2.Y);
+      temp.Z := normaliser(v1.Z + v2.Z);
       return temp;
 
    end "+";
@@ -35,9 +35,9 @@ package body type_vecteur is
    function "*"(e : in T_expr_int; v2 : in T_vecteur) return T_vecteur is
       temp : T_vecteur;
    begin
-      temp.X := e * v2.X;
-      temp.Y := e * v2.Y;
-      temp.Z := e * v2.Z;
+      temp.X := normaliser(e * v2.X);
+      temp.Y := normaliser(e * v2.Y);
+      temp.Z := normaliser(e * v2.Z);
 
       return temp;
    end "*";
@@ -228,6 +228,23 @@ package body type_vecteur is
    begin
       return m3*m2*m1;
    end rotation_3D;
+
+   procedure normaliser(m : in out T_matrice) is
+   begin
+      for i in 1..3 loop
+         for j in 1..3 loop
+            normaliser(m(i)(j));
+         end loop;
+      end loop;
+   end;
+
+   procedure normaliser(v : in out T_vecteur) is
+   begin
+      normaliser(v.X);
+      normaliser(v.Y);
+      normaliser(v.Z);
+   end;
+
 
 
 
