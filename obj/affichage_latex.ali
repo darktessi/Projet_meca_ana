@@ -28,7 +28,7 @@ Z system.img_int%s	s-imgint.adb		s-imgint.ali
 Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
 W type_vecteur%s	type_vecteur.adb	type_vecteur.ali
 
-U affichage_latex%s	affichage_latex.ads	03550273 EE NE OO PK IL
+U affichage_latex%s	affichage_latex.ads	8f15ff34 EE NE OO PK IL
 W type_expression%s	type_expression.adb	type_expression.ali
 W type_vecteur%s	type_vecteur.adb	type_vecteur.ali
 
@@ -43,11 +43,11 @@ D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
 D a-tiflio.ads		20190518041256 bf196650 ada.text_io.float_io%s
 D a-tiinio.ads		20190518041256 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
-D affichage_latex.ads	20200403201048 2a5cabb0 affichage_latex%s
-D affichage_latex.adb	20200403200336 2ae49d12 affichage_latex%b
+D affichage_latex.ads	20200403205126 2a5cabb0 affichage_latex%s
+D affichage_latex.adb	20200403205126 2ae49d12 affichage_latex%b
 D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
-D operation.ads		20200403170512 db6716fb operation%s
+D operation.ads		20200403205126 db6716fb operation%s
 D system.ads		20190518041258 32a08138 system%s
 D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
 D s-exctab.ads		20190518041256 54135002 system.exception_table%s
@@ -64,22 +64,22 @@ D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
 D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
-D type_expression.ads	20200403201352 917e31a4 type_expression%s
-D type_vecteur.ads	20200403170026 b8779867 type_vecteur%s
+D type_expression.ads	20200413220618 1d3ecce3 type_expression%s
+D type_vecteur.ads	20200403205126 b8779867 type_vecteur%s
 G a e
 G c Z s b [latex_vecteur affichage_latex 11 14 none]
 G c Z s b [latex_expr affichage_latex 12 13 none]
 G c Z s b [latex_symbole affichage_latex 13 13 none]
-G r c none [latex_vecteur affichage_latex 11 14 none] [text_ch type_expression 59 13 none]
-G r c none [latex_vecteur affichage_latex 11 14 none] [Oadd type_expression 67 13 none]
+G r c none [latex_vecteur affichage_latex 11 14 none] [text_ch type_expression 61 13 none]
+G r c none [latex_vecteur affichage_latex 11 14 none] [Oadd type_expression 69 13 none]
 G r s t_chaine [latex_vecteur affichage_latex 11 14 none] [t_chaineIP type_expression 5 9 none]
-G r c none [latex_vecteur affichage_latex 11 14 none] [put type_expression 69 14 none]
-G r c none [latex_expr affichage_latex 12 13 none] [text_ch type_expression 59 13 none]
-G r c none [latex_expr affichage_latex 12 13 none] [Oadd type_expression 67 13 none]
+G r c none [latex_vecteur affichage_latex 11 14 none] [put type_expression 71 14 none]
+G r c none [latex_expr affichage_latex 12 13 none] [text_ch type_expression 61 13 none]
+G r c none [latex_expr affichage_latex 12 13 none] [Oadd type_expression 69 13 none]
 G r s t_chaine [latex_expr affichage_latex 12 13 none] [t_chaineIP type_expression 5 9 none]
 G r s t_chaine [latex_symbole affichage_latex 13 13 none] [t_chaineIP type_expression 5 9 none]
-G r c none [latex_symbole affichage_latex 13 13 none] [text_ch type_expression 59 13 none]
-G r c none [latex_symbole affichage_latex 13 13 none] [Oadd type_expression 67 13 none]
+G r c none [latex_symbole affichage_latex 13 13 none] [text_ch type_expression 61 13 none]
+G r c none [latex_symbole affichage_latex 13 13 none] [Oadd type_expression 69 13 none]
 X 1 ada.ads
 16K9*Ada 20e8 13|4r6 5r5 6r6 7r5 8r6 9r5
 X 3 a-flteio.ads
@@ -115,7 +115,7 @@ X 13 affichage_latex.adb
 115r7 c{33|5R9} 117m7 122r20
 118e11 i{12|10E9} 121r45 121r80
 X 33 type_expression.ads
-3K9*type_expression 12|3w6 4r5 33|70e20
+3K9*type_expression 12|3w6 4r5 33|72e20
 5R9*T_chaine 12|12r53 13r49 13|35r53 36r12 114r49 115r11 33|8e14
 11n24*produit{11E9} 13|39r15
 11n33*somme{11E9} 13|40r37 48r37 55r15
@@ -130,26 +130,26 @@ X 33 type_expression.ads
 18i7*symbole_lg{integer} 13|68r66
 27P9*T_expr_int(26R9) 12|12r34 13|35r34
 29e22*type_expr{11E9} 13|38r23 40r24 48r24 78r26 78r60 78r92 78r121
-32p13*p1{27P9} 13|40r21 41r40 45r40
-33p13*p2{27P9} 13|48r21 49r40 52r40
-35p13*s1{27P9} 13|57r37
-36p13*s2{27P9} 13|59r37
-38r13*litt{14R9} 13|62r21 65r21 68r40 68r61
-40f13*valeur{float} 13|71r21 74r49
-42p13*expr{27P9} 13|78r21 78r55 78r87 78r116 79r40 85r40
-43i13*exposant{integer} 13|81r51 87r51
-45p13*d1{27P9} 13|94r37
-46p13*d2{27P9} 13|96r37
-48p13*Carg{27P9} 13|101r37
-50p13*Sarg{27P9} 13|105r37
-59V13*text_ch{5R9} 13|36s24 42s24 44s24 46s24 51s24 53s24 58s21 63s24 66s24
+33p13*p1{27P9} 13|40r21 41r40 45r40
+34p13*p2{27P9} 13|48r21 49r40 52r40
+36p13*s1{27P9} 13|57r37
+37p13*s2{27P9} 13|59r37
+39r13*litt{14R9} 13|62r21 65r21 68r40 68r61
+41f13*valeur{float} 13|71r21 74r49
+43p13*expr{27P9} 13|78r21 78r55 78r87 78r116 79r40 85r40
+44i13*exposant{integer} 13|81r51 87r51
+46p13*d1{27P9} 13|94r37
+47p13*d2{27P9} 13|96r37
+49p13*Carg{27P9} 13|101r37
+51p13*Sarg{27P9} 13|105r37
+61V13*text_ch{5R9} 13|36s24 42s24 44s24 46s24 51s24 53s24 58s21 63s24 66s24
 . 72s24 74s24 80s24 81s24 84s24 86s24 87s24 88s24 93s21 95s21 97s21 100s21
 . 102s21 104s21 106s21 117s12 122s24 125s14
-67V14*"+"{5R9} 13|41s22 42s22 44s22 45s22 46s22 49s22 51s22 52s22 53s22 57s19
+69V14*"+"{5R9} 13|41s22 42s22 44s22 45s22 46s22 49s22 51s22 52s22 53s22 57s19
 . 58s19 59s19 63s22 66s22 68s19 72s22 74s22 79s22 80s22 81s22 84s22 85s22
 . 86s22 87s22 88s22 93s19 94s19 95s19 96s19 97s19 100s19 101s19 102s19 104s19
 . 105s19 106s19 122s22
-69U14*put 13|19s7 23s7 27s7
+71U14*put 13|19s7 23s7 27s7
 X 34 type_vecteur.ads
 7K9*type_vecteur 12|1w6 2r5 13|1w6 2r5 34|45e17
 8R9*T_vecteur 12|11r36 13|14r36 34|12e14

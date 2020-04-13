@@ -192,10 +192,10 @@ package body type_vecteur is
          m(1)(3) := nb_expr(0.0);
          m(2)(1) := nb_expr(0.0);
          m(3)(1) := nb_expr(0.0);
-         m(2)(2) := new T_expression'(cos, new T_expression'(litteral, angle));
-         m(2)(3) := new T_expression'(produit, nb_expr(-1.0),new T_expression'(sin, new T_expression'(litteral, angle)));
-         m(3)(2) := new T_expression'(sin, new T_expression'(litteral, angle));
-         m(3)(3) := new T_expression'(cos, new T_expression'(litteral, angle));
+         m(2)(2) := new T_expression'(cos, False,new T_expression'(litteral, False,angle));
+         m(2)(3) := new T_expression'(sin, True,new T_expression'(litteral, False,angle));
+         m(3)(2) := new T_expression'(sin, False,new T_expression'(litteral, False,angle));
+         m(3)(3) := new T_expression'(cos, False,new T_expression'(litteral, False,angle));
       end if;
       if (axe=2) then
          m(2)(2) := nb_expr(1.0);
@@ -203,10 +203,10 @@ package body type_vecteur is
          m(2)(3) := nb_expr(0.0);
          m(2)(1) := nb_expr(0.0);
          m(3)(2) := nb_expr(0.0);
-         m(1)(1) := new T_expression'(cos, new T_expression'(litteral, angle));
-         m(1)(3) := new T_expression'(produit, nb_expr(-1.0),new T_expression'(sin, new T_expression'(litteral, angle)));
-         m(3)(1) := new T_expression'(sin, new T_expression'(litteral, angle));
-         m(3)(3) := new T_expression'(cos, new T_expression'(litteral, angle));
+         m(1)(1) := new T_expression'(cos, False,new T_expression'(litteral, False,angle));
+         m(1)(3) := new T_expression'(sin, True ,new T_expression'(litteral, False,angle));
+         m(3)(1) := new T_expression'(sin, False,new T_expression'(litteral, False,angle));
+         m(3)(3) := new T_expression'(cos, False,new T_expression'(litteral, False,angle));
       end if;
       if (axe=3) then
          m(3)(3) := nb_expr(1.0);
@@ -214,10 +214,10 @@ package body type_vecteur is
          m(2)(3) := nb_expr(0.0);
          m(3)(1) := nb_expr(0.0);
          m(3)(2) := nb_expr(0.0);
-         m(1)(1) := new T_expression'(cos, new T_expression'(litteral, angle));
-         m(1)(2) := new T_expression'(produit, nb_expr(-1.0),new T_expression'(sin, new T_expression'(litteral, angle)));
-         m(2)(1) := new T_expression'(sin, new T_expression'(litteral, angle));
-         m(2)(2) := new T_expression'(cos, new T_expression'(litteral, angle));
+         m(1)(1) := new T_expression'(cos, False,new T_expression'(litteral, False,angle));
+         m(1)(2) := new T_expression'(sin, True,new T_expression'(litteral, False,angle));
+         m(2)(1) := new T_expression'(sin, False,new T_expression'(litteral, False,angle));
+         m(2)(2) := new T_expression'(cos, False,new T_expression'(litteral, False,angle));
       end if;
       return m;
    end mat_rotation;

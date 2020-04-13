@@ -26,10 +26,10 @@ procedure main is
 
 begin
 
-   temp := new T_expression'(type_expr => nombre, valeur => 1.2256);
-   expr := new T_expression'(produit, temp, new T_expression'(litteral, alpha));
-   temp := new T_expression'(cos, expr);
-   temp := new T_expression'(puissance, temp, 4);
+   temp := new T_expression'(is_negative => False, type_expr => nombre, valeur => 1.2256);
+   expr := new T_expression'(produit, False, temp, new T_expression'(litteral, False,alpha));
+   temp := new T_expression'(cos, False, expr);
+   temp := new T_expression'(puissance, False, temp, 4);
 
 
    temp := deriver(temp, t);

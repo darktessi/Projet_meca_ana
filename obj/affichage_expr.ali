@@ -13,7 +13,7 @@ RV NO_RECURSION
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U affichage_expr%b	affichage_expr.adb	377531fc NE OO PK IL
+U affichage_expr%b	affichage_expr.adb	bb35ccbb NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -22,7 +22,7 @@ W ada.text_io%s		a-textio.adb		a-textio.ali
 Z interfaces%s		interfac.ads		interfac.ali
 W type_expression%s	type_expression.adb	type_expression.ali
 
-U affichage_expr%s	affichage_expr.ads	10588663 EE NE OO PK IL
+U affichage_expr%s	affichage_expr.ads	9c187b24 EE NE OO PK IL
 W type_expression%s	type_expression.adb	type_expression.ali
 
 D ada.ads		20190518041256 76789da1 ada%s
@@ -53,7 +53,7 @@ D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
 D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
-D type_expression.ads	20200403201352 917e31a4 type_expression%s
+D type_expression.ads	20200413220618 1d3ecce3 type_expression%s
 G a e
 G c Z s b [display_expr affichage_expr 9 14 none]
 X 1 ada.ads
@@ -80,7 +80,7 @@ X 12 affichage_expr.ads
 X 13 affichage_expr.adb
 38i17 i{integer}
 X 29 type_expression.ads
-3K9*type_expression 12|3w6 4r5 13|5w6 29|70e20
+3K9*type_expression 12|3w6 4r5 13|5w6 29|72e20
 11n24*produit{11E9} 13|14r15
 11n33*somme{11E9} 13|15r37 23r37 30r15 59r37
 11n40*litteral{11E9} 13|36r15 45r38 67r36
@@ -95,16 +95,16 @@ X 29 type_expression.ads
 27P9*T_expr_int(26R9) 12|9r37 13|11r37
 29e22*type_expr{11E9} 13|13r17 15r24 23r24 45r26 45r60 45r92 45r121 59r24
 . 67r24 67r56
-32p13*p1{27P9} 13|15r21 16r34 20r34
-33p13*p2{27P9} 13|23r21 24r34 27r34
-35p13*s1{27P9} 13|32r31
-36p13*s2{27P9} 13|34r31
-38r13*litt{14R9} 13|37m22 37r43 38r30
-40f13*valeur{float} 13|43r22
-42p13*expr{27P9} 13|45r21 45r55 45r87 45r116 46r34 52r34
-43i13*exposant{integer} 13|48r25 54r25
-45p13*d1{27P9} 13|59r21 60r34 64r34
-46p13*d2{27P9} 13|67r21 67r53 68r34 71r34
-48p13*Carg{27P9} 13|77r31
-50p13*Sarg{27P9} 13|81r31
+33p13*p1{27P9} 13|15r21 16r34 20r34
+34p13*p2{27P9} 13|23r21 24r34 27r34
+36p13*s1{27P9} 13|32r31
+37p13*s2{27P9} 13|34r31
+39r13*litt{14R9} 13|37m22 37r43 38r30
+41f13*valeur{float} 13|43r22
+43p13*expr{27P9} 13|45r21 45r55 45r87 45r116 46r34 52r34
+44i13*exposant{integer} 13|48r25 54r25
+46p13*d1{27P9} 13|59r21 60r34 64r34
+47p13*d2{27P9} 13|67r21 67r53 68r34 71r34
+49p13*Carg{27P9} 13|77r31
+51p13*Sarg{27P9} 13|81r31
 

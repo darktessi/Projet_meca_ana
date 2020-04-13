@@ -17,7 +17,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 RV SPARK_05
 
-U test_matrice%b	test_matrice.adb	080180c4 NE OO SU IL
+U test_matrice%b	test_matrice.adb	1d5d0537 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -33,10 +33,10 @@ D a-stream.ads		20190518041256 119b8fb3 ada.streams%s
 D a-tags.ads		20190518041258 491b781d ada.tags%s
 D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
 D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
-D affichage_latex.ads	20200403201048 2a5cabb0 affichage_latex%s
+D affichage_latex.ads	20200403205126 2a5cabb0 affichage_latex%s
 D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
-D operation.ads		20200403170512 db6716fb operation%s
+D operation.ads		20200403205126 db6716fb operation%s
 D system.ads		20190518041258 32a08138 system%s
 D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
 D s-exctab.ads		20190518041256 54135002 system.exception_table%s
@@ -50,9 +50,9 @@ D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
 D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
-D test_matrice.adb	20200403201504 7ec74121 test_matrice%b
-D type_expression.ads	20200403201352 917e31a4 type_expression%s
-D type_vecteur.ads	20200403170026 b8779867 type_vecteur%s
+D test_matrice.adb	20200413214624 e7db3995 test_matrice%b
+D type_expression.ads	20200413220618 1d3ecce3 type_expression%s
+D type_vecteur.ads	20200403205126 b8779867 type_vecteur%s
 G a e
 G c Z b b [test_matrice standard 16 11 none]
 G r s Tt_matriceB [test_matrice standard 16 11 none] [Tt_matriceBIP type_vecteur 15 4 none]
@@ -78,20 +78,20 @@ X 25 test_matrice.adb
 18r4 alpha{26|14R9} 27m4 28m4 34r21
 19r4 beta{26|14R9} 34r28
 20r4 gamma{26|14R9} 34r34
-21r4 x{26|14R9} 36r42
-22r4 y{26|14R9} 37r42
-23r4 z{26|14R9} 38r42
+21r4 x{26|14R9} 36r49
+22r4 y{26|14R9} 37r49
+23r4 z{26|14R9} 38r49
 24r4 t{26|14R9} 43r21
 25r4 vect{27|8R9} 36m4 37m4 38m4 40r15 41m4 41r14 43m15 43r15 45r18
 42i8 i{integer}
 X 26 type_expression.ads
-3K9*type_expression 25|4w6 5r5 26|70e20
+3K9*type_expression 25|4w6 5r5 26|72e20
 11n40*litteral{11E9} 25|36r32 37r32 38r32
 12n42*temps{12E9} 25|18r66 19r65 20r66 21r63 22r63 23r63 24r63
 14R9*T_litteraux 25|18r11 19r10 20r11 21r8 22r8 23r8 24r8 26|22e14
 17a7*symbole{string} 25|27m10
 18i7*symbole_lg{integer} 25|28m10
-26R9*T_expression 25|36r18 37r18 38r18 26|54e14
+26R9*T_expression 25|36r18 37r18 38r18 26|56e14
 27P9*T_expr_int(26R9)
 X 27 type_vecteur.ads
 7K9*type_vecteur 25|1w6 2r5 27|45e17
