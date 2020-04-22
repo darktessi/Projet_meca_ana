@@ -47,7 +47,7 @@ package body type_expression is
          return nb_expr(n1.valeur-n2.valeur);
       else
 
-         return new T_expression'(somme, n1, new T_expression'(produit, nb_expr(-1.0), n2));
+         return new T_expression'(soustration, n1,n2);
       end if;
 
    end "-";
@@ -90,6 +90,14 @@ package body type_expression is
             put(expr.s1);
             put(" + ");
             put(expr.s2);
+
+         when soustration =>
+            if expr.sm1 /= nb_expr(0.0) then
+               put(expr.sm1);
+            end if;
+
+            put(" - ");
+            put(expr.sm2);
 
          when litteral =>
             put(expr.litt.symbole(1..expr.litt.symbole_lg));

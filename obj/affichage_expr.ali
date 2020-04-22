@@ -1,5 +1,6 @@
 V "GNAT Lib v2019"
 A -gnatA
+A -gnatf
 A -mtune=generic
 A -march=x86-64
 P ZX
@@ -12,7 +13,7 @@ RV NO_RECURSION
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U affichage_expr%b	affichage_expr.adb	f985a4ad NE OO PK IL
+U affichage_expr%b	affichage_expr.adb	4e9f7d9a NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -21,7 +22,7 @@ W ada.text_io%s		a-textio.adb		a-textio.ali
 Z interfaces%s		interfac.ads		interfac.ali
 W type_expression%s	type_expression.adb	type_expression.ali
 
-U affichage_expr%s	affichage_expr.ads	dea81332 EE NE OO PK IL
+U affichage_expr%s	affichage_expr.ads	69b2ca05 EE NE OO PK IL
 W type_expression%s	type_expression.adb	type_expression.ali
 
 D ada.ads		20190518041256 76789da1 ada%s
@@ -52,7 +53,7 @@ D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
 D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
-D type_expression.ads	20200330004136 5f8ea4f5 type_expression%s
+D type_expression.ads	20200422211556 e8947dc2 type_expression%s
 G a e
 G c Z s b [display_expr affichage_expr 9 14 none]
 X 1 ada.ads
@@ -79,31 +80,31 @@ X 12 affichage_expr.ads
 X 13 affichage_expr.adb
 38i17 i{integer}
 X 29 type_expression.ads
-3K9*type_expression 12|3w6 4r5 13|5w6 29|60e20
+3K9*type_expression 12|3w6 4r5 13|5w6 29|64e20
 6n24*produit{6E9} 13|14r15
 6n33*somme{6E9} 13|15r37 23r37 30r15 59r37
-6n40*litteral{6E9} 13|36r15 45r38 67r36
-6n50*nombre{6E9} 13|42r15 45r72 67r68
-6n58*puissance{6E9} 13|44r15
-6n69*division{6E9} 13|58r15
-6n79*cos{6E9} 13|45r133 75r15
-6n84*sin{6E9} 13|45r104 79r15
+6n52*litteral{6E9} 13|36r15 45r38 67r36
+6n62*nombre{6E9} 13|42r15 45r72 67r68
+6n70*puissance{6E9} 13|44r15
+6n81*division{6E9} 13|58r15
+6n91*cos{6E9} 13|45r133 75r15
+6n96*sin{6E9} 13|45r104 79r15
 11i7*deg_deriv_temps{integer} 13|38r35
 12a7*symbole{string} 13|37r27
 13i7*symbole_lg{integer} 13|37r48
 22P9*T_expr_int(21R9) 12|9r37 13|11r37
 24e22*type_expr{6E9} 13|13r17 15r24 23r24 45r26 45r60 45r92 45r121 59r24
 . 67r24 67r56
-27p13*p1{22P9} 13|15r21 16r34 20r34
-28p13*p2{22P9} 13|23r21 24r34 27r34
-30p13*s1{22P9} 13|32r31
-31p13*s2{22P9} 13|34r31
-33r13*litt{9R9} 13|37m22 37r43 38r30
-35f13*valeur{float} 13|43r22
-37p13*expr{22P9} 13|45r21 45r55 45r87 45r116 46r34 52r34
-38i13*exposant{integer} 13|48r25 54r25
-40p13*d1{22P9} 13|59r21 60r34 64r34
-41p13*d2{22P9} 13|67r21 67r53 68r34 71r34
-43p13*Carg{22P9} 13|77r31
-45p13*Sarg{22P9} 13|81r31
+30p13*p1{22P9} 13|15r21 16r34 20r34
+31p13*p2{22P9} 13|23r21 24r34 27r34
+33p13*s1{22P9} 13|32r31
+34p13*s2{22P9} 13|34r31
+36r13*litt{9R9} 13|37m22 37r43 38r30
+38f13*valeur{float} 13|43r22
+40p13*expr{22P9} 13|45r21 45r55 45r87 45r116 46r34 52r34
+41i13*exposant{integer} 13|48r25 54r25
+43p13*d1{22P9} 13|59r21 60r34 64r34
+44p13*d2{22P9} 13|67r21 67r53 68r34 71r34
+46p13*Carg{22P9} 13|77r31
+48p13*Sarg{22P9} 13|81r31
 

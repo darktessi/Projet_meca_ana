@@ -3,7 +3,7 @@
 package type_expression is
 
 
-   type T_cat_expr is (produit, somme, litteral, nombre, puissance, division, cos, sin);
+   type T_cat_expr is (produit, somme,soustration, litteral, nombre, puissance, division, cos, sin);
    type T_cat_litt is  (masse, longueur, temps, angle, inertie);
    type T_valeur_lit is array(0..10) of float;
    type T_litteraux is record
@@ -23,6 +23,9 @@ package type_expression is
 
    type T_expression(type_expr : T_cat_expr := nombre) is record
       case type_expr is
+         when soustration =>
+            sm1 : T_expr_int;
+            sm2 : T_expr_int;
          when produit =>
             p1 : T_expr_int;
             p2 : T_expr_int;
@@ -44,6 +47,7 @@ package type_expression is
          when sin =>
             Sarg : T_expr_int;
          when others => null;
+
 
       end case;
    end record;

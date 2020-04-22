@@ -1,5 +1,6 @@
 V "GNAT Lib v2019"
 A -gnatA
+A -gnatf
 A -mtune=generic
 A -march=x86-64
 P ZX
@@ -17,7 +18,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 RV SPARK_05
 
-U type_expression%b	type_expression.adb	f97d745c NE OO PK IL
+U type_expression%b	type_expression.adb	e072d227 NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -26,7 +27,7 @@ W ada.text_io%s		a-textio.adb		a-textio.ali
 Z interfaces%s		interfac.ads		interfac.ali
 W operation%s		operation.adb		operation.ali
 
-U type_expression%s	type_expression.ads	5f8ea4f5 EE NE OO PK IL
+U type_expression%s	type_expression.ads	e8947dc2 EE NE OO PK IL
 
 D ada.ads		20190518041256 76789da1 ada%s
 D a-except.ads		20190518041256 291912d5 ada.exceptions%s
@@ -41,7 +42,7 @@ D a-tiinio.ads		20190518041256 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
-D operation.ads		20190126190858 6b3409df operation%s
+D operation.ads		20200422205910 6b3409df operation%s
 D system.ads		20190518041258 32a08138 system%s
 D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
 D s-exctab.ads		20190518041256 54135002 system.exception_table%s
@@ -55,23 +56,25 @@ D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
 D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
-D type_expression.ads	20200330004136 5f8ea4f5 type_expression%s
-D type_expression.adb	20200330004908 74f2c21f type_expression%b
+D type_expression.ads	20200422211556 e8947dc2 type_expression%s
+D type_expression.adb	20200422211646 dae7bd53 type_expression%b
 G a e
-G c Z s b [Oeq type_expression 51 13 none]
-G c Z s b [Omultiply type_expression 52 13 none]
-G c Z s b [Oadd type_expression 53 13 none]
-G c Z s b [Osubtract type_expression 54 13 none]
-G c Z s b [Odivide type_expression 55 13 none]
-G c Z s b [put type_expression 56 14 none]
-G c Z s b [put_line type_expression 57 14 none]
+G c Z s b [Oeq type_expression 55 13 none]
+G c Z s b [Omultiply type_expression 56 13 none]
+G c Z s b [Oadd type_expression 57 13 none]
+G c Z s b [Osubtract type_expression 58 13 none]
+G c Z s b [Odivide type_expression 59 13 none]
+G c Z s b [put type_expression 60 14 none]
+G c Z s b [put_line type_expression 61 14 none]
 G c Z s s [Tt_valeur_litBIP type_expression 8 4 none]
 G c Z s s [t_litterauxIP type_expression 9 9 none]
 G c Z s s [t_expressionIP type_expression 24 9 none]
-G r c none [Omultiply type_expression 52 13 none] [nb_expr operation 11 13 none]
-G r c none [Oadd type_expression 53 13 none] [nb_expr operation 11 13 none]
-G r c none [Osubtract type_expression 54 13 none] [nb_expr operation 11 13 none]
-G r c none [Odivide type_expression 55 13 none] [nb_expr operation 11 13 none]
+G r c none [Omultiply type_expression 56 13 none] [nb_expr operation 11 13 none]
+G r c none [Oadd type_expression 57 13 none] [nb_expr operation 11 13 none]
+G r c none [Osubtract type_expression 58 13 none] [nb_expr operation 11 13 none]
+G r c none [Odivide type_expression 59 13 none] [nb_expr operation 11 13 none]
+G r c none [put type_expression 60 14 none] [nb_expr operation 11 13 none]
+G r c none [put_line type_expression 61 14 none] [nb_expr operation 11 13 none]
 X 1 ada.ads
 16K9*Ada 20e8 29|2r6 3r5 4r6 5r5 6r6 7r5
 X 3 a-flteio.ads
@@ -80,85 +83,89 @@ X 4 a-inteio.ads
 18K13*Integer_Text_IO[10|46] 29|6w10 7r9
 X 8 a-textio.ads
 57K13*Text_IO 727e16 29|2w10 3r9
-264U14*New_Line 29|151s7
-465U14*Put 29|75s16 77s16 79s16 84s16 86s16 91s13 95s13 97s16 105s16 109s16
-. 111s16 119s16 121s16 123s16 128s16 130s16 134s13 136s13 138s13 140s13
+264U14*New_Line 29|159s7
+465U14*Put 29|75s16 77s16 79s16 84s16 86s16 91s13 99s13 103s13 105s16 113s16
+. 117s16 119s16 127s16 129s16 131s16 136s16 138s16 142s13 144s13 146s13 148s13
 X 9 a-tiflio.ads
-82U14*Put 29|101s13[3|20]
+82U14*Put 29|109s13[3|20]
 X 10 a-tiinio.ads
-80U14*Put 29|106s16[4|18] 112s16[4|18]
+80U14*Put 29|114s16[4|18] 120s16[4|18]
 X 14 operation.ads
 7K9*operation 15e14 29|1w6 1r21
-11V13*nb_expr{28|22P9} 29|25s17 36s17 47s17 50s73 59s17
+11V13*nb_expr{28|22P9} 29|25s17 36s17 47s17 59s17 95s28
 X 28 type_expression.ads
-3K9*type_expression 60l5 60e20 29|10b14 159l5 159t20
-6E9*T_cat_expr 6e88 24r34
-6n24*produit{6E9} 26r15 29|28r35 50r64 72r15
-6n33*somme{6E9} 29r15 29|39r35 50r35 73r37 81r37 88r15 117r37
-6n40*litteral{6E9} 32r15 29|94r15 103r38 125r36
-6n50*nombre{6E9} 24r48 34r15 29|14r25 14r51 24r25 24r51 35r25 35r51 46r24
-. 46r50 58r25 58r51 100r15 103r72 125r68
-6n58*puissance{6E9} 36r15 29|102r15
-6n69*division{6E9} 39r15 29|62r35 116r15
-6n79*cos{6E9} 42r15 29|103r133 133r15
-6n84*sin{6E9} 44r15 29|103r104 137r15
+3K9*type_expression 64l5 64e20 29|10b14 167l5 167t20
+6E9*T_cat_expr 6e100 24r34
+6n24*produit{6E9} 29r15 29|28r35 72r15
+6n33*somme{6E9} 32r15 29|39r35 73r37 81r37 88r15 125r37
+6n39*soustration{6E9} 26r15 29|50r35 94r15
+6n52*litteral{6E9} 35r15 29|102r15 111r38 133r36
+6n62*nombre{6E9} 24r48 37r15 29|14r25 14r51 24r25 24r51 35r25 35r51 46r24
+. 46r50 58r25 58r51 108r15 111r72 133r68
+6n70*puissance{6E9} 39r15 29|110r15
+6n81*division{6E9} 42r15 29|62r35 124r15
+6n91*cos{6E9} 45r15 29|111r133 141r15
+6n96*sin{6E9} 47r15 29|111r104 145r15
 7E9*T_cat_litt 7e64 14r17
 7n25*masse{7E9}
 7n32*longueur{7E9}
-7n42*temps{7E9} 33r75
+7n42*temps{7E9} 36r75
 7n49*angle{7E9}
 7n56*inertie{7E9}
 8A9*T_valeur_lit(float)<integer> 15r16
-9R9*T_litteraux 17e14 33r20
+9R9*T_litteraux 17e14 36r20
 10b7*is_constant{boolean}
-11i7*deg_deriv_temps{integer} 29|96r35
-12a7*symbole{string} 29|95r27
-13i7*symbole_lg{integer} 29|95r48
+11i7*deg_deriv_temps{integer} 29|104r35
+12a7*symbole{string} 29|103r27
+13i7*symbole_lg{integer} 29|103r48
 14e7*cat_lit{7E9}
 15a7*valeur{8A9}
-21R9*T_expression 22r30 24c9 24d22 49e14 29|28r21 39r21 50r21 50r50 62r21
-22P9*T_expr_int(21R9) 27r18 28r18 30r18 31r18 37r20 40r18 41r18 43r20 45r20
-. 51r25 51r45 52r25 52r45 52r64 53r25 53r45 53r64 54r25 54r45 54r64 55r25
-. 55r45 55r64 56r28 57r32 29|12r25 12r45 22r25 22r45 22r64 33r25 33r45 33r64
-. 44r25 44r45 44r64 56r25 56r45 56r64 69r28 148r32
+21R9*T_expression 22r30 24c9 24d22 53e14 29|28r21 39r21 50r21 62r21
+22P9*T_expr_int(21R9) 27r19 28r19 30r18 31r18 33r18 34r18 40r20 43r18 44r18
+. 46r20 48r20 55r25 55r45 56r25 56r45 56r64 57r25 57r45 57r64 58r25 58r45
+. 58r64 59r25 59r45 59r64 60r28 61r32 29|12r25 12r45 22r25 22r45 22r64 33r25
+. 33r45 33r64 44r25 44r45 44r64 56r25 56r45 56r64 69r28 156r32
 24e22*type_expr{6E9} 25r12 29|14r13 14r39 24r13 24r39 35r13 35r39 46r12 46r38
-. 58r13 58r39 71r17 73r24 81r24 103r26 103r60 103r92 103r121 117r24 125r24
-. 125r56
-27p13*p1{22P9} 29|73r21 74r25 78r25
-28p13*p2{22P9} 29|81r21 82r25 85r25
-30p13*s1{22P9} 29|90r22
-31p13*s2{22P9} 29|92r22
-33r13*litt{9R9} 29|95r22 95r43 96r30
-35f13*valeur{float} 29|15r21 15r33 25r28 25r38 36r28 36r38 47r28 47r38 59r28
-. 59r38 101r22
-37p13*expr{22P9} 29|103r21 103r55 103r87 103r116 104r25 110r25
-38i13*exposant{integer} 29|106r25 112r25
-40p13*d1{22P9} 29|117r21 118r25 122r25
-41p13*d2{22P9} 29|125r21 125r53 126r25 129r25
-43p13*Carg{22P9} 29|135r22
-45p13*Sarg{22P9} 29|139r22
-51V14*"="{boolean} 51>17 51>37 29|12b14 20l9 20t11
-51p17 n1{22P9} 29|12b17 14r10 15r18
-51p37 n2{22P9} 29|12b37 14r36 15r30
-52V14*"*"{22P9} 52>17 52>37 29|22b14 31l9 31t11
-52p17 n1{22P9} 29|22b17 24r10 25r25 28r44
-52p37 n2{22P9} 29|22b37 24r36 25r35 28r48
-53V14*"+"{22P9} 53>17 53>37 29|33b14 42l9 42t11
-53p17 n1{22P9} 29|33b17 35r10 36r25 39r42
-53p37 n2{22P9} 29|33b37 35r36 36r35 39r46
-54V14*"-"{22P9} 54>17 54>37 29|44b14 53l9 53t11
-54p17 n1{22P9} 29|44b17 46r9 47r25 50r42
-54p37 n2{22P9} 29|44b37 46r35 47r35 50r88
-55V14*"/"{22P9} 55>17 55>37 29|56b14 65l9 65t11
-55p17 d1{22P9} 29|56b17 58r10 59r25 62r45
-55p37 d2{22P9} 29|56b37 58r36 59r35 62r49
-56U14*put 56>18 29|69b14 74s16 78s16 82s16 85s16 90s13 92s13 104s16 110s16
-. 118s16 122s16 126s16 129s16 135s13 139s13 145l8 145t11 150s7
-56p18 expr{22P9} 29|69b18 71r12 73r16 74r20 78r20 81r16 82r20 85r20 90r17
-. 92r17 95r17 95r38 96r25 101r17 103r16 103r50 103r82 103r111 104r20 106r20
-. 110r20 112r20 117r16 118r20 122r20 125r16 125r48 126r20 129r20 135r17 139r17
-57U14*put_line 57>23 29|148b14 152t7
-57p23 expr{22P9} 29|148b23 150r11
+. 58r13 58r39 71r17 73r24 81r24 111r26 111r60 111r92 111r121 125r24 133r24
+. 133r56
+27p13*sm1{22P9} 29|95r21 96r25
+28p13*sm2{22P9} 29|100r22
+30p13*p1{22P9} 29|73r21 74r25 78r25
+31p13*p2{22P9} 29|81r21 82r25 85r25
+33p13*s1{22P9} 29|90r22
+34p13*s2{22P9} 29|92r22
+36r13*litt{9R9} 29|103r22 103r43 104r30
+38f13*valeur{float} 29|15r21 15r33 25r28 25r38 36r28 36r38 47r28 47r38 59r28
+. 59r38 109r22
+40p13*expr{22P9} 29|111r21 111r55 111r87 111r116 112r25 118r25
+41i13*exposant{integer} 29|114r25 120r25
+43p13*d1{22P9} 29|125r21 126r25 130r25
+44p13*d2{22P9} 29|133r21 133r53 134r25 137r25
+46p13*Carg{22P9} 29|143r22
+48p13*Sarg{22P9} 29|147r22
+55V14*"="{boolean} 55>17 55>37 29|12b14 20l9 20t11 95s25
+55p17 n1{22P9} 29|12b17 14r10 15r18
+55p37 n2{22P9} 29|12b37 14r36 15r30
+56V14*"*"{22P9} 56>17 56>37 29|22b14 31l9 31t11
+56p17 n1{22P9} 29|22b17 24r10 25r25 28r44
+56p37 n2{22P9} 29|22b37 24r36 25r35 28r48
+57V14*"+"{22P9} 57>17 57>37 29|33b14 42l9 42t11
+57p17 n1{22P9} 29|33b17 35r10 36r25 39r42
+57p37 n2{22P9} 29|33b37 35r36 36r35 39r46
+58V14*"-"{22P9} 58>17 58>37 29|44b14 53l9 53t11
+58p17 n1{22P9} 29|44b17 46r9 47r25 50r48
+58p37 n2{22P9} 29|44b37 46r35 47r35 50r51
+59V14*"/"{22P9} 59>17 59>37 29|56b14 65l9 65t11
+59p17 d1{22P9} 29|56b17 58r10 59r25 62r45
+59p37 d2{22P9} 29|56b37 58r36 59r35 62r49
+60U14*put 60>18 29|69b14 74s16 78s16 82s16 85s16 90s13 92s13 96s16 100s13
+. 112s16 118s16 126s16 130s16 134s16 137s16 143s13 147s13 153l8 153t11 158s7
+60p18 expr{22P9} 29|69b18 71r12 73r16 74r20 78r20 81r16 82r20 85r20 90r17
+. 92r17 95r16 96r20 100r17 103r17 103r38 104r25 109r17 111r16 111r50 111r82
+. 111r111 112r20 114r20 118r20 120r20 125r16 126r20 130r20 133r16 133r48
+. 134r20 137r20 143r17 147r17
+61U14*put_line 61>23 29|156b14 160t7
+61p23 expr{22P9} 29|156b23 158r11
 X 29 type_expression.adb
-96i17 i{integer}
+104i17 i{integer}
 

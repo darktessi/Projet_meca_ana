@@ -120,6 +120,16 @@ package body operation is
                   end if;
                end if;
             end if;
+         when soustration =>
+            normaliser(e.sm1);
+            normaliser(e.sm2);
+            if e.sm1.type_expr = nombre and e.sm2.type_expr = nombre then
+               e := nb_expr(e.sm1.valeur - e.sm2.valeur);
+            else
+               if e.sm2 = nb_expr(0.0) then
+                  e := e.sm1;
+               end if;
+            end if;
 
 
          when puissance =>
@@ -177,6 +187,8 @@ package body operation is
             return evaluate(e.p1) * evaluate(e.p2);
          when somme =>
             return evaluate(e.s1) + evaluate(e.s2);
+         when soustration =>
+            return evaluate(e.s1)-evaluate(e.s2);
          when litteral =>
             return e.litt.valeur(e.litt.deg_deriv_temps);
          when nombre =>
