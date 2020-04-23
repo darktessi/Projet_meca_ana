@@ -27,7 +27,6 @@ package type_expression is
    type T_expr_int is access T_expression;
 
    type T_expression(type_expr : T_cat_expr := nombre) is record
-      is_negative : Boolean := False;
       case type_expr is
          when produit =>
             p1 : T_expr_int;
@@ -52,7 +51,6 @@ package type_expression is
          when others => null;
 
       end case;
-
    end record;
 
 

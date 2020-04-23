@@ -20,7 +20,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 RV SPARK_05
 
-U type_expression%b	type_expression.adb	e03e475c NE OO PK IL
+U type_expression%b	type_expression.adb	cb84a434 NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -31,7 +31,7 @@ W operation%s		operation.adb		operation.ali
 Z system.img_int%s	s-imgint.adb		s-imgint.ali
 Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
 
-U type_expression%s	type_expression.ads	1d3ecce3 EE NE OO PK IL
+U type_expression%s	type_expression.ads	917e31a4 EE NE OO PK IL
 
 D ada.ads		20190518041256 76789da1 ada%s
 D a-except.ads		20190518041256 291912d5 ada.exceptions%s
@@ -46,7 +46,7 @@ D a-tiinio.ads		20190518041256 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
-D operation.ads		20200403205126 db6716fb operation%s
+D operation.ads		20200403170512 db6716fb operation%s
 D system.ads		20190518041258 32a08138 system%s
 D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
 D s-exctab.ads		20190518041256 54135002 system.exception_table%s
@@ -62,29 +62,29 @@ D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
 D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
-D type_expression.ads	20200413220618 1d3ecce3 type_expression%s
-D type_expression.adb	20200413220630 9f52862d type_expression%b
+D type_expression.ads	20200403201352 917e31a4 type_expression%s
+D type_expression.adb	20200403201352 38a89802 type_expression%b
 G a e
-G c Z s b [expr_text type_expression 60 13 none]
-G c Z s b [text_ch type_expression 61 13 none]
-G c Z s b [Oeq type_expression 62 13 none]
-G c Z s b [Omultiply type_expression 63 13 none]
-G c Z s b [Oadd type_expression 64 13 none]
-G c Z s b [Osubtract type_expression 65 13 none]
-G c Z s b [Odivide type_expression 66 13 none]
-G c Z s b [put type_expression 67 14 none]
-G c Z s b [put_line type_expression 68 14 none]
-G c Z s b [Oadd type_expression 69 13 none]
-G c Z s b [Oeq type_expression 70 13 none]
-G c Z s b [put type_expression 71 14 none]
+G c Z s b [expr_text type_expression 58 13 none]
+G c Z s b [text_ch type_expression 59 13 none]
+G c Z s b [Oeq type_expression 60 13 none]
+G c Z s b [Omultiply type_expression 61 13 none]
+G c Z s b [Oadd type_expression 62 13 none]
+G c Z s b [Osubtract type_expression 63 13 none]
+G c Z s b [Odivide type_expression 64 13 none]
+G c Z s b [put type_expression 65 14 none]
+G c Z s b [put_line type_expression 66 14 none]
+G c Z s b [Oadd type_expression 67 13 none]
+G c Z s b [Oeq type_expression 68 13 none]
+G c Z s b [put type_expression 69 14 none]
 G c Z s s [t_chaineIP type_expression 5 9 none]
 G c Z s s [Tt_valeur_litBIP type_expression 13 4 none]
 G c Z s s [t_litterauxIP type_expression 14 9 none]
 G c Z s s [t_expressionIP type_expression 29 9 none]
-G r c none [Omultiply type_expression 63 13 none] [nb_expr operation 13 13 none]
-G r c none [Oadd type_expression 64 13 none] [nb_expr operation 13 13 none]
-G r c none [Osubtract type_expression 65 13 none] [nb_expr operation 13 13 none]
-G r c none [Odivide type_expression 66 13 none] [nb_expr operation 13 13 none]
+G r c none [Omultiply type_expression 61 13 none] [nb_expr operation 13 13 none]
+G r c none [Oadd type_expression 62 13 none] [nb_expr operation 13 13 none]
+G r c none [Osubtract type_expression 63 13 none] [nb_expr operation 13 13 none]
+G r c none [Odivide type_expression 64 13 none] [nb_expr operation 13 13 none]
 X 1 ada.ads
 16K9*Ada 20e8 31|2r6 3r5 4r6 5r5 6r6 7r5
 X 3 a-flteio.ads
@@ -97,101 +97,100 @@ X 8 a-textio.ads
 465U14*Put 31|70s7 186s7
 X 14 operation.ads
 7K9*operation 19e14 31|1w6 1r21
-13V13*nb_expr{30|27P9} 31|25s17 36s17 47s17 50s86 59s17
+13V13*nb_expr{30|27P9} 31|25s17 36s17 47s17 50s73 59s17
 X 30 type_expression.ads
-3K9*type_expression 72l5 72e20 31|10b14 194l5 194t20
-5R9*T_chaine 8e14 60r52 61r43 69r26 69r45 69r62 70r26 70r45 71r25 31|68r11
+3K9*type_expression 70l5 70e20 31|10b14 194l5 194t20
+5R9*T_chaine 8e14 58r52 59r43 67r26 67r45 67r62 68r26 68r45 69r25 31|68r11
 . 73r43 74r8 82r52 83r11 169r26 169r45 169r62 170r9 178r26 178r45 184r25
 6a7*ch{string} 31|70r13 76m9 172m10 172r31 173m10 173r45 180r40 180r60 186r13
 7i7*lg{integer} 31|70r21 77m9 172r20 172r41 173r17 173r27 173r34 173r55 174m10
 . 174r20 174r27 180r19 180r28 180r50 180r70 186r21
 11E9*T_cat_expr 11e88 29r34
-11n24*produit{11E9} 32r15 31|28r35 50r71 86r15
-11n33*somme{11E9} 35r15 31|39r35 50r35 87r37 95r37 102r15 131r37
-11n40*litteral{11E9} 38r15 31|108r15 117r38 139r36
-11n50*nombre{11E9} 29r48 40r15 31|14r25 14r51 24r25 24r51 35r25 35r51 46r24
+11n24*produit{11E9} 31r15 31|28r35 50r64 86r15
+11n33*somme{11E9} 34r15 31|39r35 50r35 87r37 95r37 102r15 131r37
+11n40*litteral{11E9} 37r15 31|108r15 117r38 139r36
+11n50*nombre{11E9} 29r48 39r15 31|14r25 14r51 24r25 24r51 35r25 35r51 46r24
 . 46r50 58r25 58r51 114r15 117r72 139r68
-11n58*puissance{11E9} 42r15 31|116r15
-11n69*division{11E9} 45r15 31|62r35 130r15
-11n79*cos{11E9} 48r15 31|117r133 147r15
-11n84*sin{11E9} 50r15 31|117r104 151r15
+11n58*puissance{11E9} 41r15 31|116r15
+11n69*division{11E9} 44r15 31|62r35 130r15
+11n79*cos{11E9} 47r15 31|117r133 147r15
+11n84*sin{11E9} 49r15 31|117r104 151r15
 12E9*T_cat_litt 12e64 19r17
 12n25*masse{12E9}
 12n32*longueur{12E9}
-12n42*temps{12E9} 39r75
+12n42*temps{12E9} 38r75
 12n49*angle{12E9}
 12n56*inertie{12E9}
 13A9*T_valeur_lit(float)<integer> 20r16
-14R9*T_litteraux 22e14 39r20
+14R9*T_litteraux 22e14 38r20
 15b7*is_constant{boolean}
 16i7*deg_deriv_temps{integer} 31|110r35
 17a7*symbole{string} 31|109r39
 18i7*symbole_lg{integer} 31|109r60
 19e7*cat_lit{12E9}
 20a7*valeur{13A9}
-26R9*T_expression 27r30 29c9 29d22 56e14 31|28r21 39r21 50r21 50r57 62r21
-27P9*T_expr_int(26R9) 33r18 34r18 36r18 37r18 43r20 46r18 47r18 49r20 51r20
-. 60r33 62r25 62r45 63r25 63r45 63r64 64r25 64r45 64r64 65r25 65r45 65r64
-. 66r25 66r45 66r64 67r28 68r32 31|12r25 12r45 22r25 22r45 22r64 33r25 33r45
+26R9*T_expression 27r30 29c9 29d22 54e14 31|28r21 39r21 50r21 50r50 62r21
+27P9*T_expr_int(26R9) 32r18 33r18 35r18 36r18 42r20 45r18 46r18 48r20 50r20
+. 58r33 60r25 60r45 61r25 61r45 61r64 62r25 62r45 62r64 63r25 63r45 63r64
+. 64r25 64r45 64r64 65r28 66r32 31|12r25 12r45 22r25 22r45 22r64 33r25 33r45
 . 33r64 44r25 44r45 44r64 56r25 56r45 56r64 67r28 82r33 163r32
-29e22*type_expr{11E9} 31r12 31|14r13 14r39 24r13 24r39 35r13 35r39 46r12
+29e22*type_expr{11E9} 30r12 31|14r13 14r39 24r13 24r39 35r13 35r39 46r12
 . 46r38 58r13 58r39 85r17 87r24 95r24 117r26 117r60 117r92 117r121 131r24
 . 139r24 139r56
-30b7*is_negative{boolean} 31|28r47 28r66 39r45 39r64 62r47 62r66
-33p13*p1{27P9} 31|87r21 88r39 92r39
-34p13*p2{27P9} 31|95r21 96r39 99r39
-36p13*s1{27P9} 31|104r36
-37p13*s2{27P9} 31|106r36
-39r13*litt{14R9} 31|109r34 109r55 110r30
-41f13*valeur{float} 31|15r21 15r33 25r28 25r38 36r28 36r38 47r28 47r38 59r28
+32p13*p1{27P9} 31|87r21 88r39 92r39
+33p13*p2{27P9} 31|95r21 96r39 99r39
+35p13*s1{27P9} 31|104r36
+36p13*s2{27P9} 31|106r36
+38r13*litt{14R9} 31|109r34 109r55 110r30
+40f13*valeur{float} 31|15r21 15r33 25r28 25r38 36r28 36r38 47r28 47r38 59r28
 . 59r38 115r46
-43p13*expr{27P9} 31|117r21 117r55 117r87 117r116 118r39 124r39
-44i13*exposant{integer} 31|120r51 126r51
-46p13*d1{27P9} 31|131r21 132r39 136r39
-47p13*d2{27P9} 31|139r21 139r53 140r39 143r39
-49p13*Carg{27P9} 31|149r36
-51p13*Sarg{27P9} 31|153r36
-60V13*expr_text{5R9} 60>23 31|17s17 17s33 68s23 82b13 88s24 92s24 96s24 99s24
+42p13*expr{27P9} 31|117r21 117r55 117r87 117r116 118r39 124r39
+43i13*exposant{integer} 31|120r51 126r51
+45p13*d1{27P9} 31|131r21 132r39 136r39
+46p13*d2{27P9} 31|139r21 139r53 140r39 143r39
+48p13*Carg{27P9} 31|149r36
+50p13*Sarg{27P9} 31|153r36
+58V13*expr_text{5R9} 58>23 31|17s17 17s33 68s23 82b13 88s24 92s24 96s24 99s24
 . 104s21 106s21 118s24 124s24 132s24 136s24 140s24 143s24 149s21 153s21 160l8
 . 160t17
-60p23 expr{27P9} 31|82b23 85r12 87r16 88r34 92r34 95r16 96r34 99r34 104r31
+58p23 expr{27P9} 31|82b23 85r12 87r16 88r34 92r34 95r16 96r34 99r34 104r31
 . 106r31 109r29 109r50 110r25 115r41 117r16 117r50 117r82 117r111 118r34
 . 120r46 124r34 126r46 131r16 132r34 136r34 139r16 139r48 140r34 143r34 149r31
 . 153r31
-61V13*text_ch{5R9} 61>21 31|73b13 79t7 83s23 89s24 91s24 93s24 98s24 100s24
+59V13*text_ch{5R9} 59>21 31|73b13 79t7 83s23 89s24 91s24 93s24 98s24 100s24
 . 105s21 109s21 111s24 115s21 119s24 120s24 123s24 125s24 126s24 133s24 135s24
 . 137s24 142s24 144s24 148s21 150s21 152s21 154s21
-61a21 s{string} 31|73b21 76r15 76r28 77r15
-62V14*"="{boolean} 62>17 62>37 31|12b14 20l9 20t11
-62p17 n1{27P9} 31|12b17 14r10 15r18 17r27
-62p37 n2{27P9} 31|12b37 14r36 15r30 17r43
-63V14*"*"{27P9} 63>17 63>37 31|22b14 31l9 31t11
-63p17 n1{27P9} 31|22b17 24r10 25r25 28r44 28r79
-63p37 n2{27P9} 31|22b37 24r36 25r35 28r63 28r83
-64V14*"+"{27P9} 64>17 64>37 31|33b14 42l9 42t11
-64p17 n1{27P9} 31|33b17 35r10 36r25 39r42 39r61 39r78
-64p37 n2{27P9} 31|33b37 35r36 36r35 39r82
-65V14*"-"{27P9} 65>17 65>37 31|44b14 53l9 53t11
-65p17 n1{27P9} 31|44b17 46r9 47r25 50r49
-65p37 n2{27P9} 31|44b37 46r35 47r35 50r101
-66V14*"/"{27P9} 66>17 66>37 31|56b14 65l9 65t11
-66p17 d1{27P9} 31|56b17 58r10 59r25 62r44 62r79
-66p37 d2{27P9} 31|56b37 58r36 59r35 62r63 62r83
-67U14*put 67>18 31|67b14 71t7 165s7
-67p18 expr{27P9} 31|67b18 68r33
-68U14*put_line 68>23 31|163b14 167t7
-68p23 expr{27P9} 31|163b23 165r11
-69V14*"+"{5R9} 69>17 69>36 31|88s22 89s22 91s22 92s22 93s22 96s22 98s22 99s22
+59a21 s{string} 31|73b21 76r15 76r28 77r15
+60V14*"="{boolean} 60>17 60>37 31|12b14 20l9 20t11
+60p17 n1{27P9} 31|12b17 14r10 15r18 17r27
+60p37 n2{27P9} 31|12b37 14r36 15r30 17r43
+61V14*"*"{27P9} 61>17 61>37 31|22b14 31l9 31t11
+61p17 n1{27P9} 31|22b17 24r10 25r25 28r44
+61p37 n2{27P9} 31|22b37 24r36 25r35 28r48
+62V14*"+"{27P9} 62>17 62>37 31|33b14 42l9 42t11
+62p17 n1{27P9} 31|33b17 35r10 36r25 39r42
+62p37 n2{27P9} 31|33b37 35r36 36r35 39r46
+63V14*"-"{27P9} 63>17 63>37 31|44b14 53l9 53t11
+63p17 n1{27P9} 31|44b17 46r9 47r25 50r42
+63p37 n2{27P9} 31|44b37 46r35 47r35 50r88
+64V14*"/"{27P9} 64>17 64>37 31|56b14 65l9 65t11
+64p17 d1{27P9} 31|56b17 58r10 59r25 62r45
+64p37 d2{27P9} 31|56b37 58r36 59r35 62r49
+65U14*put 65>18 31|67b14 71t7 165s7
+65p18 expr{27P9} 31|67b18 68r33
+66U14*put_line 66>23 31|163b14 167t7
+66p23 expr{27P9} 31|163b23 165r11
+67V14*"+"{5R9} 67>17 67>36 31|88s22 89s22 91s22 92s22 93s22 96s22 98s22 99s22
 . 100s22 104s19 105s19 106s19 109s19 111s22 115s19 118s22 119s22 120s22 123s22
 . 124s22 125s22 126s22 132s22 133s22 135s22 136s22 137s22 140s22 142s22 143s22
 . 144s22 148s19 149s19 150s19 152s19 153s19 154s19 169b14 176t7
-69r17 ch1{5R9} 31|169b17 172r16 172r27 172r37 173r13 173r23 174r16
-69r36 ch2{5R9} 31|169b36 173r30 173r41 173r51 174r23
-70V14*"="{boolean} 70>17 70>36 31|17s31 178b14 181l9 181t11
-70r17 ch1{5R9} 31|178b17 180r15 180r36 180r46
-70r36 ch2{5R9} 31|178b36 180r24 180r56 180r66
-71U14*put 71>18 31|184b14 187t7
-71r18 c{5R9} 31|184b18 186r11 186r19
+67r17 ch1{5R9} 31|169b17 172r16 172r27 172r37 173r13 173r23 174r16
+67r36 ch2{5R9} 31|169b36 173r30 173r41 173r51 174r23
+68V14*"="{boolean} 68>17 68>36 31|17s31 178b14 181l9 181t11
+68r17 ch1{5R9} 31|178b17 180r15 180r36 180r46
+68r36 ch2{5R9} 31|178b36 180r24 180r56 180r66
+69U14*put 69>18 31|184b14 187t7
+69r18 c{5R9} 31|184b18 186r11 186r19
 X 31 type_expression.adb
 68r7 c{30|5R9} 70r11 70r19
 74r4 c{30|5R9} 76m7 77m7 78r14

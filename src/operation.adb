@@ -13,13 +13,8 @@ USE Ada.Numerics.Elementary_Functions;
 package body operation is
 
    function nb_expr(n : in float ) return T_expr_int is
-   begin
-      if n >= 0.0 then
-         return new T_expression'(nombre, False,n);
-      else
-         return new T_expression'(nombre, True,n);
-      end if;
-
+      begin
+      return new T_expression'(nombre, n);
    end nb_expr;
 
 
@@ -32,18 +27,18 @@ package body operation is
    begin
       case expr.type_expr is
          when produit =>
-            temp1 := new T_expression'(produit, expr.p1.is_negative, deriver(expr.p1, param), expr.p2);
-            temp2 := new T_expression'(produit, expr.p2.is_negative, deriver(expr.p2, param), expr.p1);
+            temp1 := new T_expression'(produit, deriver(expr.p1, param), expr.p2);
+            temp2 := new T_expression'(produit, deriver(expr.p2, param), expr.p1);
 
-            return new T_expression'(somme,False, temp1, temp2);
+            return new T_expression'(somme, temp1, temp2);
          when somme =>
-            return new T_expression'(somme, False,deriver(expr.s1, param), deriver(expr.s2, param));
+            return new T_expression'(somme, deriver(expr.s1, param), deriver(expr.s2, param));
          when litteral =>
             if expr.litt = param then
                return nb_expr(1.0);
             else
                if param.cat_lit = temps and not expr.litt.is_constant then
-                  return new T_expression'(litteral, False, (expr.litt.is_constant, expr.litt.deg_deriv_temps + 1, expr.litt.symbole, expr.litt.symbole_lg, expr.litt.cat_lit, expr.litt.valeur));
+                  return new T_expression'(litteral, (expr.litt.is_constant, expr.litt.deg_deriv_temps + 1, expr.litt.symbole, expr.litt.symbole_lg, expr.litt.cat_lit, expr.litt.valeur));
                else
                   return nb_expr(0.0);
                end if;
@@ -55,25 +50,25 @@ package body operation is
             if expr.exposant = 1 then
                return deriver(expr.expr, param);
             else
-               temp1 := new T_expression'(puissance,False, expr.expr, expr.exposant-1);
+               temp1 := new T_expression'(puissance, expr.expr, expr.exposant-1);
                temp2 := nb_expr(float(expr.exposant-1));
-               return new T_expression'(produit, False, temp1, new T_expression'(produit, False, temp2, deriver(expr.expr, param)));
+               return new T_expression'(produit, temp1, new T_expression'(produit, temp2, deriver(expr.expr, param)));
             end if;
          when division =>
-            temp1 := new T_expression'(produit, False, deriver(expr.d1, param), expr.d2);
-            temp2 := new T_expression'(produit, True,deriver(expr.d2, param), expr.d1);--forme négative
-            --temp2 := new T_expression'(produit, nb_expr(-1.0), temp2); implémentation de la forme négative
-            temp2 := new T_expression'(somme, False, temp1, temp2);
-            temp3 := new T_expression'(puissance, False, expr.d2, 2);
-            return new T_expression'(division, False, temp2, temp3);
+            temp1 := new T_expression'(produit, deriver(expr.d1, param), expr.d2);
+            temp2 := new T_expression'(produit, deriver(expr.d2, param), expr.d1);
+            temp2 := new T_expression'(produit, nb_expr(-1.0), temp2);
+            temp2 := new T_expression'(somme, temp1, temp2);
+            temp3 := new T_expression'(puissance, expr.d2, 2);
+            return new T_expression'(division, temp2, temp3);
          when cos =>
-            --temp1 := nb_expr(-1.0);
-            --temp2 := new T_expression'(produit, True, temp1, deriver(expr.Carg, param));
-            temp3 := new T_expression'(sin, False, expr.Carg);
-            return new T_expression'(produit, True, deriver(expr.Carg, param), temp3);
+            temp1 := nb_expr(-1.0);
+            temp2 := new T_expression'(produit, temp1, deriver(expr.Carg, param));
+            temp3 := new T_expression'(sin, expr.Carg);
+            return new T_expression'(produit, temp2, temp3);
          when sin =>
-            temp3 := new T_expression'(cos,False, expr.Sarg);
-            return new T_expression'(produit,False, deriver(expr.Sarg, param) , temp3);
+            temp3 := new T_expression'(cos, expr.Sarg);
+            return new T_expression'(produit, deriver(expr.Sarg, param) , temp3);
          when others =>
             return nb_expr(0.0); -- ATTENTION CE CODE N EST PAS CENSE ETRE EXECUTE
 

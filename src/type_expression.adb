@@ -25,7 +25,7 @@ package body type_expression is
          return nb_expr(n1.valeur*n2.valeur);
       else
 
-         return new T_expression'(produit, n1.is_negative xor n2.is_negative, n1, n2);
+         return new T_expression'(produit, n1, n2);
       end if;
 
    end "*";
@@ -36,7 +36,7 @@ package body type_expression is
          return nb_expr(n1.valeur+n2.valeur);
       else
 
-         return new T_expression'(somme, n1.is_negative and n1.is_negative , n1, n2);
+         return new T_expression'(somme, n1, n2);
       end if;
 
    end "+";
@@ -47,7 +47,7 @@ package body type_expression is
          return nb_expr(n1.valeur-n2.valeur);
       else
 
-         return new T_expression'(somme, False, n1, new T_expression'(produit,False, nb_expr(-1.0), n2));
+         return new T_expression'(somme, n1, new T_expression'(produit, nb_expr(-1.0), n2));
       end if;
 
    end "-";
@@ -59,7 +59,7 @@ package body type_expression is
          return nb_expr(d1.valeur/d2.valeur);
       else
 
-         return new T_expression'(division,d1.is_negative xor d2.is_negative, d1, d2);
+         return new T_expression'(division, d1, d2);
       end if;
 
    end "/";

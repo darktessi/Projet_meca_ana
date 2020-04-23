@@ -33,9 +33,9 @@ begin
    --put_line(mat_rotation(theta, 2));
    m := rotation_3D(alpha, beta, gamma);
    normaliser(m);
-   vect.X := new T_expression'(litteral, False, x);
-   vect.Y := new T_expression'(litteral, False, y);
-   vect.Z := new T_expression'(litteral, False, z);
+   vect.X := new T_expression'(litteral, x);
+   vect.Y := new T_expression'(litteral, y);
+   vect.Z := new T_expression'(litteral, z);
 
    put_line(m*vect);
    vect := m*vect;
