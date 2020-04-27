@@ -5,10 +5,12 @@ package type_expression is
    type T_chaine is record
       ch : String(1..10000);
       lg : integer := 0;
+      nb_limite : integer := 230;
+      nb_carac_ligne : integer := 0;
    end record;
 
 
-   type T_cat_expr is (produit, somme, litteral, nombre, puissance, division, cos, sin);
+   type T_cat_expr is (produit, somme,soustraction, litteral, nombre, puissance, division, cos, sin);
    type T_cat_litt is  (masse, longueur, temps, angle, inertie);
    type T_valeur_lit is array(0..10) of float;
    type T_litteraux is record
@@ -34,6 +36,9 @@ package type_expression is
          when somme =>
             s1 : T_expr_int;
             s2 : T_expr_int;
+         when soustraction =>
+            sm1 : T_expr_int;
+            sm2 : T_expr_int;
          when litteral =>
             litt : T_litteraux := (false, 0, (1 => 't',others => ' '), 1, temps, (0=> 1.0,others => 0.0));
          when nombre =>

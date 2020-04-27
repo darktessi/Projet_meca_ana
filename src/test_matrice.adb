@@ -27,6 +27,12 @@ begin
    alpha.symbole(1..5) := "ALPHA";
    alpha.symbole_lg := 5;
 
+   beta.symbole(1..4) := "BETA";
+   beta.symbole_lg :=4;
+
+   gamma.symbole(1..5) := "GAMMA";
+   gamma.symbole_lg := 5;
+
    --put_line(m);
    --put_line(det(m));
    --put_line(inverser(m));
@@ -36,12 +42,18 @@ begin
    vect.X := new T_expression'(litteral, x);
    vect.Y := new T_expression'(litteral, y);
    vect.Z := new T_expression'(litteral, z);
-
-   put_line(m*vect);
+   New_Line;
+   --put_line(m*vect);
    vect := m*vect;
    for i in 1..2 loop
+      put_line("---------------------------------");
+      latex_vecteur(vect);
+      New_Line;
       deriver(vect, t);
    end loop;
+   new_line;
+   --put(vect);
+   New_Line;
    latex_vecteur(vect);
 
 end test_matrice;

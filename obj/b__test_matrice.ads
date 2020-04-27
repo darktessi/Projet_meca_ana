@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#080180c4#;
+   u00001 : constant Version_32 := 16#3de8e27b#;
    pragma Export (C, u00001, "test_matriceB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -263,9 +263,9 @@ package ada_main is
    pragma Export (C, u00112, "system__finalization_rootS");
    u00113 : constant Version_32 := 16#cf3f1b90#;
    pragma Export (C, u00113, "system__file_control_blockS");
-   u00114 : constant Version_32 := 16#01fab5ac#;
+   u00114 : constant Version_32 := 16#1d568c59#;
    pragma Export (C, u00114, "affichage_latexB");
-   u00115 : constant Version_32 := 16#03550273#;
+   u00115 : constant Version_32 := 16#31e06bc7#;
    pragma Export (C, u00115, "affichage_latexS");
    u00116 : constant Version_32 := 16#e18a47a0#;
    pragma Export (C, u00116, "ada__float_text_ioB");
@@ -341,17 +341,17 @@ package ada_main is
    pragma Export (C, u00151, "system__val_unsB");
    u00152 : constant Version_32 := 16#33208002#;
    pragma Export (C, u00152, "system__val_unsS");
-   u00153 : constant Version_32 := 16#273384e4#;
-   pragma Export (C, u00153, "system__img_enum_newB");
-   u00154 : constant Version_32 := 16#53ec87f8#;
-   pragma Export (C, u00154, "system__img_enum_newS");
-   u00155 : constant Version_32 := 16#b1937f47#;
-   pragma Export (C, u00155, "type_vecteurB");
-   u00156 : constant Version_32 := 16#f26ebf38#;
-   pragma Export (C, u00156, "type_vecteurS");
-   u00157 : constant Version_32 := 16#b3aa5e73#;
+   u00153 : constant Version_32 := 16#bf363ed2#;
+   pragma Export (C, u00153, "ada__strings__fixedB");
+   u00154 : constant Version_32 := 16#fec1aafc#;
+   pragma Export (C, u00154, "ada__strings__fixedS");
+   u00155 : constant Version_32 := 16#144f64ae#;
+   pragma Export (C, u00155, "ada__strings__searchB");
+   u00156 : constant Version_32 := 16#c1ab8667#;
+   pragma Export (C, u00156, "ada__strings__searchS");
+   u00157 : constant Version_32 := 16#65a1f9ff#;
    pragma Export (C, u00157, "operationB");
-   u00158 : constant Version_32 := 16#4a19275f#;
+   u00158 : constant Version_32 := 16#7e4135c7#;
    pragma Export (C, u00158, "operationS");
    u00159 : constant Version_32 := 16#cd2959fb#;
    pragma Export (C, u00159, "ada__numericsS");
@@ -365,18 +365,26 @@ package ada_main is
    pragma Export (C, u00163, "ada__numerics__auxS");
    u00164 : constant Version_32 := 16#5fc82639#;
    pragma Export (C, u00164, "system__machine_codeS");
-   u00165 : constant Version_32 := 16#377531fc#;
+   u00165 : constant Version_32 := 16#032d2364#;
    pragma Export (C, u00165, "affichage_exprB");
-   u00166 : constant Version_32 := 16#10588663#;
+   u00166 : constant Version_32 := 16#240094fb#;
    pragma Export (C, u00166, "affichage_exprS");
-   u00167 : constant Version_32 := 16#cb84a434#;
+   u00167 : constant Version_32 := 16#8a12731c#;
    pragma Export (C, u00167, "type_expressionB");
-   u00168 : constant Version_32 := 16#917e31a4#;
+   u00168 : constant Version_32 := 16#a526233c#;
    pragma Export (C, u00168, "type_expressionS");
-   u00169 : constant Version_32 := 16#e31b7c4e#;
-   pragma Export (C, u00169, "system__memoryB");
-   u00170 : constant Version_32 := 16#6bdde70c#;
-   pragma Export (C, u00170, "system__memoryS");
+   u00169 : constant Version_32 := 16#273384e4#;
+   pragma Export (C, u00169, "system__img_enum_newB");
+   u00170 : constant Version_32 := 16#53ec87f8#;
+   pragma Export (C, u00170, "system__img_enum_newS");
+   u00171 : constant Version_32 := 16#75c5cf16#;
+   pragma Export (C, u00171, "type_vecteurB");
+   u00172 : constant Version_32 := 16#c636ada0#;
+   pragma Export (C, u00172, "type_vecteurS");
+   u00173 : constant Version_32 := 16#e31b7c4e#;
+   pragma Export (C, u00173, "system__memoryB");
+   u00174 : constant Version_32 := 16#6bdde70c#;
+   pragma Export (C, u00174, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -502,6 +510,10 @@ package ada_main is
    --  system.val_lli%b
    --  system.val_llu%b
    --  ada.numerics%s
+   --  ada.strings.search%s
+   --  ada.strings.search%b
+   --  ada.strings.fixed%s
+   --  ada.strings.fixed%b
    --  ada.tags%s
    --  ada.tags%b
    --  ada.streams%s

@@ -44,9 +44,12 @@ package body type_vecteur is
    end "*";
 
    function "-"(v1 : in T_vecteur; v2 : in T_vecteur) return T_vecteur is
-
+      v : T_vecteur;
    begin
-      return v1 + (nb_expr(-1.0) * v2);
+      v.X := v1.X -v2.X;
+      v.Y := v1.Y - v2.Y;
+      v.Z := v1.Z-v2.Z;
+      return v;
    end "-";
 
    function "+"(m1 : in T_matrice; m2 :in T_matrice) return T_matrice is  -- somme matrice matrice
@@ -89,8 +92,14 @@ package body type_vecteur is
    end "*";
 
    function "-"(m1 : in T_matrice; m2 : in T_matrice) return T_matrice is -- soustraction matrice
+      m : T_matrice;
    begin
-      return m1+nb_expr(-1.0)*m2;
+      for i in 1..3 loop
+         for j in 1..3 loop
+            m(i)(j) :=  m1(i)(j)-m2(i)(j);
+         end loop;
+      end loop;
+      return m;
    end "-";
 
    function "*"(m1 : in T_matrice; v1 : in T_vecteur) return T_vecteur is -- produit matrice vecteur
@@ -193,7 +202,7 @@ package body type_vecteur is
          m(2)(1) := nb_expr(0.0);
          m(3)(1) := nb_expr(0.0);
          m(2)(2) := new T_expression'(cos, new T_expression'(litteral, angle));
-         m(2)(3) := new T_expression'(produit, nb_expr(-1.0),new T_expression'(sin, new T_expression'(litteral, angle)));
+         m(2)(3) := nb_expr(0.0)-new T_expression'(sin, new T_expression'(litteral, angle));
          m(3)(2) := new T_expression'(sin, new T_expression'(litteral, angle));
          m(3)(3) := new T_expression'(cos, new T_expression'(litteral, angle));
       end if;
@@ -204,7 +213,7 @@ package body type_vecteur is
          m(2)(1) := nb_expr(0.0);
          m(3)(2) := nb_expr(0.0);
          m(1)(1) := new T_expression'(cos, new T_expression'(litteral, angle));
-         m(1)(3) := new T_expression'(produit, nb_expr(-1.0),new T_expression'(sin, new T_expression'(litteral, angle)));
+         m(1)(3) := nb_expr(0.0)-new T_expression'(sin, new T_expression'(litteral, angle));
          m(3)(1) := new T_expression'(sin, new T_expression'(litteral, angle));
          m(3)(3) := new T_expression'(cos, new T_expression'(litteral, angle));
       end if;
@@ -215,7 +224,7 @@ package body type_vecteur is
          m(3)(1) := nb_expr(0.0);
          m(3)(2) := nb_expr(0.0);
          m(1)(1) := new T_expression'(cos, new T_expression'(litteral, angle));
-         m(1)(2) := new T_expression'(produit, nb_expr(-1.0),new T_expression'(sin, new T_expression'(litteral, angle)));
+         m(1)(2) := nb_expr(0.0)-new T_expression'(sin, new T_expression'(litteral, angle));
          m(2)(1) := new T_expression'(sin, new T_expression'(litteral, angle));
          m(2)(2) := new T_expression'(cos, new T_expression'(litteral, angle));
       end if;

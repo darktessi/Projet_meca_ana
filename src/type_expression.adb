@@ -47,7 +47,7 @@ package body type_expression is
          return nb_expr(n1.valeur-n2.valeur);
       else
 
-         return new T_expression'(somme, n1, new T_expression'(produit, nb_expr(-1.0), n2));
+         return new T_expression'(soustraction, n1, n2);
       end if;
 
    end "-";
@@ -75,6 +75,7 @@ package body type_expression is
    begin
       c.ch(1..s'Length) := s;
       c.lg := s'Length;
+      c.nb_carac_ligne := s'Length;
       return c;
    end;
 
@@ -104,7 +105,13 @@ package body type_expression is
             c := c+ expr_text(expr.s1);
             c := c+ text_ch(" + ");
             c := c+ expr_text(expr.s2);
-
+         when soustraction =>
+            if expr.sm1 /= nb_expr(0.0) then
+               put(expr.sm1);
+            end if;
+            put(" - (");
+            put(expr.sm2);
+            put(")");
          when litteral =>
             c := c+ text_ch(expr.litt.symbole(1..expr.litt.symbole_lg));
             for i in 1..expr.litt.deg_deriv_temps loop
@@ -172,6 +179,7 @@ package body type_expression is
       ch.ch(1..ch1.lg) := ch1.ch(1..ch1.lg);
       ch.ch(ch1.lg+1..ch1.lg+ch2.lg) := ch2.ch(1..ch2.lg);
       ch.lg := ch1.lg+ch2.lg;
+      ch.nb_carac_ligne:= ch1.nb_carac_ligne+ch2.nb_carac_ligne;
       return ch;
    end;
 

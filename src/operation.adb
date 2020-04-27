@@ -57,13 +57,11 @@ package body operation is
          when division =>
             temp1 := new T_expression'(produit, deriver(expr.d1, param), expr.d2);
             temp2 := new T_expression'(produit, deriver(expr.d2, param), expr.d1);
-            temp2 := new T_expression'(produit, nb_expr(-1.0), temp2);
-            temp2 := new T_expression'(somme, temp1, temp2);
+            temp2 := new T_expression'(soustraction, temp1, temp2);
             temp3 := new T_expression'(puissance, expr.d2, 2);
             return new T_expression'(division, temp2, temp3);
          when cos =>
-            temp1 := nb_expr(-1.0);
-            temp2 := new T_expression'(produit, temp1, deriver(expr.Carg, param));
+            temp2 := new T_expression'(soustraction, nb_expr(0.0), deriver(expr.Carg, param));
             temp3 := new T_expression'(sin, expr.Carg);
             return new T_expression'(produit, temp2, temp3);
          when sin =>
@@ -120,7 +118,16 @@ package body operation is
                   end if;
                end if;
             end if;
-
+         when soustraction =>
+            normaliser(e.sm1);
+            normaliser(e.sm2);
+            if e.sm1.type_expr = nombre and e.sm2.type_expr = nombre then
+               e := nb_expr(e.sm1.valeur - e.sm2.valeur);
+            else
+               if e.sm2 = nb_expr(0.0) then
+                  e := e.sm1;
+               end if;
+            end if;
 
          when puissance =>
                normaliser(e.expr);

@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#67f0654b#;
+   u00001 : constant Version_32 := 16#4cf301b8#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -301,9 +301,9 @@ package ada_main is
    pragma Export (C, u00131, "system__exn_llfS");
    u00132 : constant Version_32 := 16#6ad59d2c#;
    pragma Export (C, u00132, "system__fat_fltS");
-   u00133 : constant Version_32 := 16#017078fa#;
+   u00133 : constant Version_32 := 16#adad0ca5#;
    pragma Export (C, u00133, "affichage_exprB");
-   u00134 : constant Version_32 := 16#265dcf65#;
+   u00134 : constant Version_32 := 16#8a80bb3a#;
    pragma Export (C, u00134, "affichage_exprS");
    u00135 : constant Version_32 := 16#f64b89a4#;
    pragma Export (C, u00135, "ada__integer_text_ioB");
@@ -341,13 +341,13 @@ package ada_main is
    pragma Export (C, u00151, "system__val_unsB");
    u00152 : constant Version_32 := 16#33208002#;
    pragma Export (C, u00152, "system__val_unsS");
-   u00153 : constant Version_32 := 16#e5ca47f0#;
+   u00153 : constant Version_32 := 16#65bed124#;
    pragma Export (C, u00153, "type_expressionB");
-   u00154 : constant Version_32 := 16#a77b78a2#;
+   u00154 : constant Version_32 := 16#0ba60cfd#;
    pragma Export (C, u00154, "type_expressionS");
-   u00155 : constant Version_32 := 16#194e623a#;
+   u00155 : constant Version_32 := 16#cb21d63e#;
    pragma Export (C, u00155, "operationB");
-   u00156 : constant Version_32 := 16#fbc27ef5#;
+   u00156 : constant Version_32 := 16#d0c11a06#;
    pragma Export (C, u00156, "operationS");
    u00157 : constant Version_32 := 16#cd2959fb#;
    pragma Export (C, u00157, "ada__numericsS");
@@ -361,13 +361,13 @@ package ada_main is
    pragma Export (C, u00161, "ada__numerics__auxS");
    u00162 : constant Version_32 := 16#5fc82639#;
    pragma Export (C, u00162, "system__machine_codeS");
-   u00163 : constant Version_32 := 16#07fe8390#;
+   u00163 : constant Version_32 := 16#6dbfa675#;
    pragma Export (C, u00163, "type_mecaniqueB");
-   u00164 : constant Version_32 := 16#89c1c099#;
+   u00164 : constant Version_32 := 16#645ef5d0#;
    pragma Export (C, u00164, "type_mecaniqueS");
-   u00165 : constant Version_32 := 16#5491548c#;
+   u00165 : constant Version_32 := 16#db45e0d7#;
    pragma Export (C, u00165, "type_vecteurB");
-   u00166 : constant Version_32 := 16#02f7a784#;
+   u00166 : constant Version_32 := 16#68b68261#;
    pragma Export (C, u00166, "type_vecteurS");
    u00167 : constant Version_32 := 16#e31b7c4e#;
    pragma Export (C, u00167, "system__memoryB");

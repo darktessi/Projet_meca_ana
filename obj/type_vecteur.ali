@@ -16,14 +16,14 @@ RV NO_IMPLICIT_LOOPS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U type_vecteur%b	type_vecteur.adb	b1937f47 NE OO PK IL
+U type_vecteur%b	type_vecteur.adb	75c5cf16 NE OO PK IL
 W ada%s			ada.ads			ada.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W operation%s		operation.adb		operation.ali  AD
 W type_expression%s	type_expression.adb	type_expression.ali
 
-U type_vecteur%s	type_vecteur.ads	f26ebf38 EE OO PK IL
+U type_vecteur%s	type_vecteur.ads	c636ada0 EE OO PK IL
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W operation%s		operation.adb		operation.ali
 W type_expression%s	type_expression.adb	type_expression.ali
@@ -37,7 +37,7 @@ D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
 D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20190518041256 5ab55268 interfaces%s
 D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
-D operation.ads		20200403170512 db6716fb operation%s
+D operation.ads		20200423133934 db6716fb operation%s
 D system.ads		20190518041258 32a08138 system%s
 D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
 D s-exctab.ads		20190518041256 54135002 system.exception_table%s
@@ -51,9 +51,9 @@ D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
 D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
-D type_expression.ads	20200403201352 917e31a4 type_expression%s
-D type_vecteur.ads	20200403170026 b8779867 type_vecteur%s
-D type_vecteur.adb	20200403170600 ed091512 type_vecteur%b
+D type_expression.ads	20200427140410 a526233c type_expression%s
+D type_vecteur.ads	20200423133934 b8779867 type_vecteur%s
+D type_vecteur.adb	20200423143402 1d07b7db type_vecteur%b
 G a e
 G c s s s [s type_vecteur 7 1 none]
 G c Z s s [Tt_matrice_ligneBIP type_vecteur 14 4 none]
@@ -82,51 +82,49 @@ G c Z s b [deriver type_vecteur 42 14 none]
 G c Z s b [deriver type_vecteur 43 14 none]
 G c Z s s [t_vecteurIP type_vecteur 8 9 none]
 G r c none [s type_vecteur 7 1 none] [nb_expr operation 13 13 none]
-G r c none [Omultiply type_vecteur 18 13 none] [Omultiply type_expression 61 13 none]
-G r c none [Omultiply type_vecteur 18 13 none] [Oadd type_expression 62 13 none]
+G r c none [Omultiply type_vecteur 18 13 none] [Omultiply type_expression 66 13 none]
+G r c none [Omultiply type_vecteur 18 13 none] [Oadd type_expression 67 13 none]
 G r c none [Omultiply type_vecteur 18 13 none] [normaliser operation 12 13 none]
 G r c none [Omultiply type_vecteur 19 13 none] [nb_expr operation 13 13 none]
-G r c none [Omultiply type_vecteur 19 13 none] [Omultiply type_expression 61 13 none]
-G r c none [Omultiply type_vecteur 19 13 none] [Osubtract type_expression 63 13 none]
+G r c none [Omultiply type_vecteur 19 13 none] [Omultiply type_expression 66 13 none]
+G r c none [Omultiply type_vecteur 19 13 none] [Osubtract type_expression 68 13 none]
 G r c none [Omultiply type_vecteur 19 13 none] [normaliser operation 12 13 none]
 G r c none [Oadd type_vecteur 20 13 none] [nb_expr operation 13 13 none]
-G r c none [Oadd type_vecteur 20 13 none] [Oadd type_expression 62 13 none]
+G r c none [Oadd type_vecteur 20 13 none] [Oadd type_expression 67 13 none]
 G r c none [Oadd type_vecteur 20 13 none] [normaliser operation 12 13 none]
 G r c none [Omultiply type_vecteur 21 13 none] [nb_expr operation 13 13 none]
-G r c none [Omultiply type_vecteur 21 13 none] [Omultiply type_expression 61 13 none]
+G r c none [Omultiply type_vecteur 21 13 none] [Omultiply type_expression 66 13 none]
 G r c none [Omultiply type_vecteur 21 13 none] [normaliser operation 12 13 none]
 G r c none [Osubtract type_vecteur 22 13 none] [nb_expr operation 13 13 none]
-G r c none [Osubtract type_vecteur 22 13 none] [Omultiply type_expression 61 13 none]
-G r c none [Osubtract type_vecteur 22 13 none] [normaliser operation 12 13 none]
-G r c none [Osubtract type_vecteur 22 13 none] [Oadd type_expression 62 13 none]
-G r c none [put type_vecteur 23 14 none] [put type_expression 65 14 none]
-G r c none [put_line type_vecteur 24 14 none] [put type_expression 65 14 none]
-G r c none [Oadd type_vecteur 27 13 none] [Oadd type_expression 62 13 none]
+G r c none [Osubtract type_vecteur 22 13 none] [Osubtract type_expression 68 13 none]
+G r c none [put type_vecteur 23 14 none] [put type_expression 70 14 none]
+G r c none [put_line type_vecteur 24 14 none] [put type_expression 70 14 none]
+G r c none [Oadd type_vecteur 27 13 none] [Oadd type_expression 67 13 none]
 G r c none [Omultiply type_vecteur 28 13 none] [nb_expr operation 13 13 none]
-G r c none [Omultiply type_vecteur 28 13 none] [Omultiply type_expression 61 13 none]
-G r c none [Omultiply type_vecteur 28 13 none] [Oadd type_expression 62 13 none]
-G r c none [Omultiply type_vecteur 29 13 none] [Omultiply type_expression 61 13 none]
-G r c none [Osubtract type_vecteur 30 13 none] [nb_expr operation 13 13 none]
-G r c none [Osubtract type_vecteur 30 13 none] [Omultiply type_expression 61 13 none]
-G r c none [Osubtract type_vecteur 30 13 none] [Oadd type_expression 62 13 none]
+G r c none [Omultiply type_vecteur 28 13 none] [Omultiply type_expression 66 13 none]
+G r c none [Omultiply type_vecteur 28 13 none] [Oadd type_expression 67 13 none]
+G r c none [Omultiply type_vecteur 29 13 none] [Omultiply type_expression 66 13 none]
+G r c none [Osubtract type_vecteur 30 13 none] [Osubtract type_expression 68 13 none]
 G r c none [Omultiply type_vecteur 31 13 none] [nb_expr operation 13 13 none]
-G r c none [Omultiply type_vecteur 31 13 none] [Omultiply type_expression 61 13 none]
-G r c none [Omultiply type_vecteur 31 13 none] [Oadd type_expression 62 13 none]
-G r c none [put type_vecteur 32 14 none] [put type_expression 65 14 none]
+G r c none [Omultiply type_vecteur 31 13 none] [Omultiply type_expression 66 13 none]
+G r c none [Omultiply type_vecteur 31 13 none] [Oadd type_expression 67 13 none]
+G r c none [put type_vecteur 32 14 none] [put type_expression 70 14 none]
 G r c none [inverser type_vecteur 33 13 none] [nb_expr operation 13 13 none]
-G r c none [inverser type_vecteur 33 13 none] [Omultiply type_expression 61 13 none]
-G r c none [inverser type_vecteur 33 13 none] [Osubtract type_expression 63 13 none]
-G r c none [inverser type_vecteur 33 13 none] [Oadd type_expression 62 13 none]
-G r c none [inverser type_vecteur 33 13 none] [Odivide type_expression 64 13 none]
+G r c none [inverser type_vecteur 33 13 none] [Omultiply type_expression 66 13 none]
+G r c none [inverser type_vecteur 33 13 none] [Osubtract type_expression 68 13 none]
+G r c none [inverser type_vecteur 33 13 none] [Oadd type_expression 67 13 none]
+G r c none [inverser type_vecteur 33 13 none] [Odivide type_expression 69 13 none]
 G r c none [det type_vecteur 34 13 none] [nb_expr operation 13 13 none]
-G r c none [det type_vecteur 34 13 none] [Omultiply type_expression 61 13 none]
-G r c none [det type_vecteur 34 13 none] [Osubtract type_expression 63 13 none]
-G r c none [det type_vecteur 34 13 none] [Oadd type_expression 62 13 none]
-G r c none [put_line type_vecteur 35 14 none] [put type_expression 65 14 none]
+G r c none [det type_vecteur 34 13 none] [Omultiply type_expression 66 13 none]
+G r c none [det type_vecteur 34 13 none] [Osubtract type_expression 68 13 none]
+G r c none [det type_vecteur 34 13 none] [Oadd type_expression 67 13 none]
+G r c none [put_line type_vecteur 35 14 none] [put type_expression 70 14 none]
 G r c none [mat_rotation type_vecteur 37 13 none] [nb_expr operation 13 13 none]
+G r c none [mat_rotation type_vecteur 37 13 none] [Osubtract type_expression 68 13 none]
 G r c none [rotation_3d type_vecteur 38 13 none] [nb_expr operation 13 13 none]
-G r c none [rotation_3d type_vecteur 38 13 none] [Omultiply type_expression 61 13 none]
-G r c none [rotation_3d type_vecteur 38 13 none] [Oadd type_expression 62 13 none]
+G r c none [rotation_3d type_vecteur 38 13 none] [Osubtract type_expression 68 13 none]
+G r c none [rotation_3d type_vecteur 38 13 none] [Omultiply type_expression 66 13 none]
+G r c none [rotation_3d type_vecteur 38 13 none] [Oadd type_expression 67 13 none]
 G r c none [normaliser type_vecteur 39 14 none] [hard_normaliser operation 17 14 none]
 G r c none [normaliser type_vecteur 40 14 none] [hard_normaliser operation 17 14 none]
 G r c none [deriver type_vecteur 42 14 none] [deriver operation 10 14 none]
@@ -138,164 +136,170 @@ X 1 ada.ads
 16K9*Ada 20e8 26|3r6 4r5
 X 6 a-textio.ads
 57K13*Text_IO 727e16 26|3w10 4r9
-264U14*New_Line 26|149s7 152s7 160s7 166s7
-465U14*Put 26|147s7 150s7 153s7 171s7 173s10 177s16 183s7
-508U14*Put_Line 26|181s10
+264U14*New_Line 26|158s7 161s7 169s7 175s7
+465U14*Put 26|156s7 159s7 162s7 180s7 182s10 186s16 192s7
+508U14*Put_Line 26|190s10
 X 10 operation.ads
 7K9*operation 19e14 25|4w6 4r21 26|5w6 6r5
-10U14*deriver 26|252s7 253s7 254s7 262s13
-12V13*normaliser{24|27P9} 26|13s14 19s17 20s17 21s17 29s17 30s17 31s17 39s17
+10U14*deriver 26|261s7 262s7 263s7 271s13
+12V13*normaliser{24|29P9} 26|13s14 19s17 20s17 21s17 29s17 30s17 31s17 39s17
 . 40s17 41s17
-13V13*nb_expr{24|27P9} 25|9s24 10s24 11s24 16s39 16s52 16s65 16s80 16s93
-. 16s106 16s121 16s134 16s147 26|49s20 70s18 93s17 98s25 138s35 190s21 191s21
-. 192s21 193s21 194s21 196s48 201s21 202s21 203s21 204s21 205s21 207s48 212s21
-. 213s21 214s21 215s21 216s21 218s48
-17U14*hard_normaliser 26|237s13 244s7 245s7 246s7
+13V13*nb_expr{24|29P9} 25|9s24 10s24 11s24 16s39 16s52 16s65 16s80 16s93
+. 16s106 16s121 16s134 16s147 26|73s18 107s25 147s35 199s21 200s21 201s21
+. 202s21 203s21 205s21 210s21 211s21 212s21 213s21 214s21 216s21 221s21 222s21
+. 223s21 224s21 225s21 227s21
+17U14*hard_normaliser 26|246s13 253s7 254s7 255s7
 X 24 type_expression.ads
-3K9*type_expression 70e20 25|2w6 3r5 26|1w6 2r5
-11n24*produit{11E9} 26|196r39 207r39 218r39
-11n40*litteral{11E9} 26|195r62 196r103 197r62 198r62 206r62 207r103 208r62
-. 209r62 217r62 218r103 219r62 220r62
-11n79*cos{11E9} 26|195r39 198r39 206r39 209r39 217r39 220r39
-11n84*sin{11E9} 26|196r80 197r39 207r80 208r39 218r80 219r39
-14R9*T_litteraux 22e14 25|37r37 38r37 38r61 38r88 42r55 43r55 26|186r37 225r37
-. 225r60 225r86 250r55 258r55
-26R9*T_expression 54e14 26|195r25 195r48 196r25 196r66 196r89 197r25 197r48
-. 198r25 198r48 206r25 206r48 207r25 207r66 207r89 208r25 208r48 209r25 209r48
-. 217r25 217r48 218r25 218r66 218r89 219r25 219r48 220r25 220r48
-27P9*T_expr_int(26R9) 25|9r11 10r11 11r11 14r43 18r62 21r24 29r24 34r42 26|10r62
-. 36r24 66r11 80r24 98r11 109r11 137r42 138r21
-61V14*"*"{27P9} 26|13s31 13s47 13s63 19s34 19s50 20s34 20s50 21s34 21s50
-. 39s30 40s30 41s30 72s33 85s26 100s22 100s38 100s54 101s22 101s38 101s54
-. 102s22 102s38 102s54 112s26 112s42 113s26 113s42 114s26 114s42 115s26 115s42
-. 116s26 116s42 117s26 117s42 118s26 118s42 119s26 119s42 120s26 120s42 140s29
-. 140s38 140s54 140s71 140s80 140s96 140s113 140s122 140s138
-62V14*"+"{27P9} 26|13s39 13s55 29s33 30s33 31s33 57s34 72s23 100s28 100s44
-. 101s28 101s44 102s28 102s44 140s105
-63V14*"-"{27P9} 26|19s42 20s42 21s42 112s34 113s34 114s34 115s34 116s34 117s34
-. 118s34 119s34 120s34 140s46 140s63 140s88 140s130
-64V14*"/"{27P9} 26|122s27 123s27 124s27 125s27 126s27 127s27 128s27 129s27
-. 130s27
-65U14*put 26|148s7 151s7 154s7 175s13
+3K9*type_expression 75e20 25|2w6 3r5 26|1w6 2r5
+13n53*litteral{13E9} 26|204r62 205r75 206r62 207r62 215r62 216r75 217r62
+. 218r62 226r62 227r75 228r62 229r62
+13n92*cos{13E9} 26|204r39 207r39 215r39 218r39 226r39 229r39
+13n97*sin{13E9} 26|205r52 206r39 216r52 217r39 227r52 228r39
+16R9*T_litteraux 24e14 25|37r37 38r37 38r61 38r88 42r55 43r55 26|195r37 234r37
+. 234r60 234r86 259r55 267r55
+28R9*T_expression 59e14 26|204r25 204r48 205r38 205r61 206r25 206r48 207r25
+. 207r48 215r25 215r48 216r38 216r61 217r25 217r48 218r25 218r48 226r25 226r48
+. 227r38 227r61 228r25 228r48 229r25 229r48
+29P9*T_expr_int(28R9) 25|9r11 10r11 11r11 14r43 18r62 21r24 29r24 34r42 26|10r62
+. 36r24 69r11 83r24 107r11 118r11 146r42 147r21
+66V14*"*"{29P9} 26|13s31 13s47 13s63 19s34 19s50 20s34 20s50 21s34 21s50
+. 39s30 40s30 41s30 75s33 88s26 109s22 109s38 109s54 110s22 110s38 110s54
+. 111s22 111s38 111s54 121s26 121s42 122s26 122s42 123s26 123s42 124s26 124s42
+. 125s26 125s42 126s26 126s42 127s26 127s42 128s26 128s42 129s26 129s42 149s29
+. 149s38 149s54 149s71 149s80 149s96 149s113 149s122 149s138
+67V14*"+"{29P9} 26|13s39 13s55 29s33 30s33 31s33 60s34 75s23 109s28 109s44
+. 110s28 110s44 111s28 111s44 149s105
+68V14*"-"{29P9} 26|19s42 20s42 21s42 49s19 50s19 51s18 99s33 121s34 122s34
+. 123s34 124s34 125s34 126s34 127s34 128s34 129s34 149s46 149s63 149s88 149s130
+. 205s33 216s33 227s33
+69V14*"/"{29P9} 26|131s27 132s27 133s27 134s27 135s27 136s27 137s27 138s27
+. 139s27
+70U14*put 26|157s7 160s7 163s7 184s13
 X 25 type_vecteur.ads
-7K9*type_vecteur 45l5 45e17 26|8b14 275l5 275t17
+7K9*type_vecteur 45l5 45e17 26|8b14 284l5 284t17
 8R9*T_vecteur 12e14 18r25 18r44 19r25 19r44 19r62 20r25 20r44 20r62 21r44
 . 21r62 22r25 22r44 22r62 23r25 24r30 31r44 31r62 40r36 42r33 26|10r25 10r44
 . 15r25 15r44 15r62 16r14 25r25 25r44 25r62 26r14 36r44 36r62 37r14 46r25
-. 46r44 46r62 96r44 96r62 97r11 145r25 157r30 242r36 250r33
-9p7*X{24|27P9} 26|13r29 13r36 19m12 20r39 20r48 21r32 21r55 29m12 29r31 29r38
-. 39m12 39r35 100m9 100r26 101r26 102r26 148r13 244m25 252m17
-10p7*Y{24|27P9} 26|13r45 13r52 19r32 19r55 20m12 21r39 21r48 30m12 30r31
-. 30r38 40m12 40r35 100r42 101m9 101r42 102r42 151r13 245m25 253m17
-11p7*Z{24|27P9} 26|13r61 13r68 19r39 19r48 20r32 20r55 21m12 31m12 31r31
-. 31r38 41m12 41r35 100r58 101r58 102m9 102r58 154r13 246m25 254m17
-14A9*T_matrice_ligne(24|27P9)<integer> 15r37
+. 46r44 46r62 47r11 105r44 105r62 106r11 154r25 166r30 251r36 259r33
+9p7*X{24|29P9} 26|13r29 13r36 19m12 20r39 20r48 21r32 21r55 29m12 29r31 29r38
+. 39m12 39r35 49m9 49r17 49r23 109m9 109r26 110r26 111r26 157r13 253m25 261m17
+10p7*Y{24|29P9} 26|13r45 13r52 19r32 19r55 20m12 21r39 21r48 30m12 30r31
+. 30r38 40m12 40r35 50m9 50r17 50r24 109r42 110m9 110r42 111r42 160r13 254m25
+. 262m17
+11p7*Z{24|29P9} 26|13r61 13r68 19r39 19r48 20r32 20r55 21m12 31m12 31r31
+. 31r38 41m12 41r35 51m9 51r17 51r22 109r58 110r58 111m9 111r58 163r13 255m25
+. 263m17
+14A9*T_matrice_ligne(24|29P9)<integer> 15r37
 15A9*T_matrice(14A9)<integer> 16r24 27r25 27r43 27r61 28r25 28r44 28r62 29r44
 . 29r62 30r25 30r44 30r62 31r25 32r25 33r29 33r47 34r24 35r30 37r72 38r108
-. 39r36 43r33 26|52r25 52r43 52r61 53r11 64r25 64r44 64r62 65r11 80r44 80r62
-. 81r11 91r25 91r44 91r62 96r25 106r28 106r46 107r12 108r12 137r24 163r30
-. 169r25 186r72 187r11 225r106 226r12 227r12 228r12 233r36 258r33
+. 39r36 43r33 26|55r25 55r43 55r61 56r11 67r25 67r44 67r62 68r11 83r44 83r62
+. 84r11 94r25 94r44 94r62 95r11 105r25 115r28 115r46 116r12 117r12 146r24
+. 172r30 178r25 195r72 196r11 234r106 235r12 236r12 237r12 242r36 267r33
 16a4*identity{15A9}
-18V14*"*"{24|27P9} 18>17 18>36 26|10b14 14l9 14t11
+18V14*"*"{24|29P9} 18>17 18>36 26|10b14 14l9 14t11
 18r17 v1{8R9} 26|10b17 13r26 13r42 13r58
 18r36 v2{8R9} 26|10b36 13r33 13r49 13r65
 19V14*"*"{8R9} 19>17 19>36 26|15b14 23l9 23t11
 19r17 v1{8R9} 26|15b17 19r29 19r45 20r29 20r45 21r29 21r45
 19r36 v2{8R9} 26|15b36 19r36 19r52 20r36 20r52 21r36 21r52
-20V14*"+"{8R9} 20>17 20>36 26|25b14 34l9 34t11 49s17
+20V14*"+"{8R9} 20>17 20>36 26|25b14 34l9 34t11
 20r17 v1{8R9} 26|25b17 29r28 30r28 31r28
 20r36 v2{8R9} 26|25b36 29r35 30r35 31r35
-21V14*"*"{8R9} 21>17 21>36 26|36b14 44l9 44t11 49s34
-21p17 e{24|27P9} 26|36b17 39r28 40r28 41r28
+21V14*"*"{8R9} 21>17 21>36 26|36b14 44l9 44t11
+21p17 e{24|29P9} 26|36b17 39r28 40r28 41r28
 21r36 v2{8R9} 26|36b36 39r32 40r32 41r32
-22V14*"-"{8R9} 22>17 22>36 26|46b14 50l9 50t11
-22r17 v1{8R9} 26|46b17 49r14
-22r36 v2{8R9} 26|46b36 49r36
-23U14*put 23>18 26|145b14 155l8 155t11 159s7
-23r18 v{8R9} 26|145b18 148r11 151r11 154r11
-24U14*put_line 24>23 26|157b14 161t7
-24r23 v{8R9} 26|157b23 159r11
-27V14*"+"{15A9} 27>17 27>36 26|52b14 61l9 61t11 93s16
-27a17 m1{15A9} 26|52b17 57r25
-27a36 m2{15A9} 26|52b36 57r36
-28V14*"*"{15A9} 28>17 28>36 26|64b14 78l9 78t11 230s16 230s19
-28a17 m1{15A9} 26|64b17 72r25
-28a36 m2{15A9} 26|64b36 72r34
-29V14*"*"{15A9} 29>17 29>36 26|80b14 89l9 89t11 93s30
-29p17 e{24|27P9} 26|80b17 85r24
-29a36 m1{15A9} 26|80b36 85r28
-30V14*"-"{15A9} 30>17 30>36 26|91b14 94l9 94t11
-30a17 m1{15A9} 26|91b17 93r14
-30a36 m2{15A9} 26|91b36 93r31
-31V14*"*"{8R9} 31>17 31>36 26|96b14 105l9 105t11
-31a17 m1{15A9} 26|96b17 100r14 100r30 100r46 101r14 101r30 101r46 102r14
-. 102r30 102r46
-31r36 v1{8R9} 26|96b36 100r23 100r39 100r55 101r23 101r39 101r55 102r23 102r39
-. 102r55
-32U14*put 32>18 26|165s7 169b14 184l8 184t11
-32a18 m{15A9} 26|169b18 175r17
-33V13*inverser{15A9} 33>22 26|106b12 135l8 135t16
-33a22 m{15A9} 26|106b21 109r29 112r19 112r27 112r35 112r43 113r19 113r27
-. 113r35 113r43 114r19 114r27 114r35 114r43 115r19 115r27 115r35 115r43 116r19
-. 116r27 116r35 116r43 117r19 117r27 117r35 117r43 118r19 118r27 118r35 118r43
-. 119r19 119r27 119r35 119r43 120r19 120r27 120r35 120r43
-34V13*det{24|27P9} 34>17 26|109s25 137b13 142l8 142t11
-34a17 m{15A9} 26|137b17 140r22 140r31 140r39 140r47 140r55 140r64 140r73
-. 140r81 140r89 140r97 140r106 140r115 140r123 140r131 140r139
-35U14*put_line 35>23 26|163b14 167t7
-35a23 m{15A9} 26|163b23 165r11
-37V13*mat_rotation{15A9} 37>26 37>50 26|186b13 223l8 223t20 226s25 227s25
-. 228s25
-37r26 angle{24|14R9} 26|186b26 195r72 196r113 197r72 198r72 206r72 207r113
-. 208r72 209r72 217r72 218r113 219r72 220r72
-37i50 axe{integer} 26|186b50 189r11 200r11 211r11
-38V13*rotation_3D{15A9} 38>25 38>50 38>74 26|225b13 231l8 231t19
-38r25 roulis{24|14R9} 26|225b25 226r38
-38r50 lacet{24|14R9} 26|225b50 227r38
-38r74 tanguage{24|14R9} 26|225b73 228r38
-39U14*normaliser 39=25 26|233b14 240t7 265s7
-39a25 m{15A9} 26|233b25 237m29 237r29
-40U14*normaliser 40=25 26|242b14 247t7 255s7
-40r25 v{8R9} 26|242b25 244m23 244r23 245m23 245r23 246m23 246r23
-42U14*deriver 42=22 42>44 26|250b14 256t7
-42r22 v{8R9} 26|250b22 252m15 252r15 253m15 253r15 254m15 254r15 255m18
-42r44 param{24|14R9} 26|250b44 252r20 253r20 254r20
-43U14*deriver 43=22 43>44 26|258b14 266t7
-43a22 m{15A9} 26|258b22 262m21 262r21 265m18
-43r44 param{24|14R9} 26|258b44 262r30
+22V14*"-"{8R9} 22>17 22>36 26|46b14 53l9 53t11
+22r17 v1{8R9} 26|46b17 49r14 50r14 51r14
+22r36 v2{8R9} 26|46b36 49r20 50r21 51r19
+23U14*put 23>18 26|154b14 164l8 164t11 168s7
+23r18 v{8R9} 26|154b18 157r11 160r11 163r11
+24U14*put_line 24>23 26|166b14 170t7
+24r23 v{8R9} 26|166b23 168r11
+27V14*"+"{15A9} 27>17 27>36 26|55b14 64l9 64t11
+27a17 m1{15A9} 26|55b17 60r25
+27a36 m2{15A9} 26|55b36 60r36
+28V14*"*"{15A9} 28>17 28>36 26|67b14 81l9 81t11 239s16 239s19
+28a17 m1{15A9} 26|67b17 75r25
+28a36 m2{15A9} 26|67b36 75r34
+29V14*"*"{15A9} 29>17 29>36 26|83b14 92l9 92t11
+29p17 e{24|29P9} 26|83b17 88r24
+29a36 m1{15A9} 26|83b36 88r28
+30V14*"-"{15A9} 30>17 30>36 26|94b14 103l9 103t11
+30a17 m1{15A9} 26|94b17 99r25
+30a36 m2{15A9} 26|94b36 99r34
+31V14*"*"{8R9} 31>17 31>36 26|105b14 114l9 114t11
+31a17 m1{15A9} 26|105b17 109r14 109r30 109r46 110r14 110r30 110r46 111r14
+. 111r30 111r46
+31r36 v1{8R9} 26|105b36 109r23 109r39 109r55 110r23 110r39 110r55 111r23
+. 111r39 111r55
+32U14*put 32>18 26|174s7 178b14 193l8 193t11
+32a18 m{15A9} 26|178b18 184r17
+33V13*inverser{15A9} 33>22 26|115b12 144l8 144t16
+33a22 m{15A9} 26|115b21 118r29 121r19 121r27 121r35 121r43 122r19 122r27
+. 122r35 122r43 123r19 123r27 123r35 123r43 124r19 124r27 124r35 124r43 125r19
+. 125r27 125r35 125r43 126r19 126r27 126r35 126r43 127r19 127r27 127r35 127r43
+. 128r19 128r27 128r35 128r43 129r19 129r27 129r35 129r43
+34V13*det{24|29P9} 34>17 26|118s25 146b13 151l8 151t11
+34a17 m{15A9} 26|146b17 149r22 149r31 149r39 149r47 149r55 149r64 149r73
+. 149r81 149r89 149r97 149r106 149r115 149r123 149r131 149r139
+35U14*put_line 35>23 26|172b14 176t7
+35a23 m{15A9} 26|172b23 174r11
+37V13*mat_rotation{15A9} 37>26 37>50 26|195b13 232l8 232t20 235s25 236s25
+. 237s25
+37r26 angle{24|16R9} 26|195b26 204r72 205r85 206r72 207r72 215r72 216r85
+. 217r72 218r72 226r72 227r85 228r72 229r72
+37i50 axe{integer} 26|195b50 198r11 209r11 220r11
+38V13*rotation_3D{15A9} 38>25 38>50 38>74 26|234b13 240l8 240t19
+38r25 roulis{24|16R9} 26|234b25 235r38
+38r50 lacet{24|16R9} 26|234b50 236r38
+38r74 tanguage{24|16R9} 26|234b73 237r38
+39U14*normaliser 39=25 26|242b14 249t7 274s7
+39a25 m{15A9} 26|242b25 246m29 246r29
+40U14*normaliser 40=25 26|251b14 256t7 264s7
+40r25 v{8R9} 26|251b25 253m23 253r23 254m23 254r23 255m23 255r23
+42U14*deriver 42=22 42>44 26|259b14 265t7
+42r22 v{8R9} 26|259b22 261m15 261r15 262m15 262r15 263m15 263r15 264m18
+42r44 param{24|16R9} 26|259b44 261r20 262r20 263r20
+43U14*deriver 43=22 43>44 26|267b14 275t7
+43a22 m{15A9} 26|267b22 271m21 271r21 274m18
+43r44 param{24|16R9} 26|267b44 271r30
 X 26 type_vecteur.adb
 16r7 temp{25|8R9} 19m7 20m7 21m7 22r14
 26r7 temp{25|8R9} 29m7 30m7 31m7 32r14
 37r7 temp{25|8R9} 39m7 40m7 41m7 43r14
-53a7 m{25|15A9} 57m13 60r11
-55i11 i{integer} 57r15 57r28 57r39
-56i14 j{integer} 57r18 57r31 57r42
-65a7 m{25|15A9} 74m13 77r14
-66p7 s{24|27P9} 70m13 72m16 72r21 74r24
-68i11 i{integer} 72r28 74r15
-69i14 j{integer} 72r40 74r18
-71i17 k{integer} 72r31 72r37
-81a7 m{25|15A9} 85m13 88r14
-83i11 i{integer} 85r15 85r31
-84i14 j{integer} 85r18 85r34
-97r7 v{25|8R9} 100m7 101m7 102m7 103r14
-98p7 s{24|27P9}
-107a7 mr{25|15A9} 122m7 123m7 124m7 125m7 126m7 127m7 128m7 129m7 130m7 133r14
-108a7 mt{25|15A9} 112m7 113m7 114m7 115m7 116m7 117m7 118m7 119m7 120m7 122r19
-. 123r19 124r19 125r19 126r19 127r19 128r19 129r19 130r19
-109p7 d{24|27P9} 122r28 123r28 124r28 125r28 126r28 127r28 128r28 129r28
-. 130r28
-138p7 determinant{24|27P9} 140m7 141r14
-172i11 i{integer} 175r19
-174i14 j{integer} 175r22 176r16
-187a7 m{25|15A9} 190m10 191m10 192m10 193m10 194m10 195m10 196m10 197m10
-. 198m10 201m10 202m10 203m10 204m10 205m10 206m10 207m10 208m10 209m10 212m10
-. 213m10 214m10 215m10 216m10 217m10 218m10 219m10 220m10 222r14
-226a7 m1{25|15A9} 230r20
-227a7 m2{25|15A9} 230r17
-228a7 m3{25|15A9} 230r14
-235i11 i{integer} 237r31
-236i14 j{integer} 237r34
-260i11 i{integer} 262r23
-261i14 j{integer} 262r26
+47r7 v{25|8R9} 49m7 50m7 51m7 52r14
+56a7 m{25|15A9} 60m13 63r11
+58i11 i{integer} 60r15 60r28 60r39
+59i14 j{integer} 60r18 60r31 60r42
+68a7 m{25|15A9} 77m13 80r14
+69p7 s{24|29P9} 73m13 75m16 75r21 77r24
+71i11 i{integer} 75r28 77r15
+72i14 j{integer} 75r40 77r18
+74i17 k{integer} 75r31 75r37
+84a7 m{25|15A9} 88m13 91r14
+86i11 i{integer} 88r15 88r31
+87i14 j{integer} 88r18 88r34
+95a7 m{25|15A9} 99m13 102r14
+97i11 i{integer} 99r15 99r28 99r37
+98i14 j{integer} 99r18 99r31 99r40
+106r7 v{25|8R9} 109m7 110m7 111m7 112r14
+107p7 s{24|29P9}
+116a7 mr{25|15A9} 131m7 132m7 133m7 134m7 135m7 136m7 137m7 138m7 139m7 142r14
+117a7 mt{25|15A9} 121m7 122m7 123m7 124m7 125m7 126m7 127m7 128m7 129m7 131r19
+. 132r19 133r19 134r19 135r19 136r19 137r19 138r19 139r19
+118p7 d{24|29P9} 131r28 132r28 133r28 134r28 135r28 136r28 137r28 138r28
+. 139r28
+147p7 determinant{24|29P9} 149m7 150r14
+181i11 i{integer} 184r19
+183i14 j{integer} 184r22 185r16
+196a7 m{25|15A9} 199m10 200m10 201m10 202m10 203m10 204m10 205m10 206m10
+. 207m10 210m10 211m10 212m10 213m10 214m10 215m10 216m10 217m10 218m10 221m10
+. 222m10 223m10 224m10 225m10 226m10 227m10 228m10 229m10 231r14
+235a7 m1{25|15A9} 239r20
+236a7 m2{25|15A9} 239r17
+237a7 m3{25|15A9} 239r14
+244i11 i{integer} 246r31
+245i14 j{integer} 246r34
+269i11 i{integer} 271r23
+270i14 j{integer} 271r26
 
